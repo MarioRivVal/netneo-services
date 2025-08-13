@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Sofia+Sans+Extra+Condensed:ital,wght@0,1..1000;1,1..1000&display=swap");
+
+@font-face {
+  font-family: "Bodoni MT Condensed";
+  src: url("/fonts/BodoniMTCondensed.woff2") format("woff2");
+  font-weight: 400; /* mejor usar número */
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Bodoni MT Condensed";
+  src: url("/fonts/BodoniMTCondensed-Bold.woff2") format("woff2");
+  font-weight: 700; /* bold -> 700 */
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --font-title: "Bodoni MT Condensed", serif;
+  --font-paragraph: "Sofia Sans Extra Condensed", sans-serif;
+  --font-extra: "JetBrains Mono", monospace;
+
+  --blue: #5968b2;
+  --pink: #f441a5;
+  --black: #0d0810;
+  --white: #fcfcfc;
+
+  --gray-1: #f2f2f2;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: var(--white);
+  color: var(--black);
+}
+
+a {
+  display: inline-block;
+}
+
+h1 {
+}
+h2 {
+}
+h3 {
+  font-family: var(--font-title);
+  font-size: 4rem;
+  font-weight: 400;
+  line-height: 0.8;
+}
+h4 {
+}
+h5 {
+}
+h6 {
+  font-family: var(--font-extra);
+  font-size: 1.2rem;
+  font-weight: 100;
+  text-align: end;
+}
+
+.relleno {
+  background-color: yellow;
+  height: 80rem;
+}
+.relleno-2 {
+  background-color: pink;
+  height: 80rem;
+}
+
+/* ----------------------------------------- */
+/* ---------  UTILITIES CLASSES -------------*/
+/* ----------------------------------------- */
+
+.u--pink-text {
+  color: var(--pink);
+}
+
+.u--blue-text {
+  color: var(--blue);
+  font-weight: 500;
+}
+
+.u--bold {
+  font-weight: 700;
+}

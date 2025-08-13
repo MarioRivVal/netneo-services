@@ -1,0 +1,17 @@
+.footer {
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 4rem 2.5rem;
+}
+.titleBox {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.socials {
+  display: flex;
+  gap: 1rem;
+}

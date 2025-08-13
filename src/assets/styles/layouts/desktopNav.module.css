@@ -1,0 +1,46 @@
+.navigation {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  align-items: center;
+  padding: 6rem 0;
+}
+
+.list {
+  display: flex;
+  gap: 6rem;
+  justify-self: center;
+  list-style: none;
+}
+
+.item {
+  position: relative;
+  text-decoration: none;
+  font-family: var(--font-paragraph);
+  font-size: 2.2rem;
+  padding: 0.5rem;
+}
+
+.item::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 0.2rem;
+  background-color: var(--pink);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.item:hover::after {
+  transform: scaleX(1);
+}
+
+.item.active::after {
+  transform: scaleX(1);
+}
+
+.logoText {
+  justify-self: end;
+}
