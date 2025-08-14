@@ -1,6 +1,10 @@
 import s from "../assets/styles/layouts/footer.module.css";
 import LinkedinIcon from "../icons/LinkedinIcon";
 import InstagramIcon from "../icons/InstagramIcon";
+import GradientButton from "../components/gradientButton";
+import NetneoIcon from "../icons/NetneoIcon";
+import TextIcon from "../icons/TextIcon";
+import SmallButton from "../components/smallButton";
 
 // type FooterType ={
 //     version: string
@@ -24,6 +28,24 @@ export default function Footer() {
         </div>
         <div className={s.cta}>
           <p>Habla con nosotros</p>
+          <GradientButton text="WhatsApp" variant="dark" />
+        </div>
+        <div className={s.footerContent}>
+          <div className={s.logos}>
+            <TextIcon />
+            <NetneoIcon />
+          </div>
+          <div className={s.copyrights}>
+            <div className={s.languages}>
+              <SmallButton text="Esp" />
+              <SmallButton text="Ita" />
+              <SmallButton text="Eng" />
+            </div>
+            <a href="#">Términos y privacidad</a>
+            <p>
+              <span>@ 2025 Netneo</span>Todos los derechos reservados
+            </p>
+          </div>
         </div>
       </div>
     </footer>

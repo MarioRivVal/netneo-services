@@ -15,3 +15,34 @@
   display: flex;
   gap: 1rem;
 }
+
+.cta {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cta p {
+  font-family: var(--font-paragraph);
+  font-size: 2rem;
+}
+
+.footerContent {
+  border-radius: 2rem;
+  border: 0.2rem solid transparent;
+  background: linear-gradient(var(--white), var(--white)) padding-box,
+    linear-gradient(90deg, var(--blue), var(--pink)) border-box;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.copyrights {
+}
+
+.languages {
+}
