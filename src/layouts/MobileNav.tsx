@@ -7,11 +7,7 @@ import { useTranslation } from "react-i18next";
 
 export default function MobileNav() {
   const [isNavActive, setIsNavActive] = useState(false);
-
-  const { i18n } = useTranslation();
-  const langs = ["en", "es", "it"];
-
-  const { t } = useTranslation();
+  const { t } = useTranslation("nav");
 
   const handleCheckboxChange = () => {
     setIsNavActive(!isNavActive);
@@ -19,19 +15,6 @@ export default function MobileNav() {
 
   return (
     <>
-      <div style={{ display: "flex", gap: 8 }}>
-        {langs.map((lng) => (
-          <button
-            key={lng}
-            onClick={() => i18n.changeLanguage(lng)}
-            disabled={i18n.language === lng}
-            title={`Change language to ${lng.toUpperCase()}`}
-          >
-            {lng.toUpperCase()}
-          </button>
-        ))}
-      </div>
-
       <div className={`${s.navigation} ${isNavActive ? s.active : ""}`}>
         <div>
           <Link to="/" aria-label="Go home" className={s.logoNetneo}>
@@ -60,7 +43,7 @@ export default function MobileNav() {
                     `${s.item} ${isActive ? s.active : ""}`
                   }
                 >
-                  {t("nav.home")}
+                  {t("home")}
                 </NavLink>
               </li>
               <li>
@@ -70,7 +53,7 @@ export default function MobileNav() {
                     `${s.item} ${isActive ? s.active : ""}`
                   }
                 >
-                  {t("nav.services")}
+                  {t("services")}
                 </NavLink>
               </li>
               <li>
@@ -80,7 +63,7 @@ export default function MobileNav() {
                     `${s.item} ${isActive ? s.active : ""}`
                   }
                 >
-                  {t("nav.projects")}
+                  {t("projects")}
                 </NavLink>
               </li>
               <li>
@@ -90,7 +73,7 @@ export default function MobileNav() {
                     `${s.item} ${isActive ? s.active : ""}`
                   }
                 >
-                  {t("nav.about")}
+                  {t("about")}
                 </NavLink>
               </li>
               <li>
@@ -100,7 +83,7 @@ export default function MobileNav() {
                     `${s.item} ${isActive ? s.active : ""}`
                   }
                 >
-                  {t("nav.contact")}
+                  {t("contact")}
                 </NavLink>
               </li>
             </ul>

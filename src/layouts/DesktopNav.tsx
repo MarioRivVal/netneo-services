@@ -5,7 +5,7 @@ import { NavLink, Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
 export default function DesktopNav() {
-  const { t } = useTranslation();
+  const { t } = useTranslation("nav");
   return (
     <nav className={s.navigation}>
       <Link to="/" aria-label="Go home">
@@ -20,7 +20,7 @@ export default function DesktopNav() {
               `${s.item} ${isActive ? s.active : ""}`
             }
           >
-            {t("nav.home")}
+            {t("home")}
           </NavLink>
         </li>
         <li>
@@ -30,7 +30,7 @@ export default function DesktopNav() {
               `${s.item} ${isActive ? s.active : ""}`
             }
           >
-            {t("nav.services")}
+            {t("services")}
           </NavLink>
         </li>
         <li>
@@ -40,7 +40,7 @@ export default function DesktopNav() {
               `${s.item} ${isActive ? s.active : ""}`
             }
           >
-            {t("nav.projects")}
+            {t("projects")}
           </NavLink>
         </li>
         <li>
@@ -50,7 +50,7 @@ export default function DesktopNav() {
               `${s.item} ${isActive ? s.active : ""}`
             }
           >
-            {t("nav.about")}
+            {t("about")}
           </NavLink>
         </li>
         <li>
@@ -60,7 +60,7 @@ export default function DesktopNav() {
               `${s.item} ${isActive ? s.active : ""}`
             }
           >
-            {t("nav.contact")}
+            {t("contact")}
           </NavLink>
         </li>
       </ul>

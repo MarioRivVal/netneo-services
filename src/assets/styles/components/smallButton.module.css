@@ -10,10 +10,13 @@
   transition: all 0.3s ease;
   text-transform: uppercase;
   flex: 1;
-  min-height: 0;
+  min-width: 0;
+  -webkit-user-select: none;
+  user-select: none;
 }
 
 .active {
+  color: var(--black);
   border: 0.2rem solid transparent;
   background: linear-gradient(var(--white), var(--white)) padding-box,
     linear-gradient(90deg, var(--blue), var(--pink)) border-box;

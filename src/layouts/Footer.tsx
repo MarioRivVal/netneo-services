@@ -1,3 +1,4 @@
+// layouts/Footer.tsx
 import s from "../assets/styles/layouts/footer.module.css";
 import LinkedinIcon from "../icons/LinkedinIcon";
 import InstagramIcon from "../icons/InstagramIcon";
@@ -5,20 +6,16 @@ import GradientButton from "../components/gradientButton";
 import NetneoIcon from "../icons/NetneoIcon";
 import TextIcon from "../icons/TextIcon";
 import SmallButton from "../components/smallButton";
-import { useTranslation } from "react-i18next";
+import { Trans, useTranslation } from "react-i18next";
 
 const LANGS = [
   { code: "es", label: "Esp", name: "Español" },
   { code: "en", label: "Eng", name: "English" },
   { code: "it", label: "Ita", name: "Italiano" },
 ];
-// type FooterType ={
-//     version: string
-// }
 
 export default function Footer() {
-  const { i18n } = useTranslation();
-
+  const { t, i18n } = useTranslation("footer");
   const current = (i18n.resolvedLanguage || i18n.language || "en").split(
     "-"
   )[0];
@@ -26,27 +23,37 @@ export default function Footer() {
   return (
     <footer className={s.footer}>
       <div className={s.container}>
-        <h6>// Síguenos</h6>
+        <h6>{t("follow")}</h6>
+
         <div className={s.titleBox}>
           <div className={s.socials}>
             <InstagramIcon />
             <LinkedinIcon />
           </div>
+
           <h3>
-            ¿Y si tu <span className="u--pink-text">idea</span> se convierte en
-            el próximo caso de{" "}
-            <span className="u--blue-text u--bold">exito</span>
+            <Trans
+              i18nKey="headline"
+              t={t}
+              components={{
+                pink: <span className="u--pink-text" />,
+                blue: <span className="u--blue-text u--bold" />,
+              }}
+            />
           </h3>
         </div>
+
         <div className={s.cta}>
-          <p>Habla con nosotros</p>
-          <GradientButton text="WhatsApp" variant="dark" />
+          <p>{t("ctaLabel")}</p>
+          <GradientButton text={t("ctaButton")} variant="dark" />
         </div>
+
         <div className={s.footerContent}>
           <div className={s.logos}>
             <TextIcon />
             <NetneoIcon />
           </div>
+
           <div className={s.copyrights}>
             <div className={s.languages}>
               {LANGS.map(({ code, label, name }) => (
@@ -59,9 +66,12 @@ export default function Footer() {
                 />
               ))}
             </div>
-            <a href="#">Términos y privacidad</a>
+
+            <a href="#">{t("terms")}</a>
+
             <p>
-              <span>@ 2025 Netneo</span>Todos los derechos reservados
+              <span>{t("rights", { year: new Date().getFullYear() })}</span>
+              {t("allRights")}
             </p>
           </div>
         </div>
