@@ -5,9 +5,6 @@ import { NavLink, Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
 export default function DesktopNav() {
-  const { i18n } = useTranslation();
-  const langs = ["en", "es", "it"];
-
   const { t } = useTranslation();
   return (
     <nav className={s.navigation}>
@@ -71,20 +68,6 @@ export default function DesktopNav() {
       <Link to="/" className={s.logoText} aria-label="Go home">
         <TextIcon />
       </Link>
-
-      {/* Cambiador de idioma simple */}
-      <div style={{ display: "flex", gap: 8 }}>
-        {langs.map((lng) => (
-          <button
-            key={lng}
-            onClick={() => i18n.changeLanguage(lng)}
-            disabled={i18n.language === lng}
-            title={`Change language to ${lng.toUpperCase()}`}
-          >
-            {lng.toUpperCase()}
-          </button>
-        ))}
-      </div>
     </nav>
   );
 }

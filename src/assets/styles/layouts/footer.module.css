@@ -16,6 +16,11 @@
   gap: 1rem;
 }
 
+.socials svg {
+  width: 5rem;
+  height: auto;
+}
+
 .cta {
   width: 100%;
   display: flex;
@@ -40,9 +45,39 @@
   justify-content: center;
   gap: 1.5rem;
 }
+.logos {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.logos svg:first-child {
+  width: 9rem;
+  height: auto;
+}
+.logos svg:last-child {
+  width: 4rem;
+  height: auto;
+}
 
 .copyrights {
+  display: grid;
+  justify-items: center;
+  gap: 0.5rem;
+}
+
+.copyrights a,
+.copyrights p {
+  font-size: 1.6rem;
+  font-family: var(--font-paragraph);
+  transition: color 0.3s ease;
+}
+
+.copyrights a:hover {
+  color: var(--blue);
 }
 
 .languages {
+  display: flex;
+  gap: 1.5rem;
 }

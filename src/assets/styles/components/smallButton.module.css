@@ -8,6 +8,9 @@
   font-family: var(--font-paragraph);
   cursor: pointer;
   transition: all 0.3s ease;
+  text-transform: uppercase;
+  flex: 1;
+  min-height: 0;
 }
 
 .active {

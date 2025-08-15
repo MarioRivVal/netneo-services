@@ -5,12 +5,24 @@ import GradientButton from "../components/gradientButton";
 import NetneoIcon from "../icons/NetneoIcon";
 import TextIcon from "../icons/TextIcon";
 import SmallButton from "../components/smallButton";
+import { useTranslation } from "react-i18next";
 
+const LANGS = [
+  { code: "es", label: "Esp", name: "Español" },
+  { code: "en", label: "Eng", name: "English" },
+  { code: "it", label: "Ita", name: "Italiano" },
+];
 // type FooterType ={
 //     version: string
 // }
 
 export default function Footer() {
+  const { i18n } = useTranslation();
+
+  const current = (i18n.resolvedLanguage || i18n.language || "en").split(
+    "-"
+  )[0];
+
   return (
     <footer className={s.footer}>
       <div className={s.container}>
@@ -37,9 +49,15 @@ export default function Footer() {
           </div>
           <div className={s.copyrights}>
             <div className={s.languages}>
-              <SmallButton text="Esp" />
-              <SmallButton text="Ita" />
-              <SmallButton text="Eng" />
+              {LANGS.map(({ code, label, name }) => (
+                <SmallButton
+                  key={code}
+                  text={label}
+                  onClick={() => i18n.changeLanguage(code)}
+                  active={current === code}
+                  title={`Change language to ${name}`}
+                />
+              ))}
             </div>
             <a href="#">Términos y privacidad</a>
             <p>
