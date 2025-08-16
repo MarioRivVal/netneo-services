@@ -74,6 +74,10 @@ h6 {
   text-align: end;
 }
 
+picture {
+  display: block;
+}
+
 .relleno {
   background-color: yellow;
   height: 80rem;

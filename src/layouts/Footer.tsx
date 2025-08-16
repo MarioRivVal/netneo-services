@@ -7,12 +7,7 @@ import NetneoIcon from "../icons/NetneoIcon";
 import TextIcon from "../icons/TextIcon";
 import SmallButton from "../components/smallButton";
 import { Trans, useTranslation } from "react-i18next";
-
-const LANGS = [
-  { code: "es", label: "Esp", name: "Español" },
-  { code: "en", label: "Eng", name: "English" },
-  { code: "it", label: "Ita", name: "Italiano" },
-];
+import { LANGS } from "../i18n/langs";
 
 export default function Footer() {
   const { t, i18n } = useTranslation("footer");
