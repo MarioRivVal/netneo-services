@@ -1,6 +1,11 @@
+.navigation {
+  padding: 2rem;
+}
+
 .logos {
   display: flex;
   align-items: center;
+  gap: 0.5rem;
 }
 .logoNetneo svg {
   width: 4rem;
@@ -12,11 +17,11 @@
 }
 .button {
   position: fixed;
-  top: 3rem;
-  right: 3rem;
+  top: 0;
+  right: 0;
   z-index: 1;
   background-color: var(--white);
-  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  /* box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); */
   width: 7rem;
   height: 7rem;
   border-radius: 50%;
@@ -60,9 +65,11 @@
   width: 6rem;
   height: 6rem;
   border-radius: 50%;
-  background-image: radial-gradient(var(--blue), var(--pink));
-  top: 3.5rem;
-  right: 3.5rem;
+  background-color: #fcfcfc30;
+  -webkit-backdrop-filter: blur(1px);
+  backdrop-filter: blur(1px);
+  top: 0.5rem;
+  right: 0.5rem;
   transition: all 0.3s cubic-bezier(0, 0.55, 0.45, 1);
 }
 

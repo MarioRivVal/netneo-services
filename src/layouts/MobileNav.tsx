@@ -16,7 +16,7 @@ export default function MobileNav() {
   return (
     <>
       <div className={`${s.navigation} ${isNavActive ? s.active : ""}`}>
-        <div>
+        <div className={s.logos}>
           <Link to="/" aria-label="Go home" className={s.logoNetneo}>
             <NetneoIcon />
           </Link>
@@ -24,7 +24,7 @@ export default function MobileNav() {
             <TextIcon />
           </Link>
         </div>
-        <div className={s.menu}>
+        <div>
           <div
             className={s.button}
             role="button"
