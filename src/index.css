@@ -126,3 +126,15 @@ picture {
 .u--bold {
   font-weight: 700;
 }
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 1024px) {
+}
+
+@media (min-width: 1280px) {
+  h5 {
+    font-size: 3.8rem;
+  }
+}

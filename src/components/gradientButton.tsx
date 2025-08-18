@@ -4,7 +4,7 @@ import s from "../assets/styles/components/gradientButton.module.css";
 import ArrowIcon from "../icons/ArrowIcon";
 
 type GradientButtonProps = {
-  variant?: "dark" | "light";
+  variant: "dark" | "light";
   text: string;
   onClick?: () => void;
 };

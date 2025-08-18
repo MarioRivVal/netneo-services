@@ -1,4 +1,5 @@
 .button {
+  width: fit-content;
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -12,7 +13,7 @@
 }
 
 .light {
-  border: 0.2rem solid transparent;
+  border: 0.1rem solid transparent;
   background: linear-gradient(var(--white), var(--white)) padding-box,
     linear-gradient(90deg, var(--blue), var(--pink)) border-box;
 }

@@ -154,3 +154,9 @@
 .active .button > .icon::after {
   transform: translateX(-50%) rotate(-45deg);
 }
+
+@media (min-width: 768px) {
+  .navigation {
+    padding: 2rem 4rem;
+  }
+}
