@@ -1,4 +1,5 @@
 .main {
+  background-color: var(--gray-1);
 }
 .header {
   display: flex;
@@ -7,13 +8,35 @@
   padding: 4rem 2rem;
 }
 
-.titles {
+.ImgBox {
+  position: relative;
 }
-.aside {
+
+.titleBox {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 2rem;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.5) 30%,
+    rgba(0, 0, 0, 0.5) 70%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  overflow: hidden;
 }
 
 .headerImg {
   border-radius: 2rem;
   overflow: hidden;
   height: 45vw;
+}
+
+.aside {
 }

@@ -62,7 +62,10 @@ img {
 }
 
 h1 {
+  color: var(--white);
 }
+
+h1,
 h2 {
   font-family: var(--font-paragraph);
   text-transform: uppercase;
@@ -81,7 +84,7 @@ h4 {
 }
 h5 {
   font-family: var(--font-title);
-  font-size: 2.6rem;
+  font-size: 2.8rem;
   text-align: center;
   font-weight: 400;
   line-height: 1;
@@ -89,7 +92,7 @@ h5 {
 }
 h6 {
   font-family: var(--font-extra);
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-weight: 100;
   text-align: end;
 }
