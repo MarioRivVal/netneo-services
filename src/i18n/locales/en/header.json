@@ -1,1 +1,14 @@
-{}
+{
+  "home": {
+    "title6": "// Home",
+    "title5": "Want to be more visible?",
+    "title2": "Increase your presence",
+    "title1": ["Websites", "Apps", "Design", "SEO", "AI"],
+    "imgAlt": "Hand holding a phone",
+    "contentTitle6": "// Let's start_",
+    "title3": "Your <blue>presence</blue> online <pink>starts</pink> here",
+    "paragraph": "At Netneo, we combine design, development, and artificial intelligence to create unique digital experiences. Websites, apps, and ideas that work, look great, and represent your brand. Nothing standard—everything tailored to you.",
+    "btnDark": "I want my Website",
+    "btnLight": "I want my App"
+  }
+}

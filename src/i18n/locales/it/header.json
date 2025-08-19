@@ -1,1 +1,14 @@
-{}
+{
+  "home": {
+    "title6": "// Home",
+    "title5": "Vuoi essere più visibile?",
+    "title2": "Aumenta la tua presenza",
+    "title1": ["Siti Web", "App", "Design", "SEO", "IA"],
+    "imgAlt": "Mano che tiene un telefono",
+    "contentTitle6": "// Cominciamo_",
+    "title3": "La tua <blue>presenza</blue> digitale <pink>inizia</pink> qui",
+    "paragraph": "In Netneo combiniamo design, sviluppo e intelligenza artificiale per creare esperienze digitali uniche. Siti web, app e idee che funzionano, hanno un ottimo aspetto e rappresentano il tuo brand. Niente standard: tutto su misura per te.",
+    "btnDark": "Voglio il mio Sito",
+    "btnLight": "Voglio la mia App"
+  }
+}

@@ -3,7 +3,7 @@ import Main from "../layouts/Main";
 export default function Home() {
   return (
     <>
-      <Main />
+      <Main scope="home" />;
     </>
   );
 }

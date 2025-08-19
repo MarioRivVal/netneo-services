@@ -47,6 +47,8 @@
 }
 
 .aside {
+  max-width: 160rem;
+  margin: 0 auto;
   padding: 2rem;
   display: grid;
   grid-template-columns: 1fr;
@@ -71,11 +73,46 @@
 .btnsBox {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 1.5rem;
 }
 
 @media (min-width: 768px) {
   .main {
     padding: 4rem;
+  }
+  .aside {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 8rem;
+    row-gap: 3rem;
+    padding: 4rem;
+  }
+  .aside h6 {
+    grid-column: 1/-1;
+  }
+
+  .box {
+    align-items: initial;
+    gap: 4rem;
+  }
+
+  .btnsBox {
+    flex-direction: row;
+    align-items: normal;
+  }
+}
+
+@media (min-width: 1280px) {
+  .paragraph {
+    font-size: 2.6rem;
+  }
+
+  .aside {
+    column-gap: 14rem;
+    row-gap: 4rem;
+  }
+
+  .btnsBox {
+    gap: 4rem;
   }
 }
