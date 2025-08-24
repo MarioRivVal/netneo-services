@@ -9,21 +9,23 @@ type MainProps = {
   scope: string;
   showButtons?: boolean;
   children?: ReactNode;
+  reverse?: boolean;
 };
 
 export default function Main({
   scope,
   showButtons = true,
   children,
+  reverse = false,
 }: MainProps) {
-  const { t } = useTranslation("header");
+  const { t } = useTranslation("home");
   const titleRef = useRef<HTMLHeadingElement>(null);
 
   const words = t(`${scope}.title1`, { returnObjects: true }) as string[];
   useScramble(titleRef, words, { holdMs: 1200, fps: 30, loop: true });
 
   return (
-    <main className={s.main}>
+    <main className="main u--bg-gray">
       <header className={s.header}>
         <h6>{t(`${scope}.title6`)}</h6>
 
@@ -34,8 +36,9 @@ export default function Main({
 
         <div className={s.ImgBox}>
           <ResponsiveImage
-            name={`headers/${scope}`}
+            name={`home/${scope}`}
             alt={t(`${scope}.imgAlt`, { defaultValue: "Imagen de cabecera" })}
+            preset="header"
             priority
             className={s.headerImg}
           />
@@ -47,7 +50,7 @@ export default function Main({
 
       <aside className={s.aside}>
         <h6>{t(`${scope}.contentTitle6`)}</h6>
-        <h3>
+        <h3 className={`${reverse ? s.titleReverse : ""} `}>
           <Trans
             i18nKey={`${scope}.title3`}
             t={t}

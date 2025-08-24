@@ -1,50 +1,50 @@
-// components/ResponsiveImage.tsx
-type ResponsiveImageProps = {
-  /** nombre base de la imagen sin sufijo ni extensión, ej: "hero" */
-  name: string;
-  /** texto alternativo */
-  alt: string;
-  /** clases opcionales */
-  className?: string;
-  /**
-   * si es imagen LCP/above-the-fold: eager + fetchPriority=high
-   * por defecto false (lazy)
-   */
-  priority?: boolean;
-  /**
-   * sizes opcional por si tu layout no es el típico
-   * default: móvil 100vw, tablet 80vw, desktop 1200px
-   */
-  sizes?: string;
-};
+import {
+  IMAGE_DIR,
+  IMAGE_SIZES,
+  IMAGE_PRESETS,
+  makeSrcSet,
+  type ImagePresetName,
+} from "../config/images";
 
-const WIDTHS = [480, 768, 1200, 1600] as const;
-const DIR = "/images/"; // cambia si prefieres otra carpeta
+type ResponsiveImageProps = {
+  name: string; // base sin extensión, p.ej. "headers/home-"
+  alt: string;
+  preset: ImagePresetName; // "header" | "card" | "thumb"
+  className?: string;
+  priority?: boolean;
+};
 
 export default function ResponsiveImage({
   name,
   alt,
+  preset,
   className,
   priority = false,
-  sizes = "(max-width: 640px) 100vw, (max-width: 1024px) 80vw, 1200px",
 }: ResponsiveImageProps) {
-  const makeSrcSet = (ext: "avif" | "webp" | "jpg") =>
-    WIDTHS.map((w) => `${DIR}/${name}${w}.${ext} ${w}w`).join(", ");
-
-  const largest = WIDTHS[WIDTHS.length - 1];
+  const widths = IMAGE_PRESETS[preset] as number[];
+  const sizes = IMAGE_SIZES[preset];
+  const largest = widths[widths.length - 1];
 
   return (
     <picture className={className}>
-      <source type="image/avif" srcSet={makeSrcSet("avif")} sizes={sizes} />
-      <source type="image/webp" srcSet={makeSrcSet("webp")} sizes={sizes} />
+      <source
+        srcSet={makeSrcSet(name, "avif", widths, IMAGE_DIR)}
+        type="image/avif"
+        sizes={sizes}
+      />
+      <source
+        srcSet={makeSrcSet(name, "webp", widths, IMAGE_DIR)}
+        type="image/webp"
+        sizes={sizes}
+      />
       <img
-        src={`${DIR}/${name}${largest}.jpg`}
+        src={`${IMAGE_DIR}/${name}${largest}.jpg`}
+        srcSet={makeSrcSet(name, "jpg", widths, IMAGE_DIR)}
         alt={alt}
+        sizes={sizes}
         loading={priority ? "eager" : "lazy"}
         fetchPriority={priority ? "high" : "auto"}
         decoding={priority ? "sync" : "async"}
-        sizes={sizes}
-        srcSet={makeSrcSet("jpg")}
       />
     </picture>
   );

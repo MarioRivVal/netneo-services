@@ -1,0 +1,167 @@
+.cardsContent {
+}
+
+.servicesList {
+  width: 100%;
+  display: flex;
+  gap: 2rem;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+.service {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  cursor: pointer;
+  user-select: none;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  opacity: 0.6;
+}
+
+.service:hover,
+.service:focus-visible {
+  opacity: 0.9;
+}
+
+.serviceActive {
+  opacity: 1;
+  transform: translateY(-2px);
+}
+
+.serviceNumber {
+  font-family: var(--font-extra);
+  font-weight: 100;
+  font-size: 1.2rem;
+  color: var(--pink);
+}
+
+.serviceLabel {
+  font-family: var(--font-extra);
+  font-weight: 600;
+  font-size: 1.6rem;
+  text-transform: capitalize;
+}
+
+.serviceActive .serviceLabel {
+  color: var(--blue);
+}
+
+/* ------------ */
+/* GALLERY */
+
+.gallery {
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 400px;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+.galleryItem {
+  height: 200px;
+  opacity: 0;
+  position: absolute;
+  transition: all 0.3s ease-in-out;
+  width: 330px;
+  z-index: 0;
+  border-radius: 15px;
+  background-size: contain;
+}
+.galleryItem1 {
+  left: 15%;
+  opacity: 0.4;
+  transform: translateX(-50%);
+}
+.galleryItem2,
+.galleryItem4 {
+  height: 250px;
+  opacity: 0.8;
+  width: 380px;
+  z-index: 1;
+}
+
+.galleryItem2 {
+  left: 30%;
+  transform: translateX(-50%);
+}
+
+.galleryItem3 {
+  width: 430px;
+  height: 300px;
+  left: 50%;
+  opacity: 1;
+  transform: translateX(-50%);
+  box-shadow: -2px 5px 33px 6px rgba(0, 0, 0, 0.75);
+  z-index: 2;
+}
+.galleryItem4 {
+  left: 70%;
+  transform: translateX(-50%);
+}
+.galleryItem5 {
+  left: 85%;
+  opacity: 0.4;
+  transform: translateX(-50%);
+}
+
+/* ---------- CONTROLES ---------- */
+
+.sliderBtns {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dots {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+  background: #ccc;
+  opacity: 0.6;
+  border: 0;
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.2s ease, background 0.2s ease;
+}
+
+.dot:hover,
+.dot:focus-visible {
+  opacity: 0.9;
+  transform: scale(1.15);
+  outline: none;
+}
+
+.dotActive {
+  width: 24px; /* “pill” al estar activa */
+  background: linear-gradient(90deg, var(--blue), var(--pink));
+  opacity: 1;
+}
+
+.btns {
+  display: flex;
+  gap: 2rem;
+}
+
+.chevronBtn {
+  border: 0.1rem solid transparent;
+  padding: 1rem;
+  border-radius: 50rem;
+  display: flex;
+  background: linear-gradient(var(--white), var(--white)) padding-box,
+    linear-gradient(90deg, var(--blue), var(--pink)) border-box;
+}
+
+.chevronLeft {
+  transform: rotate(180deg);
+}

@@ -1,10 +1,11 @@
 {
-  "home": {
-    "title6": "// Home",
+  "header": {
+    "title6": "// Home__",
     "title5": "¿Quieres ser más visible?",
     "title2": "Aumenta tu presencia",
     "title1": ["Webs", "Apps", "Diseño", "seo", "ia"],
     "imgAlt": "Mano con teléfono en la mano",
+    "imgName": "home",
     "contentTitle6": "// Comencemos_",
     "title3": "Tu  <blue>presencia</blue> digital <pink>empieza</pink> aqui",
     "paragraph": "En Netneo combinamos diseño, desarrollo e inteligencia artificial para crear experiencias digitales únicas. Webs, apps e ideas que funcionan, se ven bien y representan lo que tu marca es. Nada estándar, todo a tu medida.",
