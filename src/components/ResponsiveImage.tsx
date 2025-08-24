@@ -21,7 +21,7 @@ export default function ResponsiveImage({
   className,
   priority = false,
 }: ResponsiveImageProps) {
-  const widths = IMAGE_PRESETS[preset] as number[];
+  const widths = Array.from(IMAGE_PRESETS[preset]);
   const sizes = IMAGE_SIZES[preset];
   const largest = widths[widths.length - 1];
 
