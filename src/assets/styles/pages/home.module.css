@@ -51,66 +51,81 @@
 /* GALLERY */
 
 .gallery {
-  width: 100%;
   position: relative;
+  height: clamp(40rem, 68vw, 48rem);
   display: flex;
   align-items: center;
-  height: 400px;
   margin: 0 auto;
-  max-width: 1000px;
 }
+
 .galleryItem {
-  height: 200px;
-  opacity: 0;
   position: absolute;
-  transition: all 0.3s ease-in-out;
-  width: 330px;
   z-index: 0;
-  border-radius: 15px;
-  background-size: contain;
+  opacity: 0;
+  border-radius: 2rem;
+  border: solid 0.1rem var(--gray-3);
+  aspect-ratio: 5 / 7;
+  transition: left 0.35s cubic-bezier(0.2, 0.7, 0.2, 1),
+    height 0.35s cubic-bezier(0.2, 0.7, 0.2, 1),
+    transform 0.35s cubic-bezier(0.2, 0.7, 0.2, 1), opacity 0.25s ease,
+    box-shadow 0.25s ease;
+  backface-visibility: hidden;
+  will-change: left, height, transform, opacity;
+  overflow: hidden;
+  /* Todos parten centrados horizontalmente; el “stack” lo da translateX */
+  left: 50%;
 }
-.galleryItem1 {
-  left: 15%;
-  opacity: 0.4;
-  transform: translateX(-50%);
+
+.galleryItem img {
+  pointer-events: none;
 }
-.galleryItem2,
-.galleryItem4 {
-  height: 250px;
-  opacity: 0.8;
-  width: 380px;
-  z-index: 1;
+/* ---- Posiciones (MÓVIL) ----
+   Centro (3) visible; el resto “asoma” por la izquierda.
+   Ajusta los desplazamientos (vw) si quieres más/menos solapamiento.
+*/
+.galleryItem3 {
+  transform: translateX(-30%) scale(1);
+  opacity: 1;
+  z-index: 4;
+  height: 82%;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.25);
 }
 
 .galleryItem2 {
-  left: 30%;
-  transform: translateX(-50%);
+  transform: translateX(calc(-30% - 12vw)) scale(0.96);
+  opacity: 0.85;
+  z-index: 3;
+  height: 70%;
 }
 
-.galleryItem3 {
-  width: 430px;
-  height: 300px;
-  left: 50%;
-  opacity: 1;
-  transform: translateX(-50%);
-  box-shadow: -2px 5px 33px 6px rgba(0, 0, 0, 0.75);
-  z-index: 2;
+.galleryItem1 {
+  transform: translateX(calc(-30% - 22vw)) scale(0.93);
+  opacity: 0.6;
+  z-index: 1;
+  height: 64%;
 }
+
 .galleryItem4 {
-  left: 70%;
-  transform: translateX(-50%);
+  transform: translateX(calc(-30% - 30vw)) scale(0.9);
+  opacity: 0.35;
+  z-index: 1;
+  height: 58%;
 }
+
+/* La 5ª queda “escondida” */
 .galleryItem5 {
-  left: 85%;
-  opacity: 0.4;
-  transform: translateX(-50%);
+  transform: translateX(calc(-30% - 38vw)) scale(0.9);
+  opacity: 0;
+  height: 58%;
+  pointer-events: none;
 }
 
 /* ---------- CONTROLES ---------- */
 
 .sliderBtns {
-  margin-top: 2rem;
   display: flex;
+  flex-direction: column;
+  gap: 2rem;
   align-items: center;
   justify-content: space-between;
 }
@@ -155,13 +170,77 @@
 
 .chevronBtn {
   border: 0.1rem solid transparent;
+  background: none;
   padding: 1rem;
   border-radius: 50rem;
   display: flex;
   background: linear-gradient(var(--white), var(--white)) padding-box,
     linear-gradient(90deg, var(--blue), var(--pink)) border-box;
+  cursor: pointer;
+}
+
+.chevronBtn svg {
+  transition: transform 0.1s ease;
+}
+
+.chevronBtn:hover svg {
+  transform: translateX(0.5rem);
 }
 
 .chevronLeft {
   transform: rotate(180deg);
+}
+
+/* ========== DESKTOP (>= 780px): tu layout ancho actual ========== */
+
+@media (min-width: 780px) {
+  .gallery {
+    height: clamp(28rem, 38vw, 55rem);
+    max-width: 120rem; /* como tenías */
+  }
+
+  .galleryItem {
+    /* volvemos a usar left fijo por posiciones y tamaños por px */
+    transition: left 0.35s cubic-bezier(0.2, 0.7, 0.2, 1),
+      height 0.35s cubic-bezier(0.2, 0.7, 0.2, 1),
+      transform 0.35s cubic-bezier(0.2, 0.7, 0.2, 1), opacity 0.25s ease,
+      box-shadow 0.25s ease;
+    will-change: left, height, transform, opacity;
+  }
+
+  .galleryItem1 {
+    left: 15%;
+    transform: translateX(-50%) scale(0.92);
+    opacity: 0.4;
+    height: 58%;
+  }
+  .galleryItem2 {
+    left: 30%;
+    transform: translateX(-50%) scale(0.96);
+    opacity: 0.8;
+    z-index: 1;
+    height: 68%;
+  }
+  .galleryItem3 {
+    left: 50%;
+    transform: translateX(-50%) scale(1);
+    opacity: 1;
+    z-index: 2;
+    height: 82%;
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.25);
+  }
+  .galleryItem4 {
+    left: 70%;
+    transform: translateX(-50%) scale(0.96);
+    opacity: 0.8;
+    z-index: 1;
+    height: 68%;
+  }
+  .galleryItem5 {
+    left: 85%;
+    transform: translateX(-50%) scale(0.92);
+    opacity: 0.4;
+    height: 58%;
+    pointer-events: auto;
+  }
 }
