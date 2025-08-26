@@ -15,26 +15,20 @@ export default function Home() {
 
   const count = servicesList.length;
 
-  // Índice activo (0-based). Empiezo en 2 para que "app" quede al centro (galleryItem3).
   const [active, setActive] = useState(2);
 
   const prev = () => setActive((i) => (i - 1 + count) % count);
   const next = () => setActive((i) => (i + 1) % count);
-  const goTo = (i: number) => setActive(((i % count) + count) % count);
 
-  // Mapea distancia relativa -> clase de posición (para 5 posiciones)
   const posClass = (rel: number) => {
-    // rel = (index - active + count) % count
-    // 0: centro, 1/2 derecha, count-1/count-2 izquierda
     if (rel === 0) return s.galleryItem3;
     if (rel === 1) return s.galleryItem4;
     if (rel === 2) return s.galleryItem5;
     if (rel === count - 1) return s.galleryItem2;
     if (rel === count - 2) return s.galleryItem1;
-    return ""; // fuera de las 5 posiciones visibles (por si hay más elementos)
+    return "";
   };
 
-  // Para no recalcular en cada render (opcional)
   const itemsWithPos = useMemo(
     () =>
       servicesList.map((item, i) => {
@@ -61,12 +55,7 @@ export default function Home() {
           </div>
 
           <div className={s.cardsContent}>
-            {/* TOP TABS / SERVICES LIST */}
-            <ul
-              className={s.servicesList}
-              role="tablist"
-              aria-label="Servicios"
-            >
+            <ul className={s.servicesList} aria-label="Servicios">
               {servicesList.map((item, i) => {
                 const isActive = i === active;
                 return (
@@ -75,15 +64,8 @@ export default function Home() {
                     className={`${s.service} ${
                       isActive ? s.serviceActive : ""
                     }`}
-                    role="tab"
-                    aria-selected={isActive}
-                    onClick={() => goTo(i)}
-                    tabIndex={0}
-                    onKeyDown={(e) => {
-                      if (e.key === "Enter" || e.key === " ") goTo(i);
-                      if (e.key === "ArrowRight") next();
-                      if (e.key === "ArrowLeft") prev();
-                    }}
+                    role="listitem"
+                    aria-current={isActive ? "true" : undefined}
                   >
                     <span className={s.serviceNumber}>{`/0${item.id}`}</span>
                     <span className={s.serviceLabel}>{item.label}</span>
@@ -105,35 +87,22 @@ export default function Home() {
               ))}
             </div>
 
-            {/* SLIDER CONTROLS */}
+            {/* SLIDER CONTROLES */}
             <div className={s.servicesSliders}>
               <div className={s.sliderBtns}>
-                <ol
-                  className={s.dots}
-                  role="tablist"
-                  aria-label="Ir a servicio"
-                >
+                <ol className={s.dots} aria-label="Progreso del carrusel">
                   {servicesList.map((_, i) => {
                     const isActive = i === active;
                     return (
-                      <li key={i} role="presentation">
-                        <button
-                          type="button"
-                          role="tab"
-                          aria-selected={isActive}
-                          aria-label={`Ir a ${servicesList[i].label}`}
+                      <li key={i} role="listitem">
+                        <span
+                          aria-current={isActive ? "true" : undefined}
                           className={`${s.dot} ${isActive ? s.dotActive : ""}`}
-                          onClick={() => goTo(i)}
-                          onKeyDown={(e) => {
-                            if (e.key === "ArrowRight") next();
-                            if (e.key === "ArrowLeft") prev();
-                          }}
                         />
                       </li>
                     );
                   })}
                 </ol>
-
                 <div className={s.btns}>
                   <button
                     className={`${s.chevronBtn} ${s.chevronLeft}`}

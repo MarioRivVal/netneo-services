@@ -13,38 +13,33 @@
   display: flex;
   flex-direction: column;
   gap: 0.6rem;
-  cursor: pointer;
-  user-select: none;
-  transition: opacity 0.2s ease, transform 0.2s ease;
-  opacity: 0.6;
-}
-
-.service:hover,
-.service:focus-visible {
-  opacity: 0.9;
+  transition: all 0.3s ease;
 }
 
 .serviceActive {
-  opacity: 1;
-  transform: translateY(-2px);
+  transform: translateY(-0.2rem) scale(1.15);
 }
 
 .serviceNumber {
   font-family: var(--font-extra);
   font-weight: 100;
   font-size: 1.2rem;
-  color: var(--pink);
+  color: var(--gray-3);
 }
 
 .serviceLabel {
   font-family: var(--font-extra);
-  font-weight: 600;
+  font-weight: 100;
   font-size: 1.6rem;
-  text-transform: capitalize;
+  transition: all 0.3s ease;
 }
 
+.serviceActive .serviceNumber {
+  color: var(--pink);
+}
 .serviceActive .serviceLabel {
   color: var(--blue);
+  font-weight: 600;
 }
 
 /* ------------ */
@@ -52,72 +47,56 @@
 
 .gallery {
   position: relative;
-  height: clamp(40rem, 68vw, 48rem);
+  height: clamp(40rem, 38vw, 55rem);
+  max-width: 120rem; /* como tenías */
   display: flex;
   align-items: center;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 .galleryItem {
   position: absolute;
-  z-index: 0;
-  opacity: 0;
+  left: 50%;
   border-radius: 2rem;
   border: solid 0.1rem var(--gray-3);
   aspect-ratio: 5 / 7;
+  overflow: hidden;
   transition: left 0.35s cubic-bezier(0.2, 0.7, 0.2, 1),
     height 0.35s cubic-bezier(0.2, 0.7, 0.2, 1),
-    transform 0.35s cubic-bezier(0.2, 0.7, 0.2, 1), opacity 0.25s ease,
-    box-shadow 0.25s ease;
-  backface-visibility: hidden;
-  will-change: left, height, transform, opacity;
-  overflow: hidden;
-  /* Todos parten centrados horizontalmente; el “stack” lo da translateX */
-  left: 50%;
-}
-
-.galleryItem img {
-  pointer-events: none;
-}
-/* ---- Posiciones (MÓVIL) ----
-   Centro (3) visible; el resto “asoma” por la izquierda.
-   Ajusta los desplazamientos (vw) si quieres más/menos solapamiento.
-*/
-.galleryItem3 {
-  transform: translateX(-30%) scale(1);
-  opacity: 1;
-  z-index: 4;
-  height: 82%;
-  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.25);
-}
-
-.galleryItem2 {
-  transform: translateX(calc(-30% - 12vw)) scale(0.96);
-  opacity: 0.85;
-  z-index: 3;
-  height: 70%;
+    transform 0.35s cubic-bezier(0.2, 0.7, 0.2, 1), box-shadow 0.25s ease;
+  will-change: left, height, transform;
 }
 
 .galleryItem1 {
-  transform: translateX(calc(-30% - 22vw)) scale(0.93);
-  opacity: 0.6;
-  z-index: 1;
-  height: 64%;
+  left: 15%;
+  transform: translateX(-50%) scale(0.92);
+  height: 58%;
 }
-
+.galleryItem2 {
+  left: 30%;
+  transform: translateX(-50%) scale(0.96);
+  z-index: 1;
+  height: 68%;
+}
+.galleryItem3 {
+  left: 50%;
+  transform: translateX(-50%) scale(1);
+  z-index: 2;
+  height: 82%;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.25);
+}
 .galleryItem4 {
-  transform: translateX(calc(-30% - 30vw)) scale(0.9);
-  opacity: 0.35;
+  left: 70%;
+  transform: translateX(-50%) scale(0.96);
   z-index: 1;
-  height: 58%;
+  height: 68%;
 }
-
-/* La 5ª queda “escondida” */
 .galleryItem5 {
-  transform: translateX(calc(-30% - 38vw)) scale(0.9);
-  opacity: 0;
+  left: 85%;
+  transform: translateX(-50%) scale(0.92);
   height: 58%;
-  pointer-events: none;
+  pointer-events: auto;
 }
 
 /* ---------- CONTROLES ---------- */
@@ -134,32 +113,22 @@
   display: flex;
   align-items: center;
   gap: 0.8rem;
-  list-style: none;
-  margin: 0;
-  padding: 0;
 }
 
 .dot {
-  width: 8px;
-  height: 8px;
+  display: inline-block;
+  width: 0.8rem;
+  height: 0.8rem;
   border-radius: 999px;
-  background: #ccc;
+  background: var(--gray-3);
   opacity: 0.6;
   border: 0;
-  cursor: pointer;
   transition: transform 0.2s ease, opacity 0.2s ease, background 0.2s ease;
 }
 
-.dot:hover,
-.dot:focus-visible {
-  opacity: 0.9;
-  transform: scale(1.15);
-  outline: none;
-}
-
 .dotActive {
-  width: 24px; /* “pill” al estar activa */
-  background: linear-gradient(90deg, var(--blue), var(--pink));
+  width: 2rem;
+  background-color: var(--blue);
   opacity: 1;
 }
 
@@ -191,56 +160,5 @@
   transform: rotate(180deg);
 }
 
-/* ========== DESKTOP (>= 780px): tu layout ancho actual ========== */
-
 @media (min-width: 780px) {
-  .gallery {
-    height: clamp(28rem, 38vw, 55rem);
-    max-width: 120rem; /* como tenías */
-  }
-
-  .galleryItem {
-    /* volvemos a usar left fijo por posiciones y tamaños por px */
-    transition: left 0.35s cubic-bezier(0.2, 0.7, 0.2, 1),
-      height 0.35s cubic-bezier(0.2, 0.7, 0.2, 1),
-      transform 0.35s cubic-bezier(0.2, 0.7, 0.2, 1), opacity 0.25s ease,
-      box-shadow 0.25s ease;
-    will-change: left, height, transform, opacity;
-  }
-
-  .galleryItem1 {
-    left: 15%;
-    transform: translateX(-50%) scale(0.92);
-    opacity: 0.4;
-    height: 58%;
-  }
-  .galleryItem2 {
-    left: 30%;
-    transform: translateX(-50%) scale(0.96);
-    opacity: 0.8;
-    z-index: 1;
-    height: 68%;
-  }
-  .galleryItem3 {
-    left: 50%;
-    transform: translateX(-50%) scale(1);
-    opacity: 1;
-    z-index: 2;
-    height: 82%;
-    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.25);
-  }
-  .galleryItem4 {
-    left: 70%;
-    transform: translateX(-50%) scale(0.96);
-    opacity: 0.8;
-    z-index: 1;
-    height: 68%;
-  }
-  .galleryItem5 {
-    left: 85%;
-    transform: translateX(-50%) scale(0.92);
-    opacity: 0.4;
-    height: 58%;
-    pointer-events: auto;
-  }
 }
