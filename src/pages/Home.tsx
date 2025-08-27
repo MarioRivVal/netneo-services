@@ -3,6 +3,7 @@ import s from "../assets/styles/pages/home.module.css";
 import ResponsiveImage from "../components/ResponsiveImage";
 import Main from "../layouts/Main";
 import ChevronIcon from "../icons/Chevron";
+import GradientButton from "../components/gradientButton";
 
 export default function Home() {
   const servicesList = [
@@ -11,6 +12,29 @@ export default function Home() {
     { id: "3", label: "app" },
     { id: "4", label: "ia" },
     { id: "5", label: "seo" },
+  ];
+
+  const servicesDetails = [
+    {
+      title: "Diseño UI/UX",
+      description: "Interfaces limpias, usabilidad que enamora.",
+    },
+    {
+      title: "Webs inteligentes",
+      description: "Diseñadas para convertir, optimizadas para destacar.",
+    },
+    {
+      title: "Apps a medida",
+      description: "Funcionales, rápidas y adaptadas a tus necesidades.",
+    },
+    {
+      title: "IA integrada",
+      description: "Automatiza, responde y evoluciona con inteligencia.",
+    },
+    {
+      title: "SEO & estrategia",
+      description: "Para que te encuentren, te elijan y te recuerden",
+    },
   ];
 
   const count = servicesList.length;
@@ -89,6 +113,12 @@ export default function Home() {
 
             {/* SLIDER CONTROLES */}
             <div className={s.servicesSliders}>
+              <div className={s.detailsBox}>
+                <h4>{servicesDetails[active].title}</h4>
+                <p className={s.detailDesc}>
+                  {servicesDetails[active].description}
+                </p>
+              </div>
               <div className={s.sliderBtns}>
                 <ol className={s.dots} aria-label="Progreso del carrusel">
                   {servicesList.map((_, i) => {
@@ -123,6 +153,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
+            <GradientButton text="Lo que ofrecemos" variant="dark" />
           </div>
         </div>
       </section>

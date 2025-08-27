@@ -85,6 +85,9 @@ h3 {
   line-height: 1;
 }
 h4 {
+  font-family: var(--font-title);
+  font-size: 3.4rem;
+  font-weight: 600;
 }
 h5 {
   font-family: var(--font-title);
@@ -111,6 +114,7 @@ picture {
   flex-direction: column;
   gap: 4rem;
   padding: 4rem 2rem;
+  overflow: hidden;
 }
 
 .container {
@@ -178,6 +182,9 @@ picture {
   h3 {
     font-size: 7rem;
     width: 80%;
+  }
+  h4 {
+    font-size: 4rem;
   }
   h5 {
     font-size: 3.8rem;

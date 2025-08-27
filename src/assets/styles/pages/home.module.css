@@ -1,4 +1,8 @@
 .cardsContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
 }
 
 .servicesList {
@@ -47,6 +51,7 @@
 
 .gallery {
   position: relative;
+  width: 100%;
   height: clamp(40rem, 38vw, 55rem);
   max-width: 120rem; /* como tenías */
   display: flex;
@@ -101,6 +106,13 @@
 
 /* ---------- CONTROLES ---------- */
 
+.servicesSliders {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
 .sliderBtns {
   display: flex;
   flex-direction: column;
@@ -132,6 +144,18 @@
   opacity: 1;
 }
 
+.detailsBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.detailDesc {
+  font-family: var(--font-paragraph);
+  font-size: 2.2rem;
+  text-align: center;
+}
+
 .btns {
   display: flex;
   gap: 2rem;
@@ -150,6 +174,8 @@
 
 .chevronBtn svg {
   transition: transform 0.1s ease;
+  width: 3rem;
+  height: 3rem;
 }
 
 .chevronBtn:hover svg {
@@ -161,4 +187,23 @@
 }
 
 @media (min-width: 780px) {
+  .servicesSliders {
+    flex-direction: row;
+    gap: 0;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 70rem;
+    justify-self: center;
+  }
+
+  .detailsBox {
+    width: 70%;
+    order: 2;
+  }
+}
+
+@media (min-width: 780px) {
+  .detailDesc {
+    font-size: 2.6rem;
+  }
 }
