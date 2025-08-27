@@ -1,12 +1,23 @@
-import { useMemo, useState } from "react";
+import { useState } from "react";
 import s from "../assets/styles/pages/home.module.css";
-import ResponsiveImage from "../components/ResponsiveImage";
 import Main from "../layouts/Main";
-import ChevronIcon from "../icons/Chevron";
-import GradientButton from "../components/gradientButton";
+import GradientButton from "../components/GradientButton";
+import { Trans, useTranslation } from "react-i18next";
+import Gallery, { type GalleryItem } from "../components/Gallery";
+import SliderBtns from "../components/SliderBtns";
 
 export default function Home() {
-  const servicesList = [
+  const { t } = useTranslation("home");
+
+  const servicesList = t("services.servicesList", {
+    returnObjects: true,
+  }) as string[];
+
+  const servicesDetails = t("services.servicesDetails", {
+    returnObjects: true,
+  }) as { title: string; description: string }[];
+
+  const baseImgs = [
     { id: "1", label: "design" },
     { id: "2", label: "web" },
     { id: "3", label: "app" },
@@ -14,53 +25,16 @@ export default function Home() {
     { id: "5", label: "seo" },
   ];
 
-  const servicesDetails = [
-    {
-      title: "Diseño UI/UX",
-      description: "Interfaces limpias, usabilidad que enamora.",
-    },
-    {
-      title: "Webs inteligentes",
-      description: "Diseñadas para convertir, optimizadas para destacar.",
-    },
-    {
-      title: "Apps a medida",
-      description: "Funcionales, rápidas y adaptadas a tus necesidades.",
-    },
-    {
-      title: "IA integrada",
-      description: "Automatiza, responde y evoluciona con inteligencia.",
-    },
-    {
-      title: "SEO & estrategia",
-      description: "Para que te encuentren, te elijan y te recuerden",
-    },
-  ];
+  const galleryItems: GalleryItem[] = baseImgs.map(({ id, label }) => ({
+    id,
+    name: `services/${label}`,
+    alt: t(`services.imgAlts.${label}`, { defaultValue: label }),
+  }));
 
-  const count = servicesList.length;
-
+  const count = galleryItems.length;
   const [active, setActive] = useState(2);
-
   const prev = () => setActive((i) => (i - 1 + count) % count);
   const next = () => setActive((i) => (i + 1) % count);
-
-  const posClass = (rel: number) => {
-    if (rel === 0) return s.galleryItem3;
-    if (rel === 1) return s.galleryItem4;
-    if (rel === 2) return s.galleryItem5;
-    if (rel === count - 1) return s.galleryItem2;
-    if (rel === count - 2) return s.galleryItem1;
-    return "";
-  };
-
-  const itemsWithPos = useMemo(
-    () =>
-      servicesList.map((item, i) => {
-        const rel = (i - active + count) % count;
-        return { ...item, rel, cls: posClass(rel) };
-      }),
-    [servicesList, active, count]
-  );
 
   return (
     <>
@@ -69,12 +43,16 @@ export default function Home() {
       <section className="section">
         <div className="container">
           <div className="title-box">
-            <h6>//Servicios__</h6>
+            <h6>{t("services.title6")}</h6>
             <h3>
-              Lo que hacemos por ti. Tranformamos{" "}
-              <span className="u--pink-text">ideas</span> en{" "}
-              <span className="u--blue-text u--bold">soluciones</span>{" "}
-              digitales.
+              <Trans
+                i18nKey={`services.title3`}
+                t={t}
+                components={{
+                  blue: <span className="u--blue-text u--bold" />,
+                  pink: <span className="u--pink-text" />,
+                }}
+              />
             </h3>
           </div>
 
@@ -84,32 +62,22 @@ export default function Home() {
                 const isActive = i === active;
                 return (
                   <li
-                    key={item.id}
+                    key={i}
                     className={`${s.service} ${
                       isActive ? s.serviceActive : ""
                     }`}
                     role="listitem"
                     aria-current={isActive ? "true" : undefined}
                   >
-                    <span className={s.serviceNumber}>{`/0${item.id}`}</span>
-                    <span className={s.serviceLabel}>{item.label}</span>
+                    <span className={s.serviceNumber}>{`/0${i + 1}`}</span>
+                    <span className={s.serviceLabel}>{item}</span>
                   </li>
                 );
               })}
             </ul>
 
             {/* GALLERY */}
-            <div className={s.gallery} aria-live="polite">
-              {itemsWithPos.map((item) => (
-                <ResponsiveImage
-                  key={item.id}
-                  name={`services/${item.label}`}
-                  alt={item.label}
-                  preset="card"
-                  className={`${s.galleryItem} ${item.cls}`}
-                />
-              ))}
-            </div>
+            <Gallery items={galleryItems} active={active} preset="card" />
 
             {/* SLIDER CONTROLES */}
             <div className={s.servicesSliders}>
@@ -119,41 +87,14 @@ export default function Home() {
                   {servicesDetails[active].description}
                 </p>
               </div>
-              <div className={s.sliderBtns}>
-                <ol className={s.dots} aria-label="Progreso del carrusel">
-                  {servicesList.map((_, i) => {
-                    const isActive = i === active;
-                    return (
-                      <li key={i} role="listitem">
-                        <span
-                          aria-current={isActive ? "true" : undefined}
-                          className={`${s.dot} ${isActive ? s.dotActive : ""}`}
-                        />
-                      </li>
-                    );
-                  })}
-                </ol>
-                <div className={s.btns}>
-                  <button
-                    className={`${s.chevronBtn} ${s.chevronLeft}`}
-                    title="previous"
-                    aria-label="previous"
-                    onClick={prev}
-                  >
-                    <ChevronIcon />
-                  </button>
-                  <button
-                    className={`${s.chevronBtn} ${s.chevronRight}`}
-                    title="next"
-                    aria-label="next"
-                    onClick={next}
-                  >
-                    <ChevronIcon />
-                  </button>
-                </div>
-              </div>
+              <SliderBtns
+                count={count}
+                active={active}
+                onPrev={prev}
+                onNext={next}
+              />
             </div>
-            <GradientButton text="Lo que ofrecemos" variant="dark" />
+            <GradientButton text={t("services.btnDark")} variant="dark" />
           </div>
         </div>
       </section>

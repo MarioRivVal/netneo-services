@@ -11,5 +11,40 @@
     "paragraph": "In Netneo combiniamo design, sviluppo e intelligenza artificiale per creare esperienze digitali uniche. Siti web, app e idee che funzionano, hanno un ottimo aspetto e rappresentano il tuo brand. Niente standard: tutto su misura per te.",
     "btnDark": "Voglio il mio Sito",
     "btnLight": "Voglio la mia App"
+  },
+  "services": {
+    "title6": "// Servizi__",
+    "title3": "Cosa facciamo per te. Trasformiamo <pink>idee</pink> in <blue>soluzioni</blue>  digitali",
+    "servicesList": ["Siti Web", "App", "Design", "SEO", "IA"],
+    "imgAlts": {
+      "design": "Design UI/UX sullo schermo",
+      "web": "Sito web mostrato su un portatile",
+      "app": "Applicazione mobile in uso",
+      "ia": "Interfaccia con intelligenza artificiale",
+      "seo": "Immagine con testo SEO"
+    },
+    "servicesDetails": [
+      {
+        "title": "Design UI/UX",
+        "description": "Interfacce pulite, usabilità che conquista."
+      },
+      {
+        "title": "Siti Web intelligenti",
+        "description": "Progettati per convertire, ottimizzati per distinguersi."
+      },
+      {
+        "title": "App su misura",
+        "description": "Funzionali, veloci e adattate alle tue esigenze."
+      },
+      {
+        "title": "IA integrata",
+        "description": "Automatizza, rispondi ed evolvi con intelligenza."
+      },
+      {
+        "title": "SEO & Strategia",
+        "description": "Perché ti trovino, ti scelgano e ti ricordino."
+      }
+    ],
+    "btnDark": "Cosa offriamo"
   }
 }

@@ -11,5 +11,40 @@
     "paragraph": "At Netneo, we combine design, development, and artificial intelligence to create unique digital experiences. Websites, apps, and ideas that work, look great, and represent your brand. Nothing standard—everything tailored to you.",
     "btnDark": "I want my Website",
     "btnLight": "I want my App"
+  },
+  "services": {
+    "title6": "// Services__",
+    "title3": "What we do for you. We transform <pink>ideas</pink> into <blue>digital</blue> solutions",
+    "servicesList": ["Websites", "Apps", "Design", "SEO", "AI"],
+    "imgAlts": {
+      "design": "UI/UX design on screen",
+      "web": "Website displayed on a laptop",
+      "app": "Mobile application in use",
+      "ia": "Interface with artificial intelligence",
+      "seo": "Image with SEO text"
+    },
+    "servicesDetails": [
+      {
+        "title": "UI/UX Design",
+        "description": "Clean interfaces, usability that captivates."
+      },
+      {
+        "title": "Smart Websites",
+        "description": "Designed to convert, optimized to stand out."
+      },
+      {
+        "title": "Custom Apps",
+        "description": "Functional, fast, and tailored to your needs."
+      },
+      {
+        "title": "Integrated AI",
+        "description": "Automate, respond, and evolve with intelligence."
+      },
+      {
+        "title": "SEO & Strategy",
+        "description": "So they can find you, choose you, and remember you."
+      }
+    ],
+    "btnDark": "What we offer"
   }
 }

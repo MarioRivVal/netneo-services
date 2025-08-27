@@ -2,10 +2,10 @@
 import s from "../assets/styles/layouts/footer.module.css";
 import LinkedinIcon from "../icons/LinkedinIcon";
 import InstagramIcon from "../icons/InstagramIcon";
-import GradientButton from "../components/gradientButton";
+import GradientButton from "../components/GradientButton";
 import NetneoIcon from "../icons/NetneoIcon";
 import TextIcon from "../icons/TextIcon";
-import SmallButton from "../components/smallButton";
+import SmallButton from "../components/SmallButton";
 import { Trans, useTranslation } from "react-i18next";
 import { LANGS } from "../i18n/langs";
 

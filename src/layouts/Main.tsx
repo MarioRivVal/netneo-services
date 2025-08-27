@@ -2,7 +2,7 @@ import s from "../assets/styles/layouts/main.module.css";
 import { useRef, type ReactNode } from "react";
 import ResponsiveImage from "../components/ResponsiveImage";
 import useScramble from "../hooks/useScramble";
-import GradientButton from "../components/gradientButton";
+import GradientButton from "../components/GradientButton";
 import { Trans, useTranslation } from "react-i18next";
 
 type MainProps = {

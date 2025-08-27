@@ -36,7 +36,6 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
-      <div className="relleno">relleno</div>
       <Footer />
     </>
   );

@@ -1,0 +1,60 @@
+.sliderBtns {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dots {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.dot {
+  display: inline-block;
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 999px;
+  background: var(--gray-3);
+  opacity: 0.6;
+  border: 0;
+  transition: transform 0.2s ease, opacity 0.2s ease, background 0.2s ease;
+}
+
+.dotActive {
+  width: 2rem;
+  background-color: var(--blue);
+  opacity: 1;
+}
+
+.btns {
+  display: flex;
+  gap: 2rem;
+}
+
+.chevronBtn {
+  border: 0.1rem solid transparent;
+  background: none;
+  padding: 1rem;
+  border-radius: 50rem;
+  display: flex;
+  background: linear-gradient(var(--white), var(--white)) padding-box,
+    linear-gradient(90deg, var(--blue), var(--pink)) border-box;
+  cursor: pointer;
+}
+
+.chevronBtn svg {
+  transition: transform 0.1s ease;
+  width: 3rem;
+  height: 3rem;
+}
+
+.chevronBtn:hover svg {
+  transform: translateX(0.5rem);
+}
+
+.chevronLeft {
+  transform: rotate(180deg);
+}
