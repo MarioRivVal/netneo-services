@@ -28,6 +28,23 @@
 
   --gray-1: #f2f2f2;
   --gray-3: #b8b8b8;
+
+  --p-tiny: 1rem;
+  --p-small: 2rem;
+  --p-medium: 4rem;
+  --p-large: 6rem;
+
+  --g-tiny: 1rem;
+  --g-small: 2rem;
+  --g-medium: 3rem;
+  --g-large: 4rem;
+  --g-xlarge: 6rem;
+  --g-xxlarge: 8rem;
+
+  --fz-paragraph: 2.2rem;
+
+  --radius: 2rem;
+  --rounded: 100rem;
 }
 
 *,
@@ -97,10 +114,15 @@ h5 {
   line-height: 1;
   margin-bottom: 1rem;
 }
-h6 {
+h6,
+.u--light-text {
   font-family: var(--font-extra);
   font-size: 1.4rem;
   font-weight: 100;
+  color: var(--gray-3);
+}
+
+h6 {
   text-align: end;
 }
 
@@ -110,10 +132,8 @@ picture {
 
 .main,
 .section {
-  display: flex;
-  flex-direction: column;
-  gap: 4rem;
-  padding: 4rem 2rem;
+  gap: var(--g-medium);
+  padding: var(--p-medium) var(--p-small);
   overflow: hidden;
 }
 
@@ -132,18 +152,14 @@ picture {
   gap: 2rem;
 }
 
-.relleno {
-  background-color: yellow;
-  height: 80rem;
-}
-.relleno-2 {
-  background-color: pink;
-  height: 80rem;
-}
-
 /* ----------------------------------------- */
 /* ---------  UTILITIES CLASSES -------------*/
 /* ----------------------------------------- */
+
+.u--paragraph {
+  font-size: 2.2rem;
+  font-family: var(--font-paragraph);
+}
 
 .u--pink-text {
   color: var(--pink);
@@ -162,10 +178,25 @@ picture {
   background-color: var(--gray-1);
 }
 
+.u--flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.u--flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.u--mw-centered {
+  max-width: 160rem;
+  margin: 0 auto;
+}
+
 @media (min-width: 768px) {
   .main,
   .section {
-    padding: 6rem 4rem;
+    padding: var(--p-large) var(--p-medium);
   }
   h3 {
     font-size: 5rem;
@@ -179,6 +210,9 @@ picture {
 }
 
 @media (min-width: 1280px) {
+  .u--paragraph {
+    font-size: 2.6rem;
+  }
   h3 {
     font-size: 7rem;
     width: 80%;

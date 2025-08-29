@@ -21,7 +21,7 @@ export default function GradientButton({
     >
       {text}
       <div className={s.iconWrapper}>
-        <div className={s.icons}>
+        <div className={`${s.icons} u--flex-row`}>
           <ArrowIcon />
           <ArrowIcon />
           <ArrowIcon />

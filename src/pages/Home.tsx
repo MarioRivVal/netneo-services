@@ -5,6 +5,7 @@ import GradientButton from "../components/GradientButton";
 import { Trans, useTranslation } from "react-i18next";
 import Gallery, { type GalleryItem } from "../components/Gallery";
 import SliderBtns from "../components/SliderBtns";
+import { homeServicesImgs } from "../content/images";
 
 export default function Home() {
   const { t } = useTranslation("home");
@@ -17,15 +18,7 @@ export default function Home() {
     returnObjects: true,
   }) as { title: string; description: string }[];
 
-  const baseImgs = [
-    { id: "1", label: "design" },
-    { id: "2", label: "web" },
-    { id: "3", label: "app" },
-    { id: "4", label: "ia" },
-    { id: "5", label: "seo" },
-  ];
-
-  const galleryItems: GalleryItem[] = baseImgs.map(({ id, label }) => ({
+  const galleryItems: GalleryItem[] = homeServicesImgs.map(({ id, label }) => ({
     id,
     name: `services/${label}`,
     alt: t(`services.imgAlts.${label}`, { defaultValue: label }),
@@ -56,20 +49,25 @@ export default function Home() {
             </h3>
           </div>
 
-          <div className={s.cardsContent}>
-            <ul className={s.servicesList} aria-label="Servicios">
+          <div className={`${s.cardsContent} u--flex-column`}>
+            <ul
+              className={`${s.servicesList} u--flex-row`}
+              aria-label="Servicios"
+            >
               {servicesList.map((item, i) => {
                 const isActive = i === active;
                 return (
                   <li
                     key={i}
-                    className={`${s.service} ${
+                    className={`${s.service} u--flex-column ${
                       isActive ? s.serviceActive : ""
                     }`}
                     role="listitem"
                     aria-current={isActive ? "true" : undefined}
                   >
-                    <span className={s.serviceNumber}>{`/0${i + 1}`}</span>
+                    <span className={`${s.serviceNumber} u--light-text`}>{`/0${
+                      i + 1
+                    }`}</span>
                     <span className={s.serviceLabel}>{item}</span>
                   </li>
                 );
@@ -80,10 +78,10 @@ export default function Home() {
             <Gallery items={galleryItems} active={active} preset="card" />
 
             {/* SLIDER CONTROLES */}
-            <div className={s.servicesSliders}>
-              <div className={s.detailsBox}>
+            <div className={`${s.servicesDetails} u--flex-column`}>
+              <div className={`${s.detailsBox} u--flex-column`}>
                 <h4>{servicesDetails[active].title}</h4>
-                <p className={s.detailDesc}>
+                <p className="u--paragraph">
                   {servicesDetails[active].description}
                 </p>
               </div>

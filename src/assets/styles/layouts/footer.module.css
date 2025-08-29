@@ -1,21 +1,12 @@
-.footer {
-}
 .container {
-  max-width: 160rem;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  gap: 3rem;
-  padding: 4rem 2.5rem;
+  gap: var(--g-medium);
+  padding: var(--p-medium) var(--p-small);
 }
 .titleBox {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
+  gap: var(--g-small);
 }
 .socials {
-  display: flex;
-  gap: 1rem;
+  gap: var(--g-tiny);
 }
 
 .socials svg {
@@ -25,30 +16,21 @@
 
 .cta {
   width: 100%;
-  display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.cta p {
-  font-family: var(--font-paragraph);
-  font-size: 2rem;
-}
-
 .footerContent {
-  border-radius: 2rem;
+  border-radius: var(--radius);
   border: 0.2rem solid transparent;
   background: linear-gradient(var(--white), var(--white)) padding-box,
     linear-gradient(90deg, var(--blue), var(--pink)) border-box;
-  padding: 2rem;
-  display: flex;
-  flex-direction: column;
+  padding: var(--p-small);
   align-items: center;
   justify-content: center;
-  gap: 1.5rem;
+  gap: var(--g-small);
 }
 .logos {
-  display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
@@ -65,7 +47,7 @@
 .copyrights {
   display: grid;
   justify-items: center;
-  gap: 0.5rem;
+  gap: var(--g-tiny);
 }
 
 .copyrights a,
@@ -76,10 +58,9 @@
 }
 
 .copyrights a:hover {
-  color: var(--blue);
+  color: var(--pink);
 }
 
 .languages {
-  display: flex;
-  gap: 1.5rem;
+  gap: var(--g-small);
 }

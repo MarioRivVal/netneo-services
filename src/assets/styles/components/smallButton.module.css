@@ -1,10 +1,9 @@
 .smallBtn {
-  border-radius: 5rem;
+  border-radius: var(--rounded);
   border: solid 0.2rem var(--gray-3);
   color: var(--gray-3);
   padding: 0.6rem 1.2rem;
   font-size: 2.2rem;
-  font-weight: 400;
   font-family: var(--font-paragraph);
   cursor: pointer;
   transition: all 0.3s ease;

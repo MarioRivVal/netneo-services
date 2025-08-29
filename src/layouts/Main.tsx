@@ -25,8 +25,8 @@ export default function Main({
   useScramble(titleRef, words, { holdMs: 1200, fps: 30, loop: true });
 
   return (
-    <main className="main u--bg-gray">
-      <header className={s.header}>
+    <main className="main u--bg-gray u--flex-column">
+      <header className={`${s.header} u--flex-column u--mw-centered`}>
         <h6>{t(`${scope}.title6`)}</h6>
 
         <div>
@@ -42,13 +42,13 @@ export default function Main({
             priority
             className={s.headerImg}
           />
-          <div className={s.titleBox}>
+          <div className={`${s.titleBox} u--flex-row`}>
             <h1 ref={titleRef} className={s.mainTitle} />
           </div>
         </div>
       </header>
 
-      <aside className={s.aside}>
+      <aside className={`${s.aside} u--mw-centered`}>
         <h6>{t(`${scope}.contentTitle6`)}</h6>
         <h3 className={`${reverse ? s.titleReverse : ""} `}>
           <Trans
@@ -61,11 +61,11 @@ export default function Main({
           />
         </h3>
 
-        <div className={s.box}>
-          <p className={s.paragraph}>{t(`${scope}.paragraph`)}</p>
+        <div className={`${s.box} u--flex-column`}>
+          <p className="u--paragraph">{t(`${scope}.paragraph`)}</p>
 
           {showButtons && (
-            <div className={s.btnsBox}>
+            <div className={`${s.btnsBox} u--flex-column`}>
               {children ?? (
                 <>
                   <GradientButton text={t(`${scope}.btnDark`)} variant="dark" />

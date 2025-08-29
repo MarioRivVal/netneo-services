@@ -2,22 +2,21 @@
   display: grid;
   grid-template-columns: 1fr 3fr 1fr;
   align-items: center;
-  padding: 6rem 4rem;
+  padding: var(--p-large) var(--p-medium);
   background-color: var(--gray-1);
 }
 
 .list {
   display: flex;
-  gap: 6rem;
+  gap: var(--g-xlarge);
   justify-self: center;
   list-style: none;
 }
 
 .item {
   position: relative;
-  text-decoration: none;
   font-family: var(--font-paragraph);
-  font-size: 2.2rem;
+  font-size: var(--fz-paragraph);
   padding: 0.5rem;
 }
 

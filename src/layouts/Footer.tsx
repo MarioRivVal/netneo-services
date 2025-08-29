@@ -17,11 +17,11 @@ export default function Footer() {
 
   return (
     <footer className={s.footer}>
-      <div className={s.container}>
+      <div className={`${s.container} u--flex-column u--mw-centered`}>
         <h6>{t("follow")}</h6>
 
-        <div className={s.titleBox}>
-          <div className={s.socials}>
+        <div className={`${s.titleBox} u--flex-column`}>
+          <div className={`${s.socials} u--flex-row`}>
             <InstagramIcon />
             <LinkedinIcon />
           </div>
@@ -38,19 +38,19 @@ export default function Footer() {
           </h3>
         </div>
 
-        <div className={s.cta}>
-          <p>{t("ctaLabel")}</p>
+        <div className={`${s.cta} u--flex-row`}>
+          <p className="u--paragraph">{t("ctaLabel")}</p>
           <GradientButton text={t("ctaButton")} variant="dark" />
         </div>
 
-        <div className={s.footerContent}>
-          <div className={s.logos}>
+        <div className={`${s.footerContent} u--flex-column`}>
+          <div className={`${s.logos} u--flex-row`}>
             <TextIcon />
             <NetneoIcon />
           </div>
 
           <div className={s.copyrights}>
-            <div className={s.languages}>
+            <div className={`${s.languages} u--flex-row`}>
               {LANGS.map(({ code, label, name }) => (
                 <SmallButton
                   key={code}

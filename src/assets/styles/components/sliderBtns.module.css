@@ -1,22 +1,19 @@
 .sliderBtns {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
+  gap: var(--g-small);
   align-items: center;
   justify-content: space-between;
 }
 
 .dots {
-  display: flex;
   align-items: center;
-  gap: 0.8rem;
+  gap: var(--g-tiny);
 }
 
 .dot {
   display: inline-block;
   width: 0.8rem;
   height: 0.8rem;
-  border-radius: 999px;
+  border-radius: var(--rounded);
   background: var(--gray-3);
   opacity: 0.6;
   border: 0;
@@ -30,15 +27,14 @@
 }
 
 .btns {
-  display: flex;
-  gap: 2rem;
+  gap: var(--g-small);
 }
 
 .chevronBtn {
   border: 0.1rem solid transparent;
   background: none;
-  padding: 1rem;
-  border-radius: 50rem;
+  padding: var(--p-tiny);
+  border-radius: var(--rounded);
   display: flex;
   background: linear-gradient(var(--white), var(--white)) padding-box,
     linear-gradient(90deg, var(--blue), var(--pink)) border-box;

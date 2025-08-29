@@ -1,22 +1,17 @@
 .cardsContent {
-  display: flex;
-  flex-direction: column;
   align-items: center;
-  gap: 4rem;
+  gap: var(--g-large);
 }
 
 .servicesList {
   width: 100%;
-  display: flex;
-  gap: 2rem;
+  gap: var(--g-small);
   justify-content: space-around;
   align-items: flex-end;
 }
 
 .service {
-  display: flex;
-  flex-direction: column;
-  gap: 0.6rem;
+  gap: var(--g-tiny);
   transition: all 0.3s ease;
 }
 
@@ -24,18 +19,10 @@
   transform: translateY(-0.2rem) scale(1.15);
 }
 
-.serviceNumber {
-  font-family: var(--font-extra);
-  font-weight: 100;
-  font-size: 1.2rem;
-  color: var(--gray-3);
-}
-
 .serviceLabel {
   font-family: var(--font-extra);
   font-weight: 100;
   font-size: 1.6rem;
-  transition: all 0.3s ease;
 }
 
 .serviceActive .serviceNumber {
@@ -46,27 +33,17 @@
   font-weight: 600;
 }
 
-.servicesSliders {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
+.servicesDetails {
+  gap: var(--g-small);
   align-items: center;
 }
 
 .detailsBox {
-  display: flex;
-  flex-direction: column;
   align-items: center;
 }
 
-.detailDesc {
-  font-family: var(--font-paragraph);
-  font-size: 2.2rem;
-  text-align: center;
-}
-
 @media (min-width: 780px) {
-  .servicesSliders {
+  .servicesDetails {
     flex-direction: row;
     gap: 0;
     justify-content: space-around;
@@ -82,7 +59,4 @@
 }
 
 @media (min-width: 780px) {
-  .detailDesc {
-    font-size: 2.6rem;
-  }
 }

@@ -15,8 +15,8 @@ export default function SliderBtns({
   onNext,
 }: SliderBtnsProps) {
   return (
-    <div className={s.sliderBtns}>
-      <ol className={s.dots}>
+    <div className={`${s.sliderBtns} u--flex-column`}>
+      <ol className={`${s.dots} u--flex-row`}>
         {Array.from({ length: count }).map((_, i) => (
           <li key={i}>
             <span className={`${s.dot} ${i === active ? s.dotActive : ""}`} />
@@ -24,7 +24,7 @@ export default function SliderBtns({
         ))}
       </ol>
 
-      <div className={s.btns}>
+      <div className={`${s.btns} u--flex-row`}>
         <button
           className={`${s.chevronBtn} ${s.chevronLeft}`}
           onClick={onPrev}
