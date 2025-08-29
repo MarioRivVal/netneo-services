@@ -1,11 +1,12 @@
 import { useState } from "react";
 import s from "../assets/styles/pages/home.module.css";
-import Main from "../layouts/Main";
 import GradientButton from "../components/GradientButton";
 import { Trans, useTranslation } from "react-i18next";
 import Gallery, { type GalleryItem } from "../components/Gallery";
 import SliderBtns from "../components/SliderBtns";
 import { homeServicesImgs } from "../content/images";
+import Header from "../layouts/Header";
+import AsideBox from "../layouts/AsideBox";
 
 export default function Home() {
   const { t } = useTranslation("home");
@@ -31,8 +32,17 @@ export default function Home() {
 
   return (
     <>
-      <Main scope="header" reverse={true} />
+      <main className="main u--bg-gray u--flex-column">
+        <Header scope={"header"} />
+        <AsideBox
+          directory="home"
+          scope="header"
+          showButtons={true}
+          reverse={true}
+        />
+      </main>
 
+      {/* SERVICES SECTION */}
       <section className="section">
         <div className="container">
           <div className="title-box">
@@ -48,7 +58,6 @@ export default function Home() {
               />
             </h3>
           </div>
-
           <div className={`${s.cardsContent} u--flex-column`}>
             <ul
               className={`${s.servicesList} u--flex-row`}
@@ -74,10 +83,8 @@ export default function Home() {
               })}
             </ul>
 
-            {/* GALLERY */}
             <Gallery items={galleryItems} active={active} preset="card" />
 
-            {/* SLIDER CONTROLES */}
             <div className={`${s.servicesDetails} u--flex-column`}>
               <div className={`${s.detailsBox} u--flex-column`}>
                 <h4>{servicesDetails[active].title}</h4>
@@ -85,6 +92,7 @@ export default function Home() {
                   {servicesDetails[active].description}
                 </p>
               </div>
+
               <SliderBtns
                 count={count}
                 active={active}
@@ -92,9 +100,15 @@ export default function Home() {
                 onNext={next}
               />
             </div>
+
             <GradientButton text={t("services.btnDark")} variant="dark" />
           </div>
         </div>
+      </section>
+
+      {/*  PROJECTS SECTION */}
+      <section className="section u--bg-gray">
+        <AsideBox directory="home" scope={"whyNetneo"} showButtons={true} />
       </section>
     </>
   );

@@ -1,19 +1,19 @@
 {
   "header": {
-    "title6": "// Home",
+    "title6": "// Home__",
     "title5": "Want to be more visible?",
     "title2": "Increase your presence",
     "title1": ["Websites", "Apps", "Design", "SEO", "AI"],
     "imgAlt": "Hand holding a phone",
     "imgName": "home",
-    "contentTitle6": "// Let's start_",
+    "contentTitle6": "// Let's start__",
     "title3": "Your <blue>presence</blue> online <pink>starts</pink> here",
     "paragraph": "At Netneo, we combine design, development, and artificial intelligence to create unique digital experiences. Websites, apps, and ideas that work, look great, and represent your brand. Nothing standard—everything tailored to you.",
     "btnDark": "I want my Website",
     "btnLight": "I want my App"
   },
   "services": {
-    "title6": "// Services__",
+    "contentTitle6": "// Services__",
     "title3": "What we do for you. We transform <pink>ideas</pink> into <blue>digital</blue> solutions",
     "servicesList": ["Websites", "Apps", "Design", "SEO", "AI"],
     "imgAlts": {
@@ -46,5 +46,11 @@
       }
     ],
     "btnDark": "What we offer"
+  },
+  "whyNetneo": {
+    "contentTitle6": "// Choose us__",
+    "title3": "Why <blue>choose</blue> netneo is the <pink>best</pink> option?",
+    "paragraph": "At Netneo we don’t do the usual. We design original solutions, without templates, without rush, without smoke. We listen to you, create with you, and we’re there afterwards. That’s how we work, that’s how we stand out.",
+    "btnDark": "Let’s get started"
   }
 }

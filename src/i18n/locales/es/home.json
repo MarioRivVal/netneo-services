@@ -13,7 +13,7 @@
     "btnLight": "Quiero mi App"
   },
   "services": {
-    "title6": "// Servicios__",
+    "contentTitle6": "// Servicios__",
     "title3": "Lo que hacemnos por ti. Transformamos <pink>ideas</pink> en <blue>soluciones</blue> digitales",
     "servicesList": ["Webs", "Apps", "Diseño", "SEO", "IA"],
     "imgAlts": {
@@ -46,5 +46,11 @@
       }
     ],
     "btnDark": "Lo que ofrecemos"
+  },
+  "whyNetneo": {
+    "contentTitle6": "// Eligenos__",
+    "title3": "¿Por que <blue>elegir</blue> netneo es la <pink>mejor</pink> opción?",
+    "paragraph": "En Netneo no hacemos lo de siempre. Diseñamos soluciones originales, sin plantillas, sin prisas, sin humo. Te escuchamos, creamos contigo y estamos ahí después. Así trabajamos, así nos diferenciamos.",
+    "btnDark": "Comencemos"
   }
 }
