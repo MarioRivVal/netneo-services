@@ -5,8 +5,12 @@ import { Trans, useTranslation } from "react-i18next";
 import Gallery, { type GalleryItem } from "../components/Gallery";
 import SliderBtns from "../components/SliderBtns";
 import { homeServicesImgs } from "../content/images";
+import { reasonsIcons } from "../content/icons";
 import Header from "../layouts/Header";
 import AsideBox from "../layouts/AsideBox";
+import SmallButton from "../components/SmallButton";
+import ContentBox from "../layouts/ContentBox";
+import StatsIcon from "../icons/StatsIcon";
 
 export default function Home() {
   const { t } = useTranslation("home");
@@ -18,6 +22,8 @@ export default function Home() {
   const servicesDetails = t("services.servicesDetails", {
     returnObjects: true,
   }) as { title: string; description: string }[];
+
+  const order = t("reasons.order", { returnObjects: true }) as string[];
 
   const galleryItems: GalleryItem[] = homeServicesImgs.map(({ id, label }) => ({
     id,
@@ -46,7 +52,7 @@ export default function Home() {
       <section className="section">
         <div className="container">
           <div className="title-box">
-            <h6>{t("services.title6")}</h6>
+            <h6>{t("services.contentTitle6")}</h6>
             <h3>
               <Trans
                 i18nKey={`services.title3`}
@@ -106,9 +112,33 @@ export default function Home() {
         </div>
       </section>
 
-      {/*  PROJECTS SECTION */}
+      {/*  REASONS SECTION */}
       <section className="section u--bg-gray">
-        <AsideBox directory="home" scope={"whyNetneo"} showButtons={true} />
+        <AsideBox directory="home" scope={"reasons"} showButtons={true} />
+        <div className={`${s.reasonsBox} u--mw-centered u--flex-column`}>
+          <div className={`${s.reasonsList} u--flex-row`}>
+            {order.map((key) => {
+              const Icon = reasonsIcons[key as keyof typeof reasonsIcons];
+              const label = t(`reasons.labels.${key}`);
+              return <SmallButton text={label} icon={<Icon />} />;
+            })}
+          </div>
+        </div>
+        <ContentBox
+          childrenAside={
+            <>
+              <div className={s.statIcon}>
+                <StatsIcon />
+              </div>
+              <div className={s.details}>
+                <p>Clientes Satisfechos</p>
+                <p>+10</p>
+              </div>
+            </>
+          }
+          count={5}
+          active={3}
+        />
       </section>
     </>
   );

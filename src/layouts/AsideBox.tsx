@@ -36,8 +36,8 @@ export default function AsideBox({
 
         {showButtons && (
           <div className={`${s.btnsBox} u--flex-column`}>
-            <GradientButton text={t(`${scope}.btnDark`)} variant="dark" />
             <GradientButton text={t(`${scope}.btnLight`)} variant="light" />
+            <GradientButton text={t(`${scope}.btnDark`)} variant="dark" />
           </div>
         )}
       </div>

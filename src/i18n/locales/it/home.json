@@ -47,10 +47,19 @@
     ],
     "btnDark": "Cosa offriamo"
   },
-  "whyNetneo": {
+  "reasons": {
     "contentTitle6": "// Sceglici__",
     "title3": "Perché <blue>scegliere</blue> netneo è la <pink>migliore</pink> opzione?",
     "paragraph": "In Netneo non facciamo le solite cose. Progettiamo soluzioni originali, senza modelli, senza fretta, senza fumo. Ti ascoltiamo, creiamo con te e siamo lì anche dopo. Così lavoriamo, così ci distinguiamo.",
-    "btnDark": "Iniziamo"
+    "btnLight": "Iniziamo",
+    "btnDark": "Ho delle domande",
+    "order": ["puzzle", "heart", "focus", "trend", "users"],
+    "labels": {
+      "puzzle": "su misura",
+      "heart": "umano",
+      "focus": "originale",
+      "trend": "impegno",
+      "users": "accompagnamento"
+    }
   }
 }

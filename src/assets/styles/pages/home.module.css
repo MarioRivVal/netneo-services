@@ -42,6 +42,16 @@
   align-items: center;
 }
 
+/* REASON SECTION */
+
+.reasonsBox {
+  align-items: center;
+}
+.reasonsList {
+  width: 70%;
+  gap: var(--g-medium);
+}
+
 @media (min-width: 780px) {
   .servicesDetails {
     flex-direction: row;

@@ -47,10 +47,19 @@
     ],
     "btnDark": "What we offer"
   },
-  "whyNetneo": {
+  "reasons": {
     "contentTitle6": "// Choose us__",
     "title3": "Why <blue>choose</blue> netneo is the <pink>best</pink> option?",
-    "paragraph": "At Netneo we don’t do the usual. We design original solutions, without templates, without rush, without smoke. We listen to you, create with you, and we’re there afterwards. That’s how we work, that’s how we stand out.",
-    "btnDark": "Let’s get started"
+    "paragraph": "At Netneo we don't do the usual. We design original solutions, without templates, without rush, without smoke. We listen to you, create with you, and we're there afterwards. That's how we work, that's how we stand out.",
+    "btnLight": "Let's get started",
+    "btnDark": "I have questions",
+    "order": ["puzzle", "heart", "focus", "trend", "users"],
+    "labels": {
+      "puzzle": "custom-made",
+      "heart": "human",
+      "focus": "original",
+      "trend": "commitment",
+      "users": "support"
+    }
   }
 }

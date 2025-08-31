@@ -1,4 +1,8 @@
 .smallBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
   border-radius: var(--rounded);
   border: solid 0.2rem var(--gray-3);
   color: var(--gray-3);
@@ -19,4 +23,8 @@
   border: 0.2rem solid transparent;
   background: linear-gradient(var(--white), var(--white)) padding-box,
     linear-gradient(90deg, var(--blue), var(--pink)) border-box;
+}
+
+.iconBox {
+  display: grid;
 }

@@ -1,4 +1,5 @@
 import s from "../assets/styles/components/smallButton.module.css";
+import type { ReactNode } from "react";
 
 type SmallButtonProps = {
   text: string;
@@ -6,6 +7,7 @@ type SmallButtonProps = {
   active?: boolean;
   className?: string;
   title?: string;
+  icon?: ReactNode;
 };
 
 export default function SmallButton({
@@ -14,6 +16,7 @@ export default function SmallButton({
   active = false,
   className,
   title,
+  icon,
 }: SmallButtonProps) {
   return (
     <button
@@ -23,6 +26,7 @@ export default function SmallButton({
       title={title}
     >
       {text}
+      {icon && <div className={s.iconBox}>{icon}</div>}
     </button>
   );
 }
