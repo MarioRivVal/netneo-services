@@ -3,3 +3,92 @@
   grid-template-columns: 1fr;
   gap: var(--g-small);
 }
+
+.aside,
+.list,
+.btnsBox {
+  border: 0.1rem solid transparent;
+  border-radius: var(--radius);
+  background: linear-gradient(var(--white), var(--white)) padding-box,
+    linear-gradient(90deg, var(--blue), var(--pink)) border-box;
+}
+
+.aside {
+  display: flex;
+  flex-direction: row;
+  padding: 2rem;
+}
+
+.statIcon {
+  flex: 1;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 2;
+  margin-bottom: -1rem;
+}
+
+.details p {
+  color: var(--black);
+}
+
+.details p:nth-child(2) {
+  font-size: 4rem;
+  font-family: var(--font-extra);
+}
+.list {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 4rem 2rem;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 4rem;
+}
+
+.list::before,
+.list::after {
+  content: "";
+  position: absolute;
+  height: 2rem;
+  right: 50%;
+  transform: translateX(50%);
+  border-radius: 10rem 10rem 0 0;
+}
+
+.list::before {
+  width: 90%;
+  top: -2rem;
+  background-color: rgba(89, 104, 178, 0.3);
+}
+
+.list::after {
+  width: 80%;
+  top: -4rem;
+  background-color: rgba(89, 104, 178, 0.2);
+}
+
+.reasonIcon svg {
+  width: 5rem;
+  height: auto;
+}
+
+.list p {
+  font-size: 2.2rem;
+  font-family: var(--font-paragraph);
+  text-align: center;
+}
+
+.statIcon svg {
+  width: 10rem;
+  height: auto;
+  transform: scale(2.2);
+}
+
+.btnsBox {
+  padding: 2rem;
+}

@@ -60,6 +60,13 @@
       "focus": "original",
       "trend": "commitment",
       "users": "support"
+    },
+    "reasonsList": {
+      "custom": "Each project starts from scratch. No recycled templates or generic systems: only unique ideas that reflect your essence and your brand.",
+      "human": "The treatment is direct, close, and professional. We talk with you, listen, propose. We work as people, not as robots.",
+      "original": "No gray websites or soulless clones. We design visual experiences that stand out, connect, and make you memorable.",
+      "commitment": "Your investment has a return. Our prices reflect value, not just hours. What we deliver, we stand behind.",
+      "support": "After the launch, we continue with you. We take care of your website or app so that it works, evolves, and never gives you headaches."
     }
   }
 }

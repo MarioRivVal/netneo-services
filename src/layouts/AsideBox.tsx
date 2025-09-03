@@ -7,6 +7,7 @@ type AsideBoxProps = {
   scope: string;
   showButtons?: boolean;
   reverse?: boolean;
+  box?:boolean
 };
 
 export default function AsideBox({
@@ -14,11 +15,12 @@ export default function AsideBox({
   scope,
   showButtons,
   reverse,
+  box= false
 }: AsideBoxProps) {
   const { t } = useTranslation(directory);
 
   return (
-    <aside className={`${s.aside} u--mw-centered`}>
+    <aside className={`${s.aside} ${box ? s.boxStyle : ""} u--mw-centered`}>
       <h6>{t(`${scope}.contentTitle6`)}</h6>
       <h3 className={`${reverse ? s.titleReverse : ""} `}>
         <Trans

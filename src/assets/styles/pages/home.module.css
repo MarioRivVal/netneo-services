@@ -44,12 +44,20 @@
 
 /* REASON SECTION */
 
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+}
+
 .reasonsBox {
   align-items: center;
+  gap: 2rem;
 }
 .reasonsList {
-  width: 70%;
-  gap: var(--g-medium);
+  width: 100%;
+  gap: var(--g-tiny);
+  flex-wrap: wrap;
 }
 
 @media (min-width: 780px) {

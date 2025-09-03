@@ -60,6 +60,13 @@
       "focus": "originale",
       "trend": "impegno",
       "users": "accompagnamento"
+    },
+    "reasonsList": {
+      "custom": "Ogni progetto parte da zero. Niente modelli riciclati o sistemi generici: solo idee uniche che riflettono la tua essenza e il tuo brand.",
+      "human": "Il rapporto è diretto, vicino e professionale. Parliamo con te, ascoltiamo, proponiamo. Lavoriamo come persone, non come robot.",
+      "original": "Niente siti web grigi o cloni senza anima. Progettiamo esperienze visive che si distinguono, connettono e ti rendono memorabile.",
+      "commitment": "Il tuo investimento ha un ritorno. I nostri prezzi riflettono il valore, non solo le ore. Ciò che consegniamo, lo supportiamo.",
+      "support": "Dopo il lancio, restiamo con te. Ci prendiamo cura del tuo sito o della tua app affinché funzioni, evolva e non ti dia mai mal di testa."
     }
   }
 }

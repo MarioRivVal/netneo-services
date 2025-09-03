@@ -7,8 +7,8 @@ type ContentBoxProps = {
   childrenList?: ReactNode;
   count?: number;
   active?: number;
-  onPrev?: () => void;
   onNext?: () => void;
+  onPrev?: () => void;
 };
 
 export default function ContentBox({

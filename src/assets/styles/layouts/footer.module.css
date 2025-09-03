@@ -62,5 +62,6 @@
 }
 
 .languages {
+  width: 100%;
   gap: var(--g-small);
 }
