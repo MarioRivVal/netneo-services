@@ -1,20 +1,25 @@
+// hooks/useCarousel.ts
 import { useEffect, useRef, useState, useCallback } from "react";
-import s from "../assets/styles/main.module.css";
+import s from "../assets/styles/components/slider.module.css";
 
-export default function useCarousel(itemsLength: number) {
-  const [active, setActive] = useState(
-    Math.min(2, Math.max(0, itemsLength - 1))
-  );
+type Options = {
+  initial?: number;
+  onChange?: (index: number) => void;
+};
+
+export default function useCarousel(itemsLength: number, opts: Options = {}) {
+  const clamp = (n: number, a: number, b: number) =>
+    Math.max(a, Math.min(b, n));
+  const initial = clamp(opts.initial ?? 2, 0, Math.max(0, itemsLength - 1));
+
+  const [active, setActive] = useState(initial);
   const itemRefs = useRef<(HTMLDivElement | null)[]>([]);
   const sliderRef = useRef<HTMLDivElement | null>(null);
 
-  // Ajustes finos (tócalos a tu gusto)
-  const BASE_SHIFT = 150; // separación lateral en px
-  const SCALE_STEP = 0.2; // cuánto baja el scale por paso desde el centro
-  const CENTER_SCALE = 1.12; // escala del activo (centro)
-
-  const clamp = (n: number, a: number, b: number) =>
-    Math.max(a, Math.min(b, n));
+  // Ajustes
+  const BASE_SHIFT = 150;
+  const SCALE_STEP = 0.2;
+  const CENTER_SCALE = 1.12;
 
   const loadShow = () => {
     const items = itemRefs.current.filter(
@@ -36,11 +41,11 @@ export default function useCarousel(itemsLength: number) {
         translateX(${x}px)
         scale(${scale})
       `;
-      // siempre positivo; redondeado para evitar valores decimales
       items[i].style.zIndex = String(BASE_Z - Math.round(abs * 10));
     }
   };
 
+  // Recalcula al cambiar activo o tamaño
   useEffect(() => {
     loadShow();
     const onResize = () => loadShow();
@@ -48,6 +53,16 @@ export default function useCarousel(itemsLength: number) {
     return () => window.removeEventListener("resize", onResize);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [active, itemsLength]);
+
+  // Notifica al padre cuando cambia el activo
+  useEffect(() => {
+    opts.onChange?.(active);
+  }, [active, opts]);
+
+  // Si cambia itemsLength, asegura que active sea válido
+  useEffect(() => {
+    setActive((i) => clamp(i, 0, Math.max(0, itemsLength - 1)));
+  }, [itemsLength]);
 
   const next = useCallback(() => {
     setActive((i) => (i + 1 < itemsLength ? i + 1 : i));
@@ -57,12 +72,12 @@ export default function useCarousel(itemsLength: number) {
     setActive((i) => (i - 1 >= 0 ? i - 1 : i));
   }, []);
 
-  // ----- Swipe (Android/desktop friendly): decide prev/next al soltar -----
+  // Swipe
   useEffect(() => {
     const el = sliderRef.current;
     if (!el) return;
 
-    const THRESH = 40; // px para considerar swipe
+    const THRESH = 40;
     let down = false;
     let startX = 0;
     let startY = 0;
@@ -74,8 +89,8 @@ export default function useCarousel(itemsLength: number) {
     const controller = new AbortController();
     const { signal } = controller;
 
-    const onDown = (e: PointerEvent): void => {
-      if (e.pointerType === "mouse" && e.button !== 0) return; // solo botón izq en mouse
+    const onDown = (e: PointerEvent) => {
+      if (e.pointerType === "mouse" && e.button !== 0) return;
       down = true;
       startX = e.clientX;
       startY = e.clientY;
@@ -87,39 +102,30 @@ export default function useCarousel(itemsLength: number) {
       el.classList.add(s.dragging);
     };
 
-    const onMove = (e: PointerEvent): void => {
+    const onMove = (e: PointerEvent) => {
       if (!down) return;
-
       dx = e.clientX - startX;
       dy = e.clientY - startY;
 
-      // bloqueo de eje: cuando es mayormente horizontal, bloqueamos pan nativo
       if (!horiz && Math.abs(dx) > Math.abs(dy) + 6) {
         horiz = true;
-        el.classList.add(s.locking); // activa touch-action:none mediante CSS
+        el.classList.add(s.locking);
       }
-
-      // En Android real, evitar que el navegador se quede el gesto
       if (horiz && e.cancelable) e.preventDefault();
-
-      // evita selección de texto mientras arrastras
       window.getSelection?.()?.removeAllRanges();
     };
 
-    const onUp = (): void => {
+    const onUp = () => {
       if (!down) return;
       el.classList.remove(s.dragging, s.locking);
-
       if (horiz && Math.abs(dx) > THRESH) {
         if (dx < 0) next();
         else prev();
       }
-
       down = false;
       horiz = false;
     };
 
-    // IMPORTANTE: pointermove/keydown con passive:false para poder preventDefault
     el.addEventListener("pointerdown", onDown, { passive: false, signal });
     el.addEventListener("pointermove", onMove, { passive: false, signal });
     window.addEventListener("pointerup", onUp, { passive: true, signal });
@@ -127,7 +133,7 @@ export default function useCarousel(itemsLength: number) {
     window.addEventListener("pointerleave", onUp, { passive: true, signal });
 
     return () => controller.abort();
-  }, [next, prev]); // next/prev son estables (setters funcionales)
+  }, [next, prev]);
 
-  return { sliderRef, itemRefs };
+  return { sliderRef, itemRefs, active, setActive, next, prev };
 }

@@ -1,11 +1,8 @@
-// import { useState } from "react";
+import { useState } from "react";
 import s from "../assets/styles/pages/home.module.css";
-import car from "../assets/styles/main.module.css";
 // import c from "../assets/styles/layouts/contentBox.module.css";
 import GradientButton from "../components/GradientButton";
 import { Trans, useTranslation } from "react-i18next";
-import Gallery, { type GalleryItem } from "../components/Gallery";
-import { homeServicesImgs } from "../content/images";
 import { reasonsIcons } from "../content/icons";
 import Header from "../layouts/Header";
 import AsideBox from "../layouts/AsideBox";
@@ -13,8 +10,7 @@ import SmallButton from "../components/SmallButton";
 // import ContentBox from "../layouts/ContentBox";
 // import StatsIcon from "../icons/StatsIcon";
 // import PuzzleIcon from "../icons/PuzzleIcon";
-import useCarousel from "../hooks/useCarousel";
-import ResponsiveImage from "../components/ResponsiveImage";
+import Slider from "../components/Slider";
 
 export default function Home() {
   // TRANSLATIONS
@@ -24,28 +20,19 @@ export default function Home() {
     returnObjects: true,
   }) as string[];
 
-  // const servicesDetails = t("services.servicesDetails", {
-  //   returnObjects: true,
-  // }) as { title: string; description: string }[];
+  const servicesDetails = t("services.servicesDetails", {
+    returnObjects: true,
+  }) as { title: string; description: string }[];
 
   const order = t("reasons.order", { returnObjects: true }) as string[];
 
-  const reasonsList = t("reasons.reasonsList", {
-    returnObjects: true,
-  }) as Record<string, string>;
-
-  const galleryItems: GalleryItem[] = homeServicesImgs.map(({ id, label }) => ({
-    id,
-    name: `services/${label}`,
-    alt: t(`services.imgAlts.${label}`, { defaultValue: label }),
-  }));
-
-  console.log(galleryItems);
+  // const reasonsList = t("reasons.reasonsList", {
+  //   returnObjects: true,
+  // }) as Record<string, string>;
 
   // STATES
 
-  // const [active, setActive] = useState(0);
-  const { sliderRef, itemRefs } = useCarousel(galleryItems.length);
+  const [active, setActive] = useState(2);
 
   return (
     <>
@@ -77,58 +64,31 @@ export default function Home() {
             </h3>
           </div>
           <div className={`${s.cardsContent} u--flex-column`}>
-            <ul
-              className={`${s.servicesList} u--flex-row`}
-              aria-label="Servicios"
-            >
-              {/* {servicesList.map((item, i) => {
-                const isActive = i === active;
-                return (
-                  <li
-                    key={i}
-                    className={`${s.service} u--flex-column ${
-                      isActive ? s.serviceActive : ""
-                    }`}
-                    role="listitem"
-                    aria-current={isActive ? "true" : undefined}
-                  >
-                    <span className={`${s.serviceNumber} u--light-text`}>{`/0${
-                      i + 1
-                    }`}</span>
-                    <span className={s.serviceLabel}>{item}</span>
-                  </li>
-                );
-              })} */}
-            </ul>
-
-            <div className={car.slider} ref={sliderRef}>
-              {galleryItems.map((item, idx) => (
-                <div
-                  key={item.id}
-                  ref={(el) => {
-                    itemRefs.current[idx] = el;
-                  }}
-                  className={car.item}
+            <ul className={`${s.servicesList} u--flex-row`}>
+              {servicesList.map((item, i) => (
+                <li
+                  key={i}
+                  className={`${s.service} u--flex-column ${
+                    i === active ? s.serviceActive : ""
+                  }`}
                 >
-                  <ResponsiveImage
-                    key={item.id}
-                    name={item.name}
-                    alt={item.alt}
-                    preset="card"
-                    className={car.card}
-                  />
-                </div>
+                  <span className={`${s.serviceNumber} u--light-text`}>{`/0${
+                    i + 1
+                  }`}</span>
+                  <span className={s.serviceLabel}>{item}</span>
+                </li>
               ))}
-            </div>
-
-            {/* <div className={`${s.servicesDetails} u--flex-column`}>
+            </ul>
+            {/* IMAGES SLIDER*/}
+            <Slider onActiveChange={setActive} />
+            <div className={`${s.servicesDetails} u--flex-column`}>
               <div className={`${s.detailsBox} u--flex-column`}>
                 <h4>{servicesDetails[active].title}</h4>
                 <p className="u--paragraph">
                   {servicesDetails[active].description}
                 </p>
               </div>
-            </div> */}
+            </div>
 
             <GradientButton text={t("services.btnDark")} variant="dark" />
           </div>

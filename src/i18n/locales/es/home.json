@@ -15,7 +15,7 @@
   "services": {
     "contentTitle6": "// Servicios__",
     "title3": "Lo que hacemnos por ti. Transformamos <pink>ideas</pink> en <blue>soluciones</blue> digitales",
-    "servicesList": ["Webs", "Apps", "Diseño", "SEO", "IA"],
+    "servicesList": ["Diseño", "Apps", "Webs", "IA", "SEO"],
     "imgAlts": {
       "design": "Diseño UI/UX en pantalla",
       "web": "Sitio web mostrado en un portátil",

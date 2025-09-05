@@ -28,6 +28,12 @@
   user-select: none;
 }
 
+.card {
+  border-radius: 2rem;
+  overflow: hidden;
+  box-shadow: 0 0 4px rgba(13, 8, 16, 0.5);
+}
+
 .card img {
   width: 23rem;
   height: 32rem;
