@@ -11,6 +11,7 @@ import SmallButton from "../components/SmallButton";
 // import StatsIcon from "../icons/StatsIcon";
 // import PuzzleIcon from "../icons/PuzzleIcon";
 import Slider from "../components/Slider";
+import StatsIcon from "../icons/StatsIcon";
 
 export default function Home() {
   // TRANSLATIONS
@@ -80,7 +81,7 @@ export default function Home() {
               ))}
             </ul>
             {/* IMAGES SLIDER*/}
-            <Slider onActiveChange={setActive} />
+            <Slider initial={active} onActiveChange={setActive} />
             <div className={`${s.servicesDetails} u--flex-column`}>
               <div className={`${s.detailsBox} u--flex-column`}>
                 <h4>{servicesDetails[active].title}</h4>
@@ -99,7 +100,17 @@ export default function Home() {
       <section className="section u--bg-gray">
         <div className={s.container}>
           <AsideBox directory="home" scope={"reasons"} showButtons={true} />
-          <div className={`${s.reasonsBox} u--mw-centered u--flex-column`}>
+          <div className={`${s.box} u--mw-centered u--flex-column`}>
+            <div className={s.stats}>
+              <div className={s.statIcon}>
+                <StatsIcon />
+              </div>
+              <div className={s.details}>
+                <p className="u--light-text">Clientes Satisfechos</p>
+                <p>+10</p>
+              </div>
+            </div>
+
             <div className={`${s.reasonsList} u--flex-row`}>
               {order.map((key) => {
                 const Icon = reasonsIcons[key as keyof typeof reasonsIcons];

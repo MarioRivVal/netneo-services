@@ -8,10 +8,11 @@ import ResponsiveImage from "./ResponsiveImage";
 type GalleryItem = { id: string | number; name: string; alt: string };
 
 type SliderProps = {
+  initial: number;
   onActiveChange?: (index: number) => void;
 };
 
-export default function Slider({ onActiveChange }: SliderProps) {
+export default function Slider({ initial, onActiveChange }: SliderProps) {
   const { t } = useTranslation("home");
 
   const galleryItems: GalleryItem[] = homeServicesImgs.map(({ id, label }) => ({
@@ -21,7 +22,7 @@ export default function Slider({ onActiveChange }: SliderProps) {
   }));
 
   const { sliderRef, itemRefs } = useCarousel(galleryItems.length, {
-    initial: 2,
+    initial,
     onChange: onActiveChange, // <- avisa al padre
   });
 

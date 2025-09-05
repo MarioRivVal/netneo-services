@@ -48,6 +48,9 @@
     grid-template-columns: 1fr 1fr;
     column-gap: var(--g-xxlarge);
     row-gap: var(--g-medium);
+  }
+
+  .aside.boxStyle {
     padding: var(--g-xlarge) var(--g-large);
   }
 

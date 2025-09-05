@@ -23,13 +23,12 @@
   transform-origin: center center;
   transition: transform 220ms ease;
   will-change: transform;
-  touch-action: none;
   -webkit-user-select: none; /* iOS */
   user-select: none;
 }
 
 .card {
-  border-radius: 2rem;
+  border-radius: var(--radius);
   overflow: hidden;
   box-shadow: 0 0 4px rgba(13, 8, 16, 0.5);
 }
@@ -40,4 +39,14 @@
   -webkit-user-drag: none;
   -webkit-user-select: none;
   user-select: none; /* evita selección accidental */
+}
+
+@media (min-width: 1280px) {
+  .slider {
+    height: 48rem;
+  }
+  .card img {
+    width: 26rem;
+    height: 38rem;
+  }
 }

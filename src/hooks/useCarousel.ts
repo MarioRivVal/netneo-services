@@ -2,10 +2,7 @@
 import { useEffect, useRef, useState, useCallback } from "react";
 import s from "../assets/styles/components/slider.module.css";
 
-type Options = {
-  initial?: number;
-  onChange?: (index: number) => void;
-};
+type Options = { initial?: number; onChange?: (index: number) => void };
 
 export default function useCarousel(itemsLength: number, opts: Options = {}) {
   const clamp = (n: number, a: number, b: number) =>
@@ -13,15 +10,22 @@ export default function useCarousel(itemsLength: number, opts: Options = {}) {
   const initial = clamp(opts.initial ?? 2, 0, Math.max(0, itemsLength - 1));
 
   const [active, setActive] = useState(initial);
+
+  // 👇 Estado responsive (seguro para SSR)
+  const [isLargeView, setLargeView] = useState<boolean>(() => {
+    if (typeof window === "undefined") return false;
+    return window.innerWidth <= 1280;
+  });
+
   const itemRefs = useRef<(HTMLDivElement | null)[]>([]);
   const sliderRef = useRef<HTMLDivElement | null>(null);
 
-  // Ajustes
-  const BASE_SHIFT = 150;
+  // Ajustes dependientes del viewport
+  const BASE_SHIFT = isLargeView ? 150 : 220; // <-- aquí ya reacciona
   const SCALE_STEP = 0.2;
   const CENTER_SCALE = 1.12;
 
-  const loadShow = () => {
+  const loadShow = useCallback(() => {
     const items = itemRefs.current.filter(
       (el): el is HTMLDivElement => el !== null
     );
@@ -43,49 +47,44 @@ export default function useCarousel(itemsLength: number, opts: Options = {}) {
       `;
       items[i].style.zIndex = String(BASE_Z - Math.round(abs * 10));
     }
-  };
+  }, [active, BASE_SHIFT]); // 👈 se reejecuta si cambia el breakpoint
 
-  // Recalcula al cambiar activo o tamaño
+  // Recalcular cuando cambien activo / nº items / breakpoint
   useEffect(() => {
     loadShow();
-    const onResize = () => loadShow();
-    window.addEventListener("resize", onResize);
-    return () => window.removeEventListener("resize", onResize);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [active, itemsLength]);
+  }, [loadShow, itemsLength]);
 
-  // Notifica al padre cuando cambia el activo
+  // Avisar al padre (si te interesa)
   useEffect(() => {
     opts.onChange?.(active);
   }, [active, opts]);
 
-  // Si cambia itemsLength, asegura que active sea válido
+  // Mantener activo válido si cambia la longitud
   useEffect(() => {
     setActive((i) => clamp(i, 0, Math.max(0, itemsLength - 1)));
   }, [itemsLength]);
 
-  const next = useCallback(() => {
-    setActive((i) => (i + 1 < itemsLength ? i + 1 : i));
-  }, [itemsLength]);
-
-  const prev = useCallback(() => {
-    setActive((i) => (i - 1 >= 0 ? i - 1 : i));
+  // 👇 Listener de resize (estilo que ya usas en tu otro proyecto)
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    const handleResize = () => setLargeView(window.innerWidth <= 1280);
+    handleResize(); // set inicial
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  // Swipe
+  // Gestos (tal cual lo tenías)
   useEffect(() => {
     const el = sliderRef.current;
     if (!el) return;
-
     const THRESH = 40;
-    let down = false;
-    let startX = 0;
-    let startY = 0;
-    let dx = 0;
-    let dy = 0;
-    let horiz = false;
-    let pid = 0;
-
+    let down = false,
+      startX = 0,
+      startY = 0,
+      dx = 0,
+      dy = 0,
+      horiz = false,
+      pid = 0;
     const controller = new AbortController();
     const { signal } = controller;
 
@@ -101,12 +100,10 @@ export default function useCarousel(itemsLength: number, opts: Options = {}) {
       el.setPointerCapture(pid);
       el.classList.add(s.dragging);
     };
-
     const onMove = (e: PointerEvent) => {
       if (!down) return;
       dx = e.clientX - startX;
       dy = e.clientY - startY;
-
       if (!horiz && Math.abs(dx) > Math.abs(dy) + 6) {
         horiz = true;
         el.classList.add(s.locking);
@@ -114,13 +111,15 @@ export default function useCarousel(itemsLength: number, opts: Options = {}) {
       if (horiz && e.cancelable) e.preventDefault();
       window.getSelection?.()?.removeAllRanges();
     };
-
     const onUp = () => {
       if (!down) return;
       el.classList.remove(s.dragging, s.locking);
       if (horiz && Math.abs(dx) > THRESH) {
-        if (dx < 0) next();
-        else prev();
+        if (dx < 0) {
+          setActive((i) => (i + 1 < itemsLength ? i + 1 : i));
+        } else {
+          setActive((i) => (i - 1 >= 0 ? i - 1 : i));
+        }
       }
       down = false;
       horiz = false;
@@ -133,7 +132,7 @@ export default function useCarousel(itemsLength: number, opts: Options = {}) {
     window.addEventListener("pointerleave", onUp, { passive: true, signal });
 
     return () => controller.abort();
-  }, [next, prev]);
+  }, [itemsLength]);
 
-  return { sliderRef, itemRefs, active, setActive, next, prev };
+  return { sliderRef, itemRefs, active, setActive, isLargeView };
 }
