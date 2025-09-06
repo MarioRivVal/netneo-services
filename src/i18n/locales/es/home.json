@@ -15,36 +15,40 @@
   "services": {
     "contentTitle6": "// Servicios__",
     "title3": "Lo que hacemnos por ti. Transformamos <pink>ideas</pink> en <blue>soluciones</blue> digitales",
-    "servicesList": ["Diseño", "Apps", "Webs", "IA", "SEO"],
-    "imgAlts": {
-      "design": "Diseño UI/UX en pantalla",
-      "web": "Sitio web mostrado en un portátil",
-      "app": "Aplicación móvil en uso",
-      "ia": "Interfaz con inteligencia artificial",
-      "seo": "Imagen con texto SEO"
-    },
-    "servicesDetails": [
+    "servicesList": [
       {
+        "label": "Diseño",
+        "imgAlt": "Diseño UI/UX en pantalla",
         "title": "Diseño UI/UX",
         "description": "Interfaces limpias, usabilidad que enamora."
       },
+
       {
-        "title": "Webs inteligentes",
-        "description": "Diseñadas para convertir, optimizadas para destacar."
-      },
-      {
+        "label": "Apps",
+        "imgAlt": "Aplicación móvil en uso",
         "title": "Apps a medida",
         "description": "Funcionales, rápidas y adaptadas a tus necesidades."
       },
       {
+        "label": "Webs",
+        "imgAlt": "Sitio web mostrado en un portátil",
+        "title": "Webs inteligentes",
+        "description": "Diseñadas para convertir, optimizadas para destacar."
+      },
+      {
+        "label": "IA",
+        "imgAlt": "Interfaz con inteligencia artificial",
         "title": "IA integrada",
         "description": "Automatiza, responde y evoluciona con inteligencia."
       },
       {
+        "label": "SEO",
+        "imgAlt": "Imagen con texto SEO",
         "title": "SEO & estrategia",
         "description": "Para que te encuentren, te elijan y te recuerden"
       }
     ],
+
     "btnDark": "Lo que ofrecemos"
   },
   "reasons": {
@@ -53,20 +57,27 @@
     "paragraph": "En Netneo no hacemos lo de siempre. Diseñamos soluciones originales, sin plantillas, sin prisas, sin humo. Te escuchamos, creamos contigo y estamos ahí después. Así trabajamos, así nos diferenciamos.",
     "btnLight": "Comencemos",
     "btnDark": "Tengo preguntas",
-    "order": ["puzzle", "heart", "focus", "trend", "users"],
-    "labels": {
-      "puzzle": "a medida",
-      "heart": "humano",
-      "focus": "original",
-      "trend": "compromiso",
-      "users": "acompañamiento"
-    },
-    "reasonsList": {
-      "custom": "Cada proyecto empieza desde cero. Nada de plantillas recicladas ni sistemas genéricos: solo ideas únicas que reflejan tu esencia y tu marca.",
-      "human": "El trato es directo, cercano y profesional. Hablamos contigo, escuchamos, proponemos. Trabajamos como personas, no como robots.",
-      "original": "Nada de webs grises o clones sin alma. Diseñamos experiencias visuales que destacan, conectan y te hacen recordable.",
-      "commitment": "Tu inversión tiene retorno. Nuestros precios reflejan valor, no solo horas. Lo que entregamos, lo respaldamos.",
-      "support": "Después del lanzamiento, seguimos contigo. Cuidamos tu web o app para que funcione, evolucione y nunca te dé dolores de cabeza."
-    }
+    "reasonList": [
+      {
+        "label": "a medida",
+        "description": "Cada proyecto empieza desde cero. Nada de plantillas recicladas ni sistemas genéricos: solo ideas únicas que reflejan tu esencia y tu marca."
+      },
+      {
+        "label": "humano",
+        "description": "El trato es directo, cercano y profesional. Hablamos contigo, escuchamos, proponemos. Trabajamos como personas, no como robots."
+      },
+      {
+        "label": "original",
+        "description": "Nada de webs grises o clones sin alma. Diseñamos experiencias visuales que destacan, conectan y te hacen recordable."
+      },
+      {
+        "label": "compromiso",
+        "description": "Tu inversión tiene retorno. Nuestros precios reflejan valor, no solo horas. Lo que entregamos, lo respaldamos."
+      },
+      {
+        "label": "acompañamiento",
+        "description": "Después del lanzamiento, seguimos contigo. Cuidamos tu web o app para que funcione, evolucione y nunca te dé dolores de cabeza."
+      }
+    ]
   }
 }

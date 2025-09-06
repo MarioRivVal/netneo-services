@@ -1,39 +1,34 @@
-import { useState } from "react";
 import s from "../assets/styles/pages/home.module.css";
-// import c from "../assets/styles/layouts/contentBox.module.css";
 import GradientButton from "../components/GradientButton";
 import { Trans, useTranslation } from "react-i18next";
 import { reasonsIcons } from "../content/icons";
 import Header from "../layouts/Header";
 import AsideBox from "../layouts/AsideBox";
 import SmallButton from "../components/SmallButton";
-// import ContentBox from "../layouts/ContentBox";
-// import StatsIcon from "../icons/StatsIcon";
-// import PuzzleIcon from "../icons/PuzzleIcon";
-import Slider from "../components/Slider";
 import StatsIcon from "../icons/StatsIcon";
+import ResponsiveImage from "../components/ResponsiveImage";
+import useServicesImages from "../hooks/components/useServicesImages";
+import useReasons from "../hooks/components/useReasons";
 
 export default function Home() {
+  const { sliderRef, itemRefs, galleryItems, serviceActive } =
+    useServicesImages();
+
+  const {
+    sliderRef: sliderReasonRef,
+    itemRefs: itemReasonRef,
+    reasonActive,
+    reasonsList,
+  } = useReasons();
+
   // TRANSLATIONS
   const { t } = useTranslation("home");
 
   const servicesList = t("services.servicesList", {
     returnObjects: true,
-  }) as string[];
-
-  const servicesDetails = t("services.servicesDetails", {
-    returnObjects: true,
-  }) as { title: string; description: string }[];
-
-  const order = t("reasons.order", { returnObjects: true }) as string[];
-
-  // const reasonsList = t("reasons.reasonsList", {
-  //   returnObjects: true,
-  // }) as Record<string, string>;
+  }) as Record<string, string>[];
 
   // STATES
-
-  const [active, setActive] = useState(2);
 
   return (
     <>
@@ -70,23 +65,41 @@ export default function Home() {
                 <li
                   key={i}
                   className={`${s.service} u--flex-column ${
-                    i === active ? s.serviceActive : ""
+                    i === serviceActive ? s.serviceActive : ""
                   }`}
                 >
                   <span className={`${s.serviceNumber} u--light-text`}>{`/0${
                     i + 1
                   }`}</span>
-                  <span className={s.serviceLabel}>{item}</span>
+                  <span className={s.serviceLabel}>{item.label}</span>
                 </li>
               ))}
             </ul>
             {/* IMAGES SLIDER*/}
-            <Slider initial={active} onActiveChange={setActive} />
+            <div className={s.slider} ref={sliderRef}>
+              {galleryItems.map((item, idx) => (
+                <div
+                  key={item.id}
+                  ref={(el) => {
+                    itemRefs.current[idx] = el;
+                  }}
+                  className={s.item}
+                >
+                  <ResponsiveImage
+                    name={item.name}
+                    alt={item.alt}
+                    preset="card"
+                    className={s.card}
+                  />
+                </div>
+              ))}
+            </div>
+
             <div className={`${s.servicesDetails} u--flex-column`}>
               <div className={`${s.detailsBox} u--flex-column`}>
-                <h4>{servicesDetails[active].title}</h4>
+                <h4>{servicesList[serviceActive].title}</h4>
                 <p className="u--paragraph">
-                  {servicesDetails[active].description}
+                  {servicesList[serviceActive].description}
                 </p>
               </div>
             </div>
@@ -112,35 +125,34 @@ export default function Home() {
             </div>
 
             <div className={`${s.reasonsList} u--flex-row`}>
-              {order.map((key) => {
-                const Icon = reasonsIcons[key as keyof typeof reasonsIcons];
-                const label = t(`reasons.labels.${key}`);
-                return <SmallButton text={label} icon={<Icon />} />;
+              {reasonsList.map((item, index) => {
+                return (
+                  <SmallButton
+                    text={item.label}
+                    active={reasonActive === index}
+                    icon={reasonsIcons[index]}
+                  />
+                );
               })}
             </div>
-            {/* <ContentBox
-              childrenAside={
-                <>
-                  <div className={c.statIcon}>
-                    <StatsIcon />
+
+            {/* REASONS SLIDER*/}
+            <div className={s.slider} ref={sliderReasonRef}>
+              {reasonsList.map((item, index) => (
+                <div
+                  key={item.id}
+                  ref={(el) => {
+                    itemReasonRef.current[index] = el;
+                  }}
+                  className={s.item}
+                >
+                  <div className={s.reasonBox}>
+                    <div>{reasonsIcons[index]}</div>
+                    <p>{item.description}</p>
                   </div>
-                  <div className={c.details}>
-                    <p className="u--light-text">Clientes Satisfechos</p>
-                    <p>+10</p>
-                  </div>
-                </>
-              }
-              childrenList={
-                <>
-                  <div className={c.reasonIcon}>
-                    <PuzzleIcon />
-                  </div>
-                  <p>{reasonsList[reasonActive]}</p>
-                </>
-              }
-              count={5}
-              active={3}
-            /> */}
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>

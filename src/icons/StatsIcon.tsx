@@ -19,7 +19,7 @@ export default function statsIcon() {
         <path
           d="M4 698C9.04538 666.177 42.9215 674.634 75.9798 666.177C117.968 655.435 88.6902 585.843 152.478 585.843C202.211 585.843 200.433 541.448 217.347 500.323C237.529 451.254 260.601 376.187 329.427 431.16C380.773 472.171 374.771 279.652 417 269"
           stroke="black"
-          stroke-width="8"
+          strokeWidth="8"
         />
       </mask>
       <g mask="url(#mask0_117_33)">
@@ -30,7 +30,7 @@ export default function statsIcon() {
       <path
         d="M417 268.519C459.904 257.151 429.987 183.504 495.165 183.504C545.982 183.504 544.165 136.522 561.448 93"
         stroke="#B8B8B8"
-        stroke-width="8"
+        strokeWidth="8"
       />
       <g filter="url(#filter1_df_117_33)">
         <circle cx="417" cy="269" r="12" fill="#5968B2" />
@@ -43,9 +43,9 @@ export default function statsIcon() {
           width="788"
           height="788"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feBlend
             mode="normal"
             in="SourceGraphic"
@@ -64,9 +64,9 @@ export default function statsIcon() {
           width="66"
           height="66"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -110,8 +110,8 @@ export default function statsIcon() {
           y2="654.35"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#5968B2" />
-          <stop offset="1" stop-color="#F441A5" />
+          <stop stopColor="#5968B2" />
+          <stop offset="1" stopColor="#F441A5" />
         </linearGradient>
       </defs>
     </svg>

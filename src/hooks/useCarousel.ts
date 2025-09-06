@@ -1,6 +1,6 @@
 // hooks/useCarousel.ts
 import { useEffect, useRef, useState, useCallback } from "react";
-import s from "../assets/styles/components/slider.module.css";
+import s from "../assets/styles/pages/home.module.css";
 
 type Options = { initial?: number; onChange?: (index: number) => void };
 

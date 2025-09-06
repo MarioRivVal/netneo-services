@@ -15,33 +15,36 @@
   "services": {
     "contentTitle6": "// Servizi__",
     "title3": "Cosa facciamo per te. Trasformiamo <pink>idee</pink> in <blue>soluzioni</blue>  digitali",
-    "servicesList": ["Design", "App", "Siti Web", "IA", "SEO"],
-    "imgAlts": {
-      "design": "Design UI/UX sullo schermo",
-      "web": "Sito web mostrato su un portatile",
-      "app": "Applicazione mobile in uso",
-      "ia": "Interfaccia con intelligenza artificiale",
-      "seo": "Immagine con testo SEO"
-    },
-    "servicesDetails": [
+    "servicesList": [
       {
+        "label": "Design",
+        "imgAlt": "Design UI/UX sullo schermo",
         "title": "Design UI/UX",
         "description": "Interfacce pulite, usabilità che conquista."
       },
+
       {
-        "title": "Siti Web intelligenti",
-        "description": "Progettati per convertire, ottimizzati per distinguersi."
-      },
-      {
+        "label": "App",
+        "imgAlt": "Applicazione mobile in uso",
         "title": "App su misura",
         "description": "Funzionali, veloci e adattate alle tue esigenze."
       },
       {
+        "label": "Siti Web",
+        "imgAlt": "Sito web mostrato su un portatile",
+        "title": "Siti Web intelligenti",
+        "description": "Progettati per convertire, ottimizzati per distinguersi."
+      },
+      {
+        "label": "IA",
+        "imgAlt": "Interfaccia con intelligenza artificiale",
         "title": "IA integrata",
         "description": "Automatizza, rispondi ed evolvi con intelligenza."
       },
       {
-        "title": "SEO & Strategia",
+        "label": "SEO",
+        "imgAlt": "Immagine con testo SEO",
+        "title": "SEO & strategia",
         "description": "Perché ti trovino, ti scelgano e ti ricordino."
       }
     ],
@@ -53,20 +56,27 @@
     "paragraph": "In Netneo non facciamo le solite cose. Progettiamo soluzioni originali, senza modelli, senza fretta, senza fumo. Ti ascoltiamo, creiamo con te e siamo lì anche dopo. Così lavoriamo, così ci distinguiamo.",
     "btnLight": "Iniziamo",
     "btnDark": "Ho delle domande",
-    "order": ["puzzle", "heart", "focus", "trend", "users"],
-    "labels": {
-      "puzzle": "su misura",
-      "heart": "umano",
-      "focus": "originale",
-      "trend": "impegno",
-      "users": "accompagnamento"
-    },
-    "reasonsList": {
-      "custom": "Ogni progetto parte da zero. Niente modelli riciclati o sistemi generici: solo idee uniche che riflettono la tua essenza e il tuo brand.",
-      "human": "Il rapporto è diretto, vicino e professionale. Parliamo con te, ascoltiamo, proponiamo. Lavoriamo come persone, non come robot.",
-      "original": "Niente siti web grigi o cloni senza anima. Progettiamo esperienze visive che si distinguono, connettono e ti rendono memorabile.",
-      "commitment": "Il tuo investimento ha un ritorno. I nostri prezzi riflettono il valore, non solo le ore. Ciò che consegniamo, lo supportiamo.",
-      "support": "Dopo il lancio, restiamo con te. Ci prendiamo cura del tuo sito o della tua app affinché funzioni, evolva e non ti dia mai mal di testa."
-    }
+    "reasonList": [
+      {
+        "label": "su misura",
+        "description": "Ogni progetto parte da zero. Niente modelli riciclati o sistemi generici: solo idee uniche che riflettono la tua essenza e il tuo brand."
+      },
+      {
+        "label": "umano",
+        "description": "Il rapporto è diretto, vicino e professionale. Parliamo con te, ascoltiamo e proponiamo. Lavoriamo come persone, non come robot."
+      },
+      {
+        "label": "originale",
+        "description": "Niente siti web grigi o cloni senza anima. Progettiamo esperienze visive che si distinguono, connettono e ti rendono memorabile."
+      },
+      {
+        "label": "impegno",
+        "description": "Il tuo investimento ha un ritorno. I nostri prezzi riflettono il valore, non solo le ore. Ciò che consegniamo, lo supportiamo."
+      },
+      {
+        "label": "accompagnamento",
+        "description": "Dopo il lancio, restiamo con te. Ci prendiamo cura del tuo sito o della tua app affinché funzioni, evolva e non ti dia mai mal di testa."
+      }
+    ]
   }
 }
