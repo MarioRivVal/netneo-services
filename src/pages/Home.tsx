@@ -130,14 +130,21 @@ export default function Home() {
                   <SmallButton
                     text={item.label}
                     active={reasonActive === index}
-                    icon={reasonsIcons[index]}
+                    Icon={
+                      reasonActive === index
+                        ? reasonsIcons[index].active
+                        : reasonsIcons[index].unactive
+                    }
                   />
                 );
               })}
             </div>
 
             {/* REASONS SLIDER*/}
-            <div className={s.slider} ref={sliderReasonRef}>
+            <div
+              className={`${s.slider} ${s.reasonSlider}`}
+              ref={sliderReasonRef}
+            >
               {reasonsList.map((item, index) => (
                 <div
                   key={item.id}
@@ -147,8 +154,12 @@ export default function Home() {
                   className={s.item}
                 >
                   <div className={s.reasonBox}>
-                    <div>{reasonsIcons[index]}</div>
-                    <p>{item.description}</p>
+                    <div className={s.reasonIcon}>
+                      {reasonActive === index
+                        ? reasonsIcons[index].active
+                        : reasonsIcons[index].unactive}
+                    </div>
+                    <p className={s.reasonParagraph}>{item.description}</p>
                   </div>
                 </div>
               ))}
