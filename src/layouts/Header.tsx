@@ -27,8 +27,7 @@ export default function Header({ scope }: HeaderProps) {
       <div className={s.ImgBox}>
         <ResponsiveImage
           name={`home/${scope}`}
-          alt={t(`${scope}.imgAlt`, { defaultValue: "Imagen de cabecera" })}
-          preset="header"
+          alt={t(`${scope}.imgAlt`)}
           priority
           className={s.headerImg}
         />

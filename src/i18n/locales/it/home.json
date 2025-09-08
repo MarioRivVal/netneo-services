@@ -56,6 +56,7 @@
     "paragraph": "In Netneo non facciamo le solite cose. Progettiamo soluzioni originali, senza modelli, senza fretta, senza fumo. Ti ascoltiamo, creiamo con te e siamo lì anche dopo. Così lavoriamo, così ci distinguiamo.",
     "btnLight": "Iniziamo",
     "btnDark": "Ho delle domande",
+    "stats": "Clienti soddisfatti",
     "reasonList": [
       {
         "label": "su misura",
@@ -76,6 +77,32 @@
       {
         "label": "accompagnamento",
         "description": "Dopo il lancio, restiamo con te. Ci prendiamo cura del tuo sito o della tua app affinché funzioni, evolva e non ti dia mai mal di testa."
+      }
+    ]
+  },
+  "projects": {
+    "contentTitle6": "// Progetti__",
+    "title3": "<blue>Esempio</blue> di alcuni dei nostri <pink>progetti</pink>",
+    "projectsList": [
+      {
+        "title": "by Carla Herrero",
+        "description": "Sito web per un brand specializzato in branding, social media e web design. Mostra i suoi servizi e progetti con un design visivo, dinamico e facile da aggiornare.",
+        "imgAlt": "Screenshot mobile del sito web 'by Carla Herrero'"
+      },
+      {
+        "title": "RDA Padel Academy",
+        "description": "Progetto digitale che dà visibilità alla filosofia, ai team e agli eventi del brand con un'immagine solida e moderna, includendo sezioni modificabili dal cliente.",
+        "imgAlt": "Screenshot tablet del sito web 'RDA Padel Academy'"
+      },
+      {
+        "title": "El Whoper",
+        "description": "El Whoper è un sito web con uno stile unico e 100% originale. Progettato per un illustratore e designer, riflette la sua essenza creativa e professionale. Il suo obiettivo: mostrare i suoi servizi in modo visivo e attrarre nuovi clienti.",
+        "imgAlt": "Screenshot desktop del sito web 'El Whoper'"
+      },
+      {
+        "title": "Student's MG",
+        "description": "Un'app che consente al nostro cliente di organizzare e controllare facilmente i pagamenti degli studenti per trimestre. Conserva le informazioni in modo sicuro e genera fatture pronte per la stampa ogni tre mesi. Uno strumento pratico e semplice per mantenere sempre in ordine i propri registri.",
+        "imgAlt": "Screenshot desktop dell'app 'Student's MG'"
       }
     ]
   }

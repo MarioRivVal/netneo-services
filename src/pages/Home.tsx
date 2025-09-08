@@ -9,6 +9,7 @@ import StatsIcon from "../icons/StatsIcon";
 import ResponsiveImage from "../components/ResponsiveImage";
 import useServicesImages from "../hooks/components/useServicesImages";
 import useReasons from "../hooks/components/useReasons";
+import ProjectCards from "../components/ProjectCards";
 
 export default function Home() {
   const { sliderRef, itemRefs, galleryItems, serviceActive } =
@@ -88,8 +89,8 @@ export default function Home() {
                   <ResponsiveImage
                     name={item.name}
                     alt={item.alt}
-                    preset="card"
                     className={s.card}
+                    priority={false}
                   />
                 </div>
               ))}
@@ -98,7 +99,7 @@ export default function Home() {
             <div className={`${s.servicesDetails} u--flex-column`}>
               <div className={`${s.detailsBox} u--flex-column`}>
                 <h4>{servicesList[serviceActive].title}</h4>
-                <p className="u--paragraph">
+                <p className="u--paragraph u--text-centered">
                   {servicesList[serviceActive].description}
                 </p>
               </div>
@@ -119,7 +120,7 @@ export default function Home() {
                 <StatsIcon />
               </div>
               <div className={s.details}>
-                <p className="u--light-text">Clientes Satisfechos</p>
+                <p className="u--light-text">{t("reasons.stats")}</p>
                 <p>+10</p>
               </div>
             </div>
@@ -164,6 +165,28 @@ export default function Home() {
                 </div>
               ))}
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* PROJECTS SECTIONS */}
+      <section className="section">
+        <div className="container">
+          <div className="title-box">
+            <h6>{t("projects.contentTitle6")}</h6>
+            <h3>
+              <Trans
+                i18nKey={`projects.title3`}
+                t={t}
+                components={{
+                  blue: <span className="u--blue-text u--bold" />,
+                  pink: <span className="u--pink-text" />,
+                }}
+              />
+            </h3>
+          </div>
+          <div className={s.projectsGrid}>
+            <ProjectCards />
           </div>
         </div>
       </section>

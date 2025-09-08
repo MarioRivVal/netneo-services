@@ -56,6 +56,7 @@
     "paragraph": "At Netneo we don't do the usual. We design original solutions, without templates, without rush, without smoke. We listen to you, create with you, and we're there afterwards. That's how we work, that's how we stand out.",
     "btnLight": "Let's get started",
     "btnDark": "I have questions",
+    "stats": "Satisfied customers",
     "reasonList": [
       {
         "label": "custom-made",
@@ -76,6 +77,32 @@
       {
         "label": "support",
         "description": "After the launch, we continue with you. We take care of your website or app so that it works, evolves, and never gives you headaches."
+      }
+    ]
+  },
+  "projects": {
+    "contentTitle6": "// Projects__",
+    "title3": "<blue>Example</blue> of some of our <pink>projects</pink>",
+    "projectsList": [
+      {
+        "title": "by Carla Herrero",
+        "description": "Website for a brand specializing in branding, social media, and web design. It showcases her services and projects with a visual, dynamic, and easy-to-update design.",
+        "imgAlt": "Mobile screenshot of the website 'by Carla Herrero'"
+      },
+      {
+        "title": "RDA Padel Academy",
+        "description": "Digital project that gives visibility to the brand's philosophy, teams, and events with a solid and modern image, including sections editable by the client.",
+        "imgAlt": "Tablet screenshot of the website 'RDA Padel Academy'"
+      },
+      {
+        "title": "El Whoper",
+        "description": "El Whoper is a website with a unique and 100% original style. Designed for an illustrator and designer, it reflects his creative and professional essence. Its goal: to showcase his services visually and attract new clients.",
+        "imgAlt": "Desktop screenshot of the website 'El Whoper'"
+      },
+      {
+        "title": "Student's MG",
+        "description": "An app that allows our client to easily organize and control student payments by quarters. It securely stores information and generates ready-to-print invoices every three months. A practical and simple tool to always keep records in order.",
+        "imgAlt": "Desktop screenshot of the app 'Student's MG'"
       }
     ]
   }

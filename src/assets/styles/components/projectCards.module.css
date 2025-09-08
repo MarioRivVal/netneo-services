@@ -1,0 +1,66 @@
+.card {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  box-shadow: var(--light-shadow);
+  border-radius: 2rem;
+}
+
+.imgBox {
+  width: 100%;
+  height: 100%;
+  border-radius: 2rem;
+  display: flex;
+  justify-content: center;
+  background-position: center;
+  background-size: cover;
+}
+
+.imgBox1 {
+  background-image: url("/images/utils/backgrounds/bg-red.png");
+}
+.imgBox2 {
+  background-image: url("/images/utils/backgrounds/bg-green.png");
+}
+.imgBox3 {
+  background-image: url("/images/utils/backgrounds/bg-orange.png");
+}
+.imgBox4 {
+  background-image: url("/images/utils/backgrounds/bg-violet.png");
+}
+
+.imgBox img {
+  width: 60%;
+  height: auto;
+  transform: scale(1.4);
+  object-fit: contain;
+}
+
+.infoBox {
+  padding: 4rem 2rem 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+@media (min-width: 780px) {
+  .card {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .imgBox.reverse {
+    order: 2;
+  }
+
+  .infoBox {
+    padding: 2rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .infoBox {
+    padding: 2rem 4rem;
+    gap: 2rem;
+  }
+}
