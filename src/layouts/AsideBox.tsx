@@ -6,6 +6,8 @@ type AsideBoxProps = {
   directory: string;
   scope: string;
   showButtons?: boolean;
+  lightBtnTo: string;
+  darkBtnTo: string;
   reverse?: boolean;
   box?: boolean;
 };
@@ -14,6 +16,8 @@ export default function AsideBox({
   directory,
   scope,
   showButtons,
+  lightBtnTo,
+  darkBtnTo,
   reverse,
   box = false,
 }: AsideBoxProps) {
@@ -38,8 +42,16 @@ export default function AsideBox({
 
         {showButtons && (
           <div className={`${s.btnsBox} u--flex-row`}>
-            <GradientButton text={t(`${scope}.btnLight`)} variant="light" />
-            <GradientButton text={t(`${scope}.btnDark`)} variant="dark" />
+            <GradientButton
+              href={lightBtnTo}
+              text={t(`${scope}.btnLight`)}
+              variant="light"
+            />
+            <GradientButton
+              href={darkBtnTo}
+              text={t(`${scope}.btnDark`)}
+              variant="dark"
+            />
           </div>
         )}
       </div>

@@ -1,18 +1,18 @@
 import s from "../assets/styles/layouts/desktopNav.module.css";
 import NetneoIcon from "../icons/NetneoIcon";
 import TextIcon from "../icons/TextIcon";
-import { NavLink, Link } from "react-router-dom";
-import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
+// import { useTranslation } from "react-i18next";
 
 export default function DesktopNav() {
-  const { t } = useTranslation("nav");
+  // const { t } = useTranslation("nav");
   return (
     <nav className={s.navigation}>
       <Link to="/" aria-label="Go home">
         <NetneoIcon />
       </Link>
 
-      <ul className={s.list}>
+      {/* <ul className={s.list}>
         <li>
           <NavLink
             to="/"
@@ -63,7 +63,7 @@ export default function DesktopNav() {
             {t("contact")}
           </NavLink>
         </li>
-      </ul>
+      </ul> */}
 
       <Link to="/" className={s.logoText} aria-label="Go home">
         <TextIcon />

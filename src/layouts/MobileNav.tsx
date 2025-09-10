@@ -1,21 +1,22 @@
-import { useState } from "react";
-import { NavLink, Link } from "react-router-dom";
+// import { useState } from "react";
+import { Link } from "react-router-dom";
 import s from "../assets/styles/layouts/mobileNav.module.css";
 import NetneoIcon from "../icons/NetneoIcon";
 import TextIcon from "../icons/TextIcon";
-import { useTranslation } from "react-i18next";
+// import { useTranslation } from "react-i18next";
 
 export default function MobileNav() {
-  const [isNavActive, setIsNavActive] = useState(false);
-  const { t } = useTranslation("nav");
+  // const [isNavActive, setIsNavActive] = useState(false);
+  // const { t } = useTranslation("nav");
 
-  const handleCheckboxChange = () => {
-    setIsNavActive(!isNavActive);
-  };
+  // const handleCheckboxChange = () => {
+  //   setIsNavActive(!isNavActive);
+  // };
 
   return (
     <>
-      <div className={`${s.navigation} ${isNavActive ? s.active : ""}`}>
+      <div className={`${s.navigation}`}>
+        {/* <div className={`${s.navigation} ${isNavActive ? s.active : ""}`}> */}
         <div className={s.logos}>
           <Link to="/" aria-label="Go home" className={s.logoNetneo}>
             <NetneoIcon />
@@ -24,7 +25,7 @@ export default function MobileNav() {
             <TextIcon />
           </Link>
         </div>
-        <div>
+        {/* <div>
           <div
             className={s.button}
             role="button"
@@ -88,7 +89,7 @@ export default function MobileNav() {
               </li>
             </ul>
           </nav>
-        </div>
+        </div> */}
       </div>
     </>
   );

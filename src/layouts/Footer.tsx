@@ -40,7 +40,11 @@ export default function Footer() {
 
         <div className={`${s.cta} u--flex-row`}>
           <p className="u--paragraph">{t("ctaLabel")}</p>
-          <GradientButton text={t("ctaButton")} variant="dark" />
+          <GradientButton
+            text={t("ctaButton")}
+            variant="dark"
+            href="https://wa.me/34642469683"
+          />
         </div>
 
         <div className={`${s.footerContent} u--flex-column`}>

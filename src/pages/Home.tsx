@@ -1,5 +1,5 @@
 import s from "../assets/styles/pages/home.module.css";
-import as from "../assets/styles/layouts/asideBox.module.css";
+// import as from "../assets/styles/layouts/asideBox.module.css";
 import GradientButton from "../components/GradientButton";
 import { Trans, useTranslation } from "react-i18next";
 import { reasonsIcons } from "../content/icons";
@@ -46,6 +46,8 @@ export default function Home() {
           directory="home"
           scope="header"
           showButtons={true}
+          lightBtnTo="https://wa.me/34642469683"
+          darkBtnTo="https://wa.me/34642469683"
           reverse={true}
           box={true}
         />
@@ -112,7 +114,7 @@ export default function Home() {
               </div>
             </div>
 
-            <GradientButton text={t("services.btnDark")} variant="dark" />
+            <GradientButton to="" text={t("services.btnDark")} variant="dark" />
           </div>
         </div>
       </section>
@@ -120,7 +122,13 @@ export default function Home() {
       {/*  REASONS SECTION */}
       <section className="section u--bg-gray">
         <div className={s.container}>
-          <AsideBox directory="home" scope={"reasons"} showButtons={true} />
+          <AsideBox
+            directory="home"
+            scope={"reasons"}
+            showButtons={true}
+            lightBtnTo="https://wa.me/34642469683"
+            darkBtnTo="https://wa.me/34642469683"
+          />
           <div className={`${s.box} u--mw-centered u--flex-column`}>
             <div className={s.stats}>
               <div className={s.statIcon}>
@@ -195,10 +203,10 @@ export default function Home() {
           <div className={s.projectsGrid}>
             <ProjectCards />
           </div>
-          <div className={`${as.btnsBox} u--flex-row`}>
+          {/* <div className={`${as.btnsBox} u--flex-row`}>
             <GradientButton text={t("projects.btnLight")} variant="light" />
             <GradientButton text={t("projects.btnDark")} variant="dark" />
-          </div>
+          </div> */}
         </div>
       </section>
 
@@ -263,6 +271,8 @@ export default function Home() {
         <div className="container">
           <AsideBox
             directory="home"
+            darkBtnTo=""
+            lightBtnTo=""
             scope="testimonials"
             reverse={true}
             box={true}
@@ -313,10 +323,13 @@ export default function Home() {
           <AsideBox
             directory="home"
             scope="curriculum"
+            showButtons
+            darkBtnTo="https://netneoportfolio.netlify.app/"
+            lightBtnTo="/docs/CV_Mario_Rivera_esp_digital.pdf"
             reverse={true}
             box={true}
           />
-          <div className={`${s.stats}`}>
+          {/* <div className={`${s.stats}`}>
             <div className={s.curriculumCta}>
               <p>{t("curriculum.btnTitle")}</p>
               <div className={s.btnsBox}>
@@ -327,7 +340,7 @@ export default function Home() {
                 />
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
     </>

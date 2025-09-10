@@ -1,6 +1,6 @@
 import s from "../assets/styles/components/projectCards.module.css";
 import ResponsiveImage from "./ResponsiveImage";
-import GradientButton from "./GradientButton";
+// import GradientButton from "./GradientButton";
 import { projectImgs } from "../content/images";
 import { useTranslation } from "react-i18next";
 
@@ -32,7 +32,7 @@ export default function ProjectCards() {
           <div className={s.infoBox}>
             <h4>{item.title}</h4>
             <p className="u--paragraph u--text-centered">{item.description}</p>
-            <GradientButton text="Online" variant="light" />
+            {/* <GradientButton to="" text="Online" variant="light" /> */}
           </div>
         </div>
       ))}
