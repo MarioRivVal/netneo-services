@@ -17,7 +17,7 @@ export default function useCarousel(itemsLength: number, opts: Options = {}) {
     return window.innerWidth <= 1280;
   });
 
-  const itemRefs = useRef<(HTMLDivElement | null)[]>([]);
+  const itemRef = useRef<(HTMLDivElement | null)[]>([]);
   const sliderRef = useRef<HTMLDivElement | null>(null);
 
   // Ajustes dependientes del viewport
@@ -26,7 +26,7 @@ export default function useCarousel(itemsLength: number, opts: Options = {}) {
   const CENTER_SCALE = 1.12;
 
   const loadShow = useCallback(() => {
-    const items = itemRefs.current.filter(
+    const items = itemRef.current.filter(
       (el): el is HTMLDivElement => el !== null
     );
     if (!items.length) return;
@@ -134,5 +134,5 @@ export default function useCarousel(itemsLength: number, opts: Options = {}) {
     return () => controller.abort();
   }, [itemsLength]);
 
-  return { sliderRef, itemRefs, active, setActive, isLargeView };
+  return { sliderRef, itemRef, active, setActive, isLargeView };
 }

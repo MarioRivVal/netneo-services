@@ -7,7 +7,7 @@ type AsideBoxProps = {
   scope: string;
   showButtons?: boolean;
   reverse?: boolean;
-  box?:boolean
+  box?: boolean;
 };
 
 export default function AsideBox({
@@ -15,12 +15,12 @@ export default function AsideBox({
   scope,
   showButtons,
   reverse,
-  box= false
+  box = false,
 }: AsideBoxProps) {
   const { t } = useTranslation(directory);
 
   return (
-    <aside className={`${s.aside} ${box ? s.boxStyle : ""} u--mw-centered`}>
+    <aside className={`${s.aside} ${box ? s.boxStyle : ""}  u--mw-centered`}>
       <h6>{t(`${scope}.contentTitle6`)}</h6>
       <h3 className={`${reverse ? s.titleReverse : ""} `}>
         <Trans
@@ -37,7 +37,7 @@ export default function AsideBox({
         <p className="u--paragraph">{t(`${scope}.paragraph`)}</p>
 
         {showButtons && (
-          <div className={`${s.btnsBox} u--flex-column`}>
+          <div className={`${s.btnsBox} u--flex-row`}>
             <GradientButton text={t(`${scope}.btnLight`)} variant="light" />
             <GradientButton text={t(`${scope}.btnDark`)} variant="dark" />
           </div>

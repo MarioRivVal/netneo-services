@@ -57,7 +57,7 @@
     "btnLight": "Let's get started",
     "btnDark": "I have questions",
     "stats": "Satisfied customers",
-    "reasonList": [
+    "reasonsList": [
       {
         "label": "custom-made",
         "description": "Each project starts from scratch. No recycled templates or generic systems: only unique ideas that reflect your essence and your brand."
@@ -104,6 +104,80 @@
         "description": "An app that allows our client to easily organize and control student payments by quarters. It securely stores information and generates ready-to-print invoices every three months. A practical and simple tool to always keep records in order.",
         "imgAlt": "Desktop screenshot of the app 'Student's MG'"
       }
+    ],
+    "btnDark": "I want my Website",
+    "btnLight": "I want my App"
+  },
+  "partners": {
+    "contentTitle6": "// Partners__",
+    "title3": "They <blue>choose us</blue> from many <pink>sectors</pink>",
+    "partnersList": [
+      {
+        "imgAlt": "People with shopping bags in a mall, symbol of clothing stores, fashion and local shops",
+        "category": "Local business",
+        "subcategories": ["Clothing stores", "Independent brands", "Bakeries"]
+      },
+      {
+        "imgAlt": "Smartphone recording a content creator outdoors, representing influencers, marketing and digital startups",
+        "category": "Creative & Digital",
+        "subcategories": ["Marketing", "Startups", "E-commerce"]
+      },
+      {
+        "imgAlt": "Young technician repairing a device, representing trades, freelancers and professional services",
+        "category": "Professionals & Services",
+        "subcategories": ["Technicians", "Freelancers", "Events"]
+      },
+      {
+        "imgAlt": "Gourmet burger in hand, representing the restaurant sector, delivery, cafés and bars",
+        "category": "Restaurants",
+        "subcategories": ["Delivery", "Cafés", "Bars"]
+      },
+      {
+        "imgAlt": "Model house with keys on a table, representing the real estate and renovations sector",
+        "category": "Real Estate & Construction",
+        "subcategories": ["Real estate agencies", "Agents", "Renovations"]
+      },
+      {
+        "imgAlt": "Young people playing padel on a court, representing academies, courses and educational activities",
+        "category": "Education & Training",
+        "subcategories": ["Schools", "Online courses", "Coaching"]
+      },
+      {
+        "imgAlt": "Man training in a gym, example of the fitness, clinics and personal wellness sector",
+        "category": "Wellness & Health",
+        "subcategories": ["Hair salons", "Clinics", "Therapies"]
+      }
     ]
+  },
+  "testimonials": {
+    "contentTitle6": "// Testimonials__",
+    "title3": "They say we <pink>create</pink><blue> magic.</blue> And the numbers don't lie",
+    "paragraph": "Each client has their story, and the results back it up. Here we show you what they say about us… and what we achieved together.",
+    "stats": "Satisfaction rate",
+    "testimonialsList": [
+      {
+        "profession": "Education",
+        "name": "Pablo García Calvo",
+        "quote": "As a teacher, I couldn't be happier with this application! It makes keeping track of student records and payments very easy."
+      },
+      {
+        "profession": "Digital Marketing",
+        "name": "Carla Herrero",
+        "quote": "Mario! Highly recommended; I have collaborated with him and we achieved the best results. He is the best in the field."
+      },
+      {
+        "profession": "Artistic / Medicine",
+        "name": "Felix El Whoper",
+        "quote": "I love that it automatically generates invoices every three months, saving me the time of doing it manually one by one. It's like having a personal assistant!"
+      }
+    ]
+  },
+  "curriculum": {
+    "contentTitle6": "// Curriculum__",
+    "title3": "Are you <blue>recruiting</blue><pink> talent?</pink>",
+    "paragraph": "I am also open to collaborating with companies, agencies, or teams that share a clear vision: doing things right. If you are looking for someone with initiative, real experience in development and design, and who understands technology with purpose, here I am.",
+    "btnTitle": "Do you want to know me better?",
+    "btnLight": "Download CV",
+    "btnDark": "My portfolio"
   }
 }

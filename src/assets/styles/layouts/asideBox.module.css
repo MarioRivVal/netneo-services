@@ -17,7 +17,9 @@
 }
 
 .btnsBox {
+  flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
   gap: var(--g-small);
 }
 
@@ -58,6 +60,10 @@
     order: 1;
     text-align: end;
     justify-self: end;
+  }
+
+  .btnsBox {
+    justify-content: initial;
   }
 }
 @media (min-width: 1280px) {
