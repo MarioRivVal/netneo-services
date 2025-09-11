@@ -7,14 +7,14 @@
     "imgAlt": "Mano con teléfono en la mano",
     "imgName": "home",
     "contentTitle6": "// Comencemos_",
-    "title3": "Tu  <blue>presencia</blue> digital <pink>empieza</pink> aqui",
+    "title3": "Tu  <blue>presencia</blue> digital <pink>empieza</pink> aquí",
     "paragraph": "En Netneo combinamos diseño, desarrollo e inteligencia artificial para crear experiencias digitales únicas. Webs, apps e ideas que funcionan, se ven bien y representan lo que tu marca es. Nada estándar, todo a tu medida.",
     "btnDark": "Quiero mi Web",
     "btnLight": "Quiero mi App"
   },
   "services": {
     "contentTitle6": "// Servicios__",
-    "title3": "Lo que hacemnos por ti. Transformamos <pink>ideas</pink> en <blue>soluciones</blue> digitales",
+    "title3": "Lo que hacemos por ti. Transformamos <pink>ideas</pink> en <blue>soluciones</blue> digitales",
     "servicesList": [
       {
         "label": "Diseño",
@@ -53,7 +53,7 @@
   },
   "reasons": {
     "contentTitle6": "// Eligenos__",
-    "title3": "¿Por que <blue>elegir</blue> netneo es la <pink>mejor</pink> opción?",
+    "title3": "¿Por qué <blue>elegir</blue> netneo es la <pink>mejor</pink> opción?",
     "paragraph": "En Netneo no hacemos lo de siempre. Diseñamos soluciones originales, sin plantillas, sin prisas, sin humo. Te escuchamos, creamos contigo y estamos ahí después. Así trabajamos, así nos diferenciamos.",
     "btnLight": "Comencemos",
     "btnDark": "Tengo preguntas",
@@ -83,7 +83,7 @@
   },
   "projects": {
     "contentTitle6": "// Proyectos__",
-    "title3": "<blue>Ejemplo</blue> De algunos nuestros <pink>proyectos</pink>",
+    "title3": "<blue>Ejemplo</blue> de algunos de nuestros <pink>proyectos</pink>",
     "projectsList": [
       {
         "title": "by Carla Herrero",
@@ -156,7 +156,7 @@
   },
   "testimonials": {
     "contentTitle6": "// Testimonios__",
-    "title3": "Dicen que <pink>hacemos</pink><blue> magia.</blue> Y los numeros no mientes",
+    "title3": "Dicen que <pink>hacemos</pink><blue> magia.</blue> Y los números no mienten",
     "paragraph": "Cada cliente tiene su historia, y los resultados la respaldan. Aquí te mostramos lo que dicen de nosotros… y lo que logramos juntos.",
     "stats": "Tasa de satisfacción",
     "testimonialsList": [
@@ -171,15 +171,15 @@
         "quote": "Mario! Súper recomendable; he colaborado con él y hemos obtenido los mejores resultados. Es el mejor en la materia"
       },
       {
-        "profession": "Artistico / Medicina",
-        "name": "Felix",
-        "quote": "Me entregaron una web clara, moderna y hecha a mi medida. Lo mejor: siempre estuvieron disponibles para ayudar y ajustar detalles"
+        "profession": "Artístico / Medicina",
+        "name": "Félix González",
+        "quote": "Tanto entusiasmo en tener tu propia web pondrá 'netneo' en desarrollarla. Trabajo y dedicación máximas para que el resultado sea el que tú deseas, el que más se ajuste a tu negocio. Te aconsejarán para que tu proyecto obtenga la visibilidad que se merece. Todo un acierto si confias en 'netNeo'."
       }
     ]
   },
   "curriculum": {
     "contentTitle6": "// Curriculum__",
-    "title3": "¿Estas <blue> reclutando</blue><pink> talento?</pink>",
+    "title3": "¿Estás <blue> reclutando</blue><pink> talento?</pink>",
     "paragraph": "También estoy abierto a colaborar con empresas, agencias o equipos que compartan una visión clara: hacer las cosas bien. Si buscas a alguien con iniciativa, experiencia real en desarrollo y diseño, y que entienda la tecnología con propósito, aqui estoy.",
     "btnTitle": "¿Quieres conocerme mejor?",
     "btnLight": "Descarga CV",
