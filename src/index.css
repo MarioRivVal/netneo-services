@@ -59,12 +59,7 @@
 }
 
 html {
-  font-size: 46.875%;
-}
-
-html,
-body {
-  height: 100%;
+  font-size: 62.5%;
 }
 
 body {
@@ -106,9 +101,10 @@ h2 {
 }
 h3 {
   font-family: var(--font-title);
-  font-size: 4rem;
+  /* font-size: 5rem; */
+  font-size: clamp(5rem, 6vw, 9rem);
   font-weight: 400;
-  line-height: 1;
+  line-height: 0.9;
 }
 h4 {
   font-family: var(--font-title);
@@ -167,7 +163,7 @@ picture {
 /* ----------------------------------------- */
 
 .u--paragraph {
-  font-size: 2.2rem;
+  font-size: 2.4rem;
   font-family: var(--font-paragraph);
 }
 
@@ -213,47 +209,37 @@ picture {
 }
 
 @media (min-width: 768px) {
-  html {
-    font-size: 50%;
-  }
   .main,
   .section {
     padding: var(--p-large) var(--p-medium);
-  }
-  /* h3 {
-    font-size: 5rem;
-  } */
-}
-
-@media (min-width: 1024px) {
-  html {
-    font-size: 56.25%;
   }
   /* h3 {
     font-size: 6rem;
   } */
 }
 
-@media (min-width: 1280px) {
-  html {
-    font-size: 62.5%;
-  }
-  /* .u--paragraph {
-    font-size: 2.6rem;
-  }
-  h3 {
+@media (min-width: 1024px) {
+  /* h3 {
     font-size: 7rem;
-    width: 80%;
+  } */
+}
+
+@media (min-width: 1280px) {
+  .u--paragraph {
+    font-size: 2.8rem;
   }
+  /* h3 {
+    font-size: 8rem;
+  } */
   h4 {
     font-size: 4rem;
   }
   h5 {
     font-size: 3.8rem;
-  } */
+  }
 }
 @media (min-width: 1440px) {
   /* h3 {
-    font-size: 8rem;
+    font-size: 9rem;
   } */
 }
