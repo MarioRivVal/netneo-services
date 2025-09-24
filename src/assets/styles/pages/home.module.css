@@ -165,7 +165,7 @@
   gap: 1rem;
   min-width: 25rem;
   height: 22rem;
-  padding: 2rem 4rem;
+  padding: 2rem;
 }
 
 .reasonIcon svg {
@@ -215,6 +215,13 @@
 .testimonialsUser span:last-child {
   font-size: 2.6rem;
   font-family: var(--font-title);
+}
+.testimonialsSlider {
+  height: 38rem;
+}
+
+.testimonialsBox {
+  height: 30rem;
 }
 
 /* CURRICULUM SECTION */
@@ -281,9 +288,6 @@
   .box {
     gap: 4rem;
   }
-  .slider {
-    height: 48rem;
-  }
 
   .reasonSlider {
     height: 26rem;
@@ -297,6 +301,10 @@
   .reasonBox {
     min-width: 35rem;
     height: 24rem;
+  }
+
+  .testimonialsBox {
+    height: 30rem;
   }
 
   .projectsGrid {

@@ -40,7 +40,7 @@ export default function Home() {
 
   return (
     <>
-      <main className="main u--bg-gray u--flex-column">
+      <main className="main u--bg-light-blue u--flex-column">
         <Header scope={"header"} />
         <AsideBox
           directory="home"
@@ -290,7 +290,7 @@ export default function Home() {
 
             {/* TESTIMONIALS SLIDER*/}
             <div
-              className={`${s.slider} ${s.reasonSlider}`}
+              className={`${s.slider} ${s.testimonialsSlider}`}
               ref={testimonialRef.sliderRef}
             >
               {testimonialRef.itemsList.map((item, index) => (
@@ -301,7 +301,7 @@ export default function Home() {
                   }}
                   className={s.item}
                 >
-                  <div className={s.reasonBox}>
+                  <div className={`${s.reasonBox} ${s.testimonialsBox}`}>
                     <div className={s.reasonIcon}></div>
                     <div className={s.testimonialsUser}>
                       <span>{item.profession}</span>

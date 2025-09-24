@@ -21,10 +21,11 @@
   --font-paragraph: "Sofia Sans Extra Condensed", sans-serif;
   --font-extra: "JetBrains Mono", monospace;
 
-  --blue: #5968b2;
-  --pink: #f441a5;
   --black: #0d0810;
   --white: #fcfcfc;
+  --pink: #f441a5;
+  --blue: #5968b2;
+  --light-blue: #e6e9f4;
 
   --gray-1: #f2f2f2;
   --gray-3: #b8b8b8;
@@ -58,7 +59,12 @@
 }
 
 html {
-  font-size: 62.5%;
+  font-size: 46.875%;
+}
+
+html,
+body {
+  height: 100%;
 }
 
 body {
@@ -137,7 +143,7 @@ picture {
 .main,
 .section {
   gap: var(--g-medium);
-  padding: var(--p-medium) var(--p-small);
+  padding: var(--g-medium) var(--p-small);
   overflow: hidden;
 }
 
@@ -182,8 +188,13 @@ picture {
   font-weight: 700;
 }
 
+/* POR ELIMINAR */
 .u--bg-gray {
   background-color: var(--gray-1);
+}
+
+.u--bg-light-blue {
+  background-color: var(--light-blue);
 }
 
 .u--flex-column {
@@ -202,23 +213,32 @@ picture {
 }
 
 @media (min-width: 768px) {
+  html {
+    font-size: 50%;
+  }
   .main,
   .section {
     padding: var(--p-large) var(--p-medium);
   }
-  h3 {
+  /* h3 {
     font-size: 5rem;
-  }
+  } */
 }
 
 @media (min-width: 1024px) {
-  h3 {
-    font-size: 6rem;
+  html {
+    font-size: 56.25%;
   }
+  /* h3 {
+    font-size: 6rem;
+  } */
 }
 
 @media (min-width: 1280px) {
-  .u--paragraph {
+  html {
+    font-size: 62.5%;
+  }
+  /* .u--paragraph {
     font-size: 2.6rem;
   }
   h3 {
@@ -230,10 +250,10 @@ picture {
   }
   h5 {
     font-size: 3.8rem;
-  }
+  } */
 }
 @media (min-width: 1440px) {
-  h3 {
+  /* h3 {
     font-size: 8rem;
-  }
+  } */
 }

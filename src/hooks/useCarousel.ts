@@ -32,7 +32,7 @@ export default function useCarousel(itemsLength: number, opts: Options = {}) {
     if (!items.length) return;
 
     const a = clamp(active, 0, items.length - 1);
-    const BASE_Z = 1000;
+    const BASE_Z = 10;
 
     for (let i = 0; i < items.length; i++) {
       const d = i - a;

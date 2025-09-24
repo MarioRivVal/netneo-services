@@ -18,9 +18,9 @@
 }
 
 .dark {
-  background-color: var(--black);
+  background-color: var(--blue);
   color: var(--white);
-  border: solid 0.2rem var(--black);
+  border: none;
 }
 
 .iconWrapper {
@@ -32,7 +32,9 @@
 }
 
 .light .iconWrapper {
-  background-color: var(--black);
+  border: 0.1rem solid transparent;
+  background: linear-gradient(var(--white), var(--white)) padding-box,
+    linear-gradient(90deg, var(--blue), var(--pink)) border-box;
 }
 
 .dark .iconWrapper {

@@ -7,10 +7,10 @@ export const homeServicesImgs = [
 ];
 
 export const projectImgs = [
-  { id: 1, label: "carlaherrero", url: "" },
-  { id: 2, label: "rdapadel", url: "" },
-  { id: 3, label: "whoper", url: "" },
-  { id: 4, label: "student" },
+  { id: 1, label: "carlaherrero", url: "https://bycarlaherrero.com/" },
+  { id: 2, label: "rdapadel", url: "https://www.rdapadel.com/" },
+  { id: 3, label: "whoper", url: "https://www.elwhopercomics.es/" },
+  { id: 4, label: "student", url: "https://students-control.netlify.app/" },
   // { id: 5, label: "wisecalories" },
 ];
 export const partnerImgs = [

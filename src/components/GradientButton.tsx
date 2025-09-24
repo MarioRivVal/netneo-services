@@ -25,7 +25,7 @@ type LinkProps = BaseProps & {
 };
 
 type AnchorProps = BaseProps & {
-  href: string; // url externa
+  href: string | undefined; // url externa
   onClick?: never;
   to?: never;
 };

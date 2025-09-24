@@ -14,7 +14,6 @@ export default function useGalleryCards(
   const itemsList = t(`${scope}.${scope}List`, {
     returnObjects: true,
   }) as Record<string, string>[];
-  console.log(itemsList);
 
   const { sliderRef, itemRef } = useCarousel(itemsList.length, {
     initial: reasonActive,

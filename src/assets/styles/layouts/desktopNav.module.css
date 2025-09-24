@@ -1,7 +1,6 @@
 .navigation {
   display: grid;
-  /* grid-template-columns: 1fr 3fr 1fr; */
-  grid-template-columns: 1fr 3fr;
+  grid-template-columns: 1fr 3fr 1fr;
   align-items: center;
   padding: var(--p-large) var(--p-medium);
   background-color: var(--gray-1);
