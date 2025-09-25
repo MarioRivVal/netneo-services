@@ -1,0 +1,24 @@
+{
+  "projectsList": [
+    {
+      "title": "by Carla Herrero",
+      "description": "Sitio para una marca especialista en branding, redes sociales y diseño web. Muestra sus servicios y proyectos con un diseño visual, dinámico y fácil de actualizar.",
+      "imgAlt": "Captura de pantalla en movil para web de 'by Carla Herrero'"
+    },
+    {
+      "title": "RDA Padel Academy",
+      "description": "Proyecto digital que da visibilidad a la filosofía, equipos y eventos a su marca con una imagen sólida y moderna, con secciones editables por el cliente.",
+      "imgAlt": "Captura de pantalla en versión pad para web de 'RDA Padel Academy'"
+    },
+    {
+      "title": "El Whoper",
+      "description": "El Whoper es una web con un estilo único y 100% original. Diseñada para un ilustrador y diseñador, refleja su esencia creativa y profesional. Su objetivo: mostrar sus servicios de forma visual y captar nuevos clientes.",
+      "imgAlt": "Captura de pantalla en versión escritorio para web de 'El Whoper'"
+    },
+    {
+      "title": "Student's MG",
+      "description": "Una app que permite a nuestro cliente organizar y controlar fácilmente los pagos de sus estudiantes por trimestres. Guarda la información de manera segura y genera facturas listas para imprimir cada tres meses. Una herramienta práctica y sencilla para mantener sus registros siempre en orden.",
+      "imgAlt": "Captura de pantalla en versión escritorio para la app de 'Student's MG'"
+    }
+  ]
+}

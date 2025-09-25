@@ -1,0 +1,90 @@
+.imgBox {
+  border-radius: 2rem;
+  display: flex;
+  justify-content: center;
+  background-position: center;
+  background-size: cover;
+}
+
+.imgBox1 {
+  background-image: url("/images/utils/backgrounds/bg-red.png");
+  width: 60%;
+  height: 70vw;
+  align-self: center;
+}
+
+.imgBox1 img {
+  transform: scale(1.8) translateX(1.5rem);
+}
+.imgBox2 {
+  background-image: url("/images/utils/backgrounds/bg-green.png");
+  width: 90%;
+  height: 45vw;
+  justify-self: flex-end;
+}
+.imgBox2 img {
+  transform: scale(1.2) translateY(-2rem);
+}
+.imgBox3 {
+  background-image: url("/images/utils/backgrounds/bg-orange.png");
+  width: 60%;
+  height: 75vw;
+  align-self: flex-end;
+}
+.imgBox3 img {
+  transform: scale(1.7);
+}
+.imgBox4 {
+  background-image: url("/images/utils/backgrounds/bg-violet.png");
+  width: 90%;
+  height: 45vw;
+}
+.imgBox4 img {
+  transform: scale(1.4);
+}
+
+.imgBox img {
+  height: auto;
+  object-fit: contain;
+}
+
+@media (min-width: 1024px) {
+  .imgBox1 {
+    background-image: url("/images/utils/backgrounds/bg-red.png");
+    width: 60%;
+    height: 80%;
+    justify-self: flex-end;
+    align-self: flex-end;
+  }
+
+  .imgBox1 img {
+    transform: scale(1.8) translateX(1.5rem);
+  }
+  .imgBox2 {
+    background-image: url("/images/utils/backgrounds/bg-green.png");
+    width: 90%;
+    height: 50%;
+    justify-self: flex-end;
+  }
+  .imgBox2 img {
+    transform: scale(1.05) translateY(-3rem);
+  }
+  .imgBox3 {
+    background-image: url("/images/utils/backgrounds/bg-orange.png");
+    width: 50%;
+    height: 70%;
+    justify-self: flex-start;
+    align-self: flex-end;
+  }
+  .imgBox3 img {
+    transform: scale(1.9);
+  }
+  .imgBox4 {
+    background-image: url("/images/utils/backgrounds/bg-violet.png");
+    width: 90%;
+    height: 45%;
+  }
+  .imgBox4 img {
+    transform: scale(1.4);
+  }
+}

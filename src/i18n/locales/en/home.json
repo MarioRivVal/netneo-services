@@ -59,23 +59,28 @@
     "stats": "Satisfied customers",
     "reasonsList": [
       {
-        "label": "custom-made",
+        "label": "Custom-made",
+        "title": "Solutions without shortcuts",
         "description": "Each project starts from scratch. No recycled templates or generic systems: only unique ideas that reflect your essence and your brand."
       },
       {
-        "label": "human",
+        "label": "Human",
+        "title": "Real collaboration",
         "description": "The treatment is direct, close, and professional. We talk with you, listen, and propose. We work as people, not as robots."
       },
       {
-        "label": "original",
+        "label": "Original",
+        "title": "Make the difference",
         "description": "No gray websites or soulless clones. We design visual experiences that stand out, connect, and make you memorable."
       },
       {
-        "label": "commitment",
+        "label": "Commitment",
+        "title": "Value and results",
         "description": "Your investment has a return. Our prices reflect value, not just hours. What we deliver, we stand behind."
       },
       {
-        "label": "support",
+        "label": "Support",
+        "title": "After the launch",
         "description": "After the launch, we continue with you. We take care of your website or app so that it works, evolves, and never gives you headaches."
       }
     ]
@@ -83,30 +88,10 @@
   "projects": {
     "contentTitle6": "// Projects__",
     "title3": "<blue>Example</blue> of some of our <pink>projects</pink>",
-    "projectsList": [
-      {
-        "title": "by Carla Herrero",
-        "description": "Website for a brand specializing in branding, social media, and web design. It showcases her services and projects with a visual, dynamic, and easy-to-update design.",
-        "imgAlt": "Mobile screenshot of the website 'by Carla Herrero'"
-      },
-      {
-        "title": "RDA Padel Academy",
-        "description": "Digital project that gives visibility to the brand's philosophy, teams, and events with a solid and modern image, including sections editable by the client.",
-        "imgAlt": "Tablet screenshot of the website 'RDA Padel Academy'"
-      },
-      {
-        "title": "El Whoper",
-        "description": "El Whoper is a website with a unique and 100% original style. Designed for an illustrator and designer, it reflects his creative and professional essence. Its goal: to showcase his services visually and attract new clients.",
-        "imgAlt": "Desktop screenshot of the website 'El Whoper'"
-      },
-      {
-        "title": "Student's MG",
-        "description": "An app that allows our client to easily organize and control student payments by quarters. It securely stores information and generates ready-to-print invoices every three months. A practical and simple tool to always keep records in order.",
-        "imgAlt": "Desktop screenshot of the app 'Student's MG'"
-      }
-    ],
-    "btnDark": "I want my Website",
-    "btnLight": "I want my App"
+    "paragraph": "Every client has their own story, and the results back it up. Here's what they say about us... and what we've achieved together.",
+
+    "btnDark": "Testimonials",
+    "btnLight": "More projects"
   },
   "partners": {
     "contentTitle6": "// Partners__",

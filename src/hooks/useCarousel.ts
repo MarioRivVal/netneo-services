@@ -21,9 +21,9 @@ export default function useCarousel(itemsLength: number, opts: Options = {}) {
   const sliderRef = useRef<HTMLDivElement | null>(null);
 
   // Ajustes dependientes del viewport
-  const BASE_SHIFT = isLargeView ? 150 : 220; // <-- aquí ya reacciona
-  const SCALE_STEP = 0.2;
-  const CENTER_SCALE = 1.12;
+  const BASE_SHIFT = isLargeView ? 150 : 200; // <-- aquí ya reacciona
+  const SCALE_STEP = 0.1;
+  const CENTER_SCALE = 1;
 
   const loadShow = useCallback(() => {
     const items = itemRef.current.filter(
@@ -38,14 +38,14 @@ export default function useCarousel(itemsLength: number, opts: Options = {}) {
       const d = i - a;
       const abs = Math.abs(d);
       const x = BASE_SHIFT * d;
-      const scale = clamp(CENTER_SCALE - SCALE_STEP * abs, 0.82, CENTER_SCALE);
+      const scale = clamp(CENTER_SCALE - SCALE_STEP * abs, 0.7, CENTER_SCALE);
 
       items[i].style.transform = `
         translate(-50%, -50%)
         translateX(${x}px)
         scale(${scale})
       `;
-      items[i].style.zIndex = String(BASE_Z - Math.round(abs * 10));
+      items[i].style.zIndex = String(BASE_Z - Math.round(abs * 1));
     }
   }, [active, BASE_SHIFT]); // 👈 se reejecuta si cambia el breakpoint
 

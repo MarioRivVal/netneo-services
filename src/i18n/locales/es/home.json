@@ -60,54 +60,42 @@
     "stats": "Clientes satisfechos",
     "reasonsList": [
       {
-        "label": "a medida",
+        "label": "A medida",
+        "title": "Soluciones sin atajos",
         "description": "Cada proyecto empieza desde cero. Nada de plantillas recicladas ni sistemas genéricos: solo ideas únicas que reflejan tu esencia y tu marca."
       },
       {
-        "label": "humano",
+        "label": "Humano",
+        "title": "Colaboración real",
+
         "description": "El trato es directo, cercano y profesional. Hablamos contigo, escuchamos, proponemos. Trabajamos como personas, no como robots."
       },
       {
-        "label": "original",
+        "label": "Original",
+        "title": "Marca la diferencia",
+
         "description": "Nada de webs grises o clones sin alma. Diseñamos experiencias visuales que destacan, conectan y te hacen recordable."
       },
       {
-        "label": "compromiso",
+        "label": "Compromiso",
+        "title": "Valor y resultados",
+
         "description": "Tu inversión tiene retorno. Nuestros precios reflejan valor, no solo horas. Lo que entregamos, lo respaldamos."
       },
       {
-        "label": "acompañamiento",
+        "label": "Acompañamiento",
+        "title": "Más allá del lanzamiento",
+
         "description": "Después del lanzamiento, seguimos contigo. Cuidamos tu web o app para que funcione, evolucione y nunca te dé dolores de cabeza."
       }
     ]
   },
   "projects": {
-    "contentTitle6": "// Proyectos__",
+    "contentTitle6": "// Lo mejor__",
     "title3": "<blue>Ejemplo</blue> de algunos de nuestros <pink>proyectos</pink>",
-    "projectsList": [
-      {
-        "title": "by Carla Herrero",
-        "description": "Sitio para una marca especialista en branding, redes sociales y diseño web. Muestra sus servicios y proyectos con un diseño visual, dinámico y fácil de actualizar.",
-        "imgAlt": "Captura de pantalla en movil para web de 'by Carla Herrero'"
-      },
-      {
-        "title": "RDA Padel Academy",
-        "description": "Proyecto digital que da visibilidad a la filosofía, equipos y eventos a su marca con una imagen sólida y moderna, con secciones editables por el cliente.",
-        "imgAlt": "Captura de pantalla en versión pad para web de 'RDA Padel Academy'"
-      },
-      {
-        "title": "El Whoper",
-        "description": "El Whoper es una web con un estilo único y 100% original. Diseñada para un ilustrador y diseñador, refleja su esencia creativa y profesional. Su objetivo: mostrar sus servicios de forma visual y captar nuevos clientes.",
-        "imgAlt": "Captura de pantalla en versión escritorio para web de 'El Whoper'"
-      },
-      {
-        "title": "Student's MG",
-        "description": "Una app que permite a nuestro cliente organizar y controlar fácilmente los pagos de sus estudiantes por trimestres. Guarda la información de manera segura y genera facturas listas para imprimir cada tres meses. Una herramienta práctica y sencilla para mantener sus registros siempre en orden.",
-        "imgAlt": "Captura de pantalla en versión escritorio para la app de 'Student's MG'"
-      }
-    ],
-    "btnDark": "Quiero mi web",
-    "btnLight": "Quiero mi app"
+    "paragraph": "Cada proyecto nace de una idea única y de una visión propia. Nuestro trabajo es transformarla en algo real y con impacto. Aquí verás resultados que hablan por sí solos y clientes que confían en lo que hacemos juntos.",
+    "btnDark": "Testimonios",
+    "btnLight": "Más proyectos"
   },
   "partners": {
     "contentTitle6": "// Partners__",

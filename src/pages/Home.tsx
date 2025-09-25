@@ -5,12 +5,12 @@ import { Trans, useTranslation } from "react-i18next";
 import { reasonsIcons } from "../content/icons";
 import Header from "../layouts/Header";
 import AsideBox from "../layouts/AsideBox";
-import SmallButton from "../components/SmallButton";
 import StatsIcon from "../icons/StatsIcon";
 import ResponsiveImage from "../components/ResponsiveImage";
 import useGalleryImages from "../hooks/components/useGalleryImages";
 import useGalleryCards from "../hooks/components/useGalleryCards";
-import ProjectCards from "../components/ProjectCards";
+// import ProjectCards from "../components/ProjectCards";
+import ProjectCardsPreview from "../components/ProjectCardsPreview";
 import { homeServicesImgs, partnerImgs } from "../content/images";
 
 type Partner = {
@@ -35,8 +35,6 @@ export default function Home() {
   const partnersList = t("partners.partnersList", {
     returnObjects: true,
   }) as Partner[];
-
-  // STATES
 
   return (
     <>
@@ -120,42 +118,17 @@ export default function Home() {
       </section>
 
       {/*  REASONS SECTION */}
-      <section className="section u--bg-gray">
+      <section className="section u--bg-light-blue">
         <div className={s.container}>
           <AsideBox
             directory="home"
             scope={"reasons"}
             showButtons={true}
+            box={true}
             lightBtnTo="https://wa.me/34642469683"
             darkBtnTo="https://wa.me/34642469683"
           />
           <div className={`${s.box} u--mw-centered u--flex-column`}>
-            <div className={s.stats}>
-              <div className={s.statIcon}>
-                <StatsIcon />
-              </div>
-              <div className={s.details}>
-                <p className="u--light-text">{t("reasons.stats")}</p>
-                <p>+10</p>
-              </div>
-            </div>
-
-            <div className={`${s.reasonsList} u--flex-row`}>
-              {reasonsRef.itemsList.map((item, index) => {
-                return (
-                  <SmallButton
-                    text={item.label}
-                    active={reasonsRef.reasonActive === index}
-                    Icon={
-                      reasonsRef.reasonActive === index
-                        ? reasonsIcons[index].active
-                        : reasonsIcons[index].unactive
-                    }
-                  />
-                );
-              })}
-            </div>
-
             {/* REASONS SLIDER*/}
             <div
               className={`${s.slider} ${s.reasonSlider}`}
@@ -169,12 +142,21 @@ export default function Home() {
                   }}
                   className={s.item}
                 >
-                  <div className={s.reasonBox}>
-                    <div className={s.reasonIcon}>
-                      {reasonsRef.reasonActive === index
-                        ? reasonsIcons[index].active
-                        : reasonsIcons[index].unactive}
+                  <div
+                    className={`${s.reasonBox} ${
+                      reasonsRef.reasonActive === index ? s.reasonActive : ""
+                    }`}
+                  >
+                    <div className={`${s.reasonTitles} u--flex-column`}>
+                      <div className={s.reasonIcon}>
+                        {reasonsRef.reasonActive === index
+                          ? reasonsIcons[index].active
+                          : reasonsIcons[index].unactive}
+                      </div>
+                      <p className={s.reasonLabel}>{item.label}</p>
+                      <p className={s.reasonTitle}>{item.title}</p>
                     </div>
+
                     <p className={s.reasonParagraph}>{item.description}</p>
                   </div>
                 </div>
@@ -187,26 +169,18 @@ export default function Home() {
       {/* PROJECTS SECTIONS */}
       <section className="section">
         <div className="container">
-          <div className="title-box">
-            <h6>{t("projects.contentTitle6")}</h6>
-            <h3>
-              <Trans
-                i18nKey={`projects.title3`}
-                t={t}
-                components={{
-                  blue: <span className="u--blue-text u--bold" />,
-                  pink: <span className="u--pink-text" />,
-                }}
-              />
-            </h3>
+          <AsideBox
+            directory="home"
+            scope={"projects"}
+            showButtons={true}
+            box={true}
+            lightBtnTo=""
+            darkBtnTo=""
+            reverse
+          />
+          <div className={s.projectsBox}>
+            <ProjectCardsPreview />
           </div>
-          <div className={s.projectsGrid}>
-            <ProjectCards />
-          </div>
-          {/* <div className={`${as.btnsBox} u--flex-row`}>
-            <GradientButton text={t("projects.btnLight")} variant="light" />
-            <GradientButton text={t("projects.btnDark")} variant="dark" />
-          </div> */}
         </div>
       </section>
 
@@ -343,6 +317,27 @@ export default function Home() {
           </div> */}
         </div>
       </section>
+      {/* <section className="section">
+        <div className="container">
+          <div className="title-box">
+            <h6>{t("projects.contentTitle6")}</h6>
+            <h3>
+              <Trans
+                i18nKey={`projects.title3`}
+                t={t}
+                components={{
+                  blue: <span className="u--blue-text u--bold" />,
+                  pink: <span className="u--pink-text" />,
+                }}
+              />
+            </h3>
+          </div>
+          <div className={s.projectsGrid}>
+            <ProjectCards />
+          </div>
+         
+        </div>
+      </section> */}
     </>
   );
 }

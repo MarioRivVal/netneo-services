@@ -1,0 +1,24 @@
+{
+  "projectsList": [
+    {
+      "title": "by Carla Herrero",
+      "description": "Website for a brand specializing in branding, social media, and web design. It showcases her services and projects with a visual, dynamic, and easy-to-update design.",
+      "imgAlt": "Mobile screenshot of the website 'by Carla Herrero'"
+    },
+    {
+      "title": "RDA Padel Academy",
+      "description": "Digital project that gives visibility to the brand's philosophy, teams, and events with a solid and modern image, including sections editable by the client.",
+      "imgAlt": "Tablet screenshot of the website 'RDA Padel Academy'"
+    },
+    {
+      "title": "El Whoper",
+      "description": "El Whoper is a website with a unique and 100% original style. Designed for an illustrator and designer, it reflects his creative and professional essence. Its goal: to showcase his services visually and attract new clients.",
+      "imgAlt": "Desktop screenshot of the website 'El Whoper'"
+    },
+    {
+      "title": "Student's MG",
+      "description": "An app that allows our client to easily organize and control student payments by quarters. It securely stores information and generates ready-to-print invoices every three months. A practical and simple tool to always keep records in order.",
+      "imgAlt": "Desktop screenshot of the app 'Student's MG'"
+    }
+  ]
+}
