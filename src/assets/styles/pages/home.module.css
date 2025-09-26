@@ -184,6 +184,13 @@
 }
 
 /* PROJECTS SECTION */
+.projectsBox {
+  display: flex;
+  flex-direction: column;
+  max-width: 140rem;
+  margin: 0 auto;
+  gap: 3rem;
+}
 
 /* .projectsGrid {
   display: grid;
@@ -192,17 +199,9 @@
   margin-top: 2rem;
 } */
 
-.projectsBox {
-  display: flex;
-  flex-direction: column;
-  max-width: 140rem;
-  margin: 0 auto;
-  gap: 5rem;
-}
-
 /* PARTNER SECTION */
 
-.partnersSub {
+/* .partnersSub {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -213,11 +212,11 @@
 }
 .partnersSub > span:not(:last-child) {
   border-right: solid 0.2rem var(--pink);
-}
+} */
 
 /* TESTIMONIALS SECTION  */
 
-.testimonialsUser {
+/* .testimonialsUser {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -236,7 +235,7 @@
 
 .testimonialsBox {
   height: 30rem;
-}
+} */
 
 /* CURRICULUM SECTION */
 

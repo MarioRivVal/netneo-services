@@ -2,41 +2,32 @@ import { Link } from "react-router-dom";
 import s from "../assets/styles/components/gradientButton.module.css";
 import ArrowIcon from "../icons/ArrowIcon";
 
-type BaseProps = {
-  variant: "dark" | "light";
-  download?: string | boolean;
+type GradientButtonProps = {
+  text: string;
+  to?: string; // interno o archivo/externo
+  onClick?: () => void;
   target?: "_blank" | "_self";
   rel?: string;
-  text: string;
+  variant?: "dark" | "light";
   className?: string;
-  children?: never;
 };
 
-type ButtonProps = BaseProps & {
-  onClick: () => void;
-  to?: never;
-  href?: never;
-};
+const isExternalHttp = (url: string) => /^https?:\/\//i.test(url);
+const isFile = (url: string) =>
+  /\.(pdf|jpg|jpeg|png|webp|avif|zip|docx?|xlsx?)$/i.test(url);
 
-type LinkProps = BaseProps & {
-  to: string; // ruta interna
-  onClick?: never;
-  href?: never;
-};
-
-type AnchorProps = BaseProps & {
-  href: string | undefined; // url externa
-  onClick?: never;
-  to?: never;
-};
-
-type GradientButtonProps = ButtonProps | LinkProps | AnchorProps;
-
-export default function GradientButton(props: GradientButtonProps) {
-  const { variant, text } = props;
-  const cls = `${s.button} ${variant === "dark" ? s.dark : s.light} ${
-    props.className ?? ""
-  }`;
+export default function GradientButton({
+  text,
+  to,
+  onClick,
+  target = "_blank",
+  rel = "noopener noreferrer",
+  variant = "light",
+  className = "",
+}: GradientButtonProps) {
+  const cls = `${s.button} ${
+    variant === "dark" ? s.dark : s.light
+  } ${className}`;
 
   const content = (
     <>
@@ -51,34 +42,25 @@ export default function GradientButton(props: GradientButtonProps) {
     </>
   );
 
-  if ("to" in props && typeof props.to === "string") {
-    // React Router internal link
+  if (to) {
+    // Si es http(s) o un archivo (como .pdf) => usar <a>
+    if (isExternalHttp(to) || isFile(to)) {
+      return (
+        <a href={to} target={target} rel={rel} className={cls}>
+          {content}
+        </a>
+      );
+    }
+    // Si empieza por "/" y NO es archivo, lo tratamos como ruta interna
     return (
-      <Link to={props.to} className={cls}>
+      <Link to={to} className={cls}>
         {content}
       </Link>
     );
   }
 
-  if ("href" in props) {
-    // External link
-    const anchorProps = props as AnchorProps;
-    return (
-      <a
-        href={anchorProps.href}
-        download={anchorProps.download} // 👈 aquí
-        target={anchorProps.target ?? "_blank"}
-        rel={anchorProps.rel ?? "noopener noreferrer"}
-        className={cls}
-      >
-        {content}
-      </a>
-    );
-  }
-
-  // Default: button with onClick
   return (
-    <button onClick={props.onClick} className={cls}>
+    <button onClick={onClick} className={cls}>
       {content}
     </button>
   );

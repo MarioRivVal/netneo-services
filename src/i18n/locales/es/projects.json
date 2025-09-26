@@ -1,24 +1,96 @@
 {
-  "projectsList": [
-    {
-      "title": "by Carla Herrero",
-      "description": "Sitio para una marca especialista en branding, redes sociales y diseño web. Muestra sus servicios y proyectos con un diseño visual, dinámico y fácil de actualizar.",
-      "imgAlt": "Captura de pantalla en movil para web de 'by Carla Herrero'"
-    },
-    {
-      "title": "RDA Padel Academy",
-      "description": "Proyecto digital que da visibilidad a la filosofía, equipos y eventos a su marca con una imagen sólida y moderna, con secciones editables por el cliente.",
-      "imgAlt": "Captura de pantalla en versión pad para web de 'RDA Padel Academy'"
-    },
-    {
-      "title": "El Whoper",
-      "description": "El Whoper es una web con un estilo único y 100% original. Diseñada para un ilustrador y diseñador, refleja su esencia creativa y profesional. Su objetivo: mostrar sus servicios de forma visual y captar nuevos clientes.",
-      "imgAlt": "Captura de pantalla en versión escritorio para web de 'El Whoper'"
-    },
-    {
-      "title": "Student's MG",
-      "description": "Una app que permite a nuestro cliente organizar y controlar fácilmente los pagos de sus estudiantes por trimestres. Guarda la información de manera segura y genera facturas listas para imprimir cada tres meses. Una herramienta práctica y sencilla para mantener sus registros siempre en orden.",
-      "imgAlt": "Captura de pantalla en versión escritorio para la app de 'Student's MG'"
-    }
-  ]
+  "projects": {
+    "contentTitle6": "// Proyectos__",
+    "title3": "Algunos de nuestros <pink>proyectos</pink><blue> recientes</blue>",
+    "projectsList": [
+      {
+        "title": "by Carla Herrero",
+        "description": "Sitio para una marca especialista en branding, redes sociales y diseño web. Muestra sus servicios y proyectos con un diseño visual, dinámico y fácil de actualizar.",
+        "imgAlt": "Captura de pantalla en movil para web de 'by Carla Herrero'"
+      },
+      {
+        "title": "RDA Padel Academy",
+        "description": "Proyecto digital que da visibilidad a la filosofía, equipos y eventos a su marca con una imagen sólida y moderna, con secciones editables por el cliente.",
+        "imgAlt": "Captura de pantalla en versión pad para web de 'RDA Padel Academy'"
+      },
+      {
+        "title": "El Whoper",
+        "description": "El Whoper es una web con un estilo único y 100% original. Diseñada para un ilustrador y diseñador, refleja su esencia creativa y profesional. Su objetivo: mostrar sus servicios de forma visual y captar nuevos clientes.",
+        "imgAlt": "Captura de pantalla en versión escritorio para web de 'El Whoper'"
+      },
+      {
+        "title": "Student's MG",
+        "description": "Una app que permite a nuestro cliente organizar y controlar fácilmente los pagos de sus estudiantes por trimestres. Guarda la información de manera segura y genera facturas listas para imprimir cada tres meses. Una herramienta práctica y sencilla para mantener sus registros siempre en orden.",
+        "imgAlt": "Captura de pantalla en versión escritorio para la app de 'Student's MG'"
+      }
+    ]
+  },
+  "partners": {
+    "contentTitle6": "// Partners__",
+    "title3": "Nos <blue>eligen</blue> desde muchos <pink>sectores</pink>",
+    "partnersList": [
+      {
+        "imgAlt": "Personas con bolsas de compras en un centro comercial, símbolo de tiendas de ropa, moda y comercios locales",
+        "category": "Comercio local",
+        "subcategories": [
+          "Tiendas de ropa",
+          "Marcas independientes",
+          "Panaderías"
+        ]
+      },
+      {
+        "imgAlt": "Smartphone grabando a un creador de contenido al aire libre, representación de influencers, marketing y startups digitales",
+        "category": "Creatividad y digital",
+        "subcategories": ["Marketing", "Startups", "E-commerce"]
+      },
+      {
+        "imgAlt": "Joven técnico reparando un dispositivo, representación de oficios, freelancers y servicios profesionales",
+        "category": "Profesionales y servicios",
+        "subcategories": ["Técnicos", "Freelancers", "Eventos"]
+      },
+      {
+        "imgAlt": "Hamburguesa gourmet en mano, representación del sector de restaurantes, delivery, cafeterías y bares",
+        "category": "Restauración",
+        "subcategories": ["Delivery", "Cafeterías", "Bares"]
+      },
+      {
+        "imgAlt": "Maqueta de casa con llaves sobre una mesa, representación del sector inmobiliario y reformas",
+        "category": "Inmobiliaria y construcción",
+        "subcategories": ["Inmobiliarias", "Agentes", "Reformas"]
+      },
+      {
+        "imgAlt": "Personas jóvenes practicando pádel en una pista, representación de academias, cursos y actividades educativas",
+        "category": "Educación y formación",
+        "subcategories": ["Escuelas", "Cursos online", "Coaching"]
+      },
+      {
+        "imgAlt": "Hombre entrenando en un gimnasio, ejemplo del sector fitness, clínicas y bienestar personal",
+        "category": "Bienestar y salud",
+        "subcategories": ["Peluquerías", "Clínicas", "Terapias"]
+      }
+    ]
+  },
+  "testimonials": {
+    "contentTitle6": "// Testimonios__",
+    "title3": "Dicen que <pink>hacemos</pink><blue> magia.</blue> Y los números no mienten",
+    "paragraph": "Cada cliente tiene su historia, y los resultados la respaldan. Aquí te mostramos lo que dicen de nosotros… y lo que logramos juntos.",
+    "stats": "Tasa de satisfacción",
+    "testimonialsList": [
+      {
+        "profession": "Educación",
+        "name": "Pablo García Calvo",
+        "quote": "Como profesor, no podría estar más feliz con esta aplicación! Hace que llevar el control de los registros y pagos de los estudiantes sea muy fácil."
+      },
+      {
+        "profession": "Marketing Digital",
+        "name": "Carla Herrero",
+        "quote": "Mario! Súper recomendable; he colaborado con él y hemos obtenido los mejores resultados. Es el mejor en la materia"
+      },
+      {
+        "profession": "Artístico",
+        "name": "Félix González",
+        "quote": "Tanto entusiasmo en tener tu propia web pondrá 'netneo' en desarrollarla. Trabajo y dedicación máximas para que el resultado sea el que tú deseas, el que más se ajuste a tu negocio. Te aconsejarán para que tu proyecto obtenga la visibilidad que se merece. Todo un acierto si confias en 'netNeo'."
+      }
+    ]
+  }
 }

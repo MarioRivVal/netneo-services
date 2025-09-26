@@ -1,24 +1,96 @@
 {
-  "projectsList": [
-    {
-      "title": "by Carla Herrero",
-      "description": "Sito web per un brand specializzato in branding, social media e web design. Mostra i suoi servizi e progetti con un design visivo, dinamico e facile da aggiornare.",
-      "imgAlt": "Screenshot mobile del sito web 'by Carla Herrero'"
-    },
-    {
-      "title": "RDA Padel Academy",
-      "description": "Progetto digitale che dà visibilità alla filosofia, ai team e agli eventi del brand con un'immagine solida e moderna, includendo sezioni modificabili dal cliente.",
-      "imgAlt": "Screenshot tablet del sito web 'RDA Padel Academy'"
-    },
-    {
-      "title": "El Whoper",
-      "description": "El Whoper è un sito web con uno stile unico e 100% originale. Progettato per un illustratore e designer, riflette la sua essenza creativa e professionale. Il suo obiettivo: mostrare i suoi servizi in modo visivo e attrarre nuovi clienti.",
-      "imgAlt": "Screenshot desktop del sito web 'El Whoper'"
-    },
-    {
-      "title": "Student's MG",
-      "description": "Un'app che consente al nostro cliente di organizzare e controllare facilmente i pagamenti degli studenti per trimestre. Conserva le informazioni in modo sicuro e genera fatture pronte per la stampa ogni tre mesi. Uno strumento pratico e semplice per mantenere sempre in ordine i propri registri.",
-      "imgAlt": "Screenshot desktop dell'app 'Student's MG'"
-    }
-  ]
+  "projects": {
+    "contentTitle6": "// Progetti__",
+    "title3": "Alcuni <pink>dei nostri</pink><blue> progetti</blue>",
+    "projectsList": [
+      {
+        "title": "by Carla Herrero",
+        "description": "Sito web per un brand specializzato in branding, social media e web design. Mostra i suoi servizi e progetti con un design visivo, dinamico e facile da aggiornare.",
+        "imgAlt": "Screenshot mobile del sito web 'by Carla Herrero'"
+      },
+      {
+        "title": "RDA Padel Academy",
+        "description": "Progetto digitale che dà visibilità alla filosofia, ai team e agli eventi del brand con un'immagine solida e moderna, includendo sezioni modificabili dal cliente.",
+        "imgAlt": "Screenshot tablet del sito web 'RDA Padel Academy'"
+      },
+      {
+        "title": "El Whoper",
+        "description": "El Whoper è un sito web con uno stile unico e 100% originale. Progettato per un illustratore e designer, riflette la sua essenza creativa e professionale. Il suo obiettivo: mostrare i suoi servizi in modo visivo e attrarre nuovi clienti.",
+        "imgAlt": "Screenshot desktop del sito web 'El Whoper'"
+      },
+      {
+        "title": "Student's MG",
+        "description": "Un'app che consente al nostro cliente di organizzare e controllare facilmente i pagamenti degli studenti per trimestre. Conserva le informazioni in modo sicuro e genera fatture pronte per la stampa ogni tre mesi. Uno strumento pratico e semplice per mantenere sempre in ordine i propri registri.",
+        "imgAlt": "Screenshot desktop dell'app 'Student's MG'"
+      }
+    ]
+  },
+  "partners": {
+    "contentTitle6": "// Partners__",
+    "title3": "Ci <blue>scelgono</blue> da molti <pink>settori</pink>",
+    "partnersList": [
+      {
+        "imgAlt": "Persone con borse della spesa in un centro commerciale, simbolo di negozi di abbigliamento, moda e attività locali",
+        "category": "Commercio locale",
+        "subcategories": [
+          "Negozi di abbigliamento",
+          "Brand indipendenti",
+          "Panetterie"
+        ]
+      },
+      {
+        "imgAlt": "Smartphone che riprende un content creator all'aperto, rappresentazione di influencer, marketing e startup digitali",
+        "category": "Creatività e Digitale",
+        "subcategories": ["Marketing", "Startup", "E-commerce"]
+      },
+      {
+        "imgAlt": "Giovane tecnico che ripara un dispositivo, rappresentazione di mestieri, freelance e servizi professionali",
+        "category": "Professionisti e Servizi",
+        "subcategories": ["Tecnici", "Freelance", "Eventi"]
+      },
+      {
+        "imgAlt": "Hamburger gourmet in mano, rappresentazione del settore ristorazione, delivery, caffetterie e bar",
+        "category": "Ristorazione",
+        "subcategories": ["Delivery", "Caffetterie", "Bar"]
+      },
+      {
+        "imgAlt": "Modellino di casa con chiavi su un tavolo, rappresentazione del settore immobiliare e ristrutturazioni",
+        "category": "Immobiliare e Costruzioni",
+        "subcategories": ["Agenzie immobiliari", "Agenti", "Ristrutturazioni"]
+      },
+      {
+        "imgAlt": "Giovani che giocano a padel in un campo, rappresentazione di accademie, corsi e attività formative",
+        "category": "Educazione e Formazione",
+        "subcategories": ["Scuole", "Corsi online", "Coaching"]
+      },
+      {
+        "imgAlt": "Uomo che si allena in palestra, esempio del settore fitness, cliniche e benessere personale",
+        "category": "Benessere e Salute",
+        "subcategories": ["Parrucchieri", "Cliniche", "Terapie"]
+      }
+    ]
+  },
+  "testimonials": {
+    "contentTitle6": "// Testimonianze__",
+    "title3": "Dicono che <pink>facciamo</pink><blue> magia.</blue> E i numeri non mentono",
+    "paragraph": "Ogni cliente ha la sua storia, e i risultati lo confermano. Qui ti mostriamo cosa dicono di noi… e cosa abbiamo realizzato insieme.",
+    "stats": "Tasso di soddisfazione",
+    "testimonialsList": [
+      {
+        "profession": "Istruzione",
+        "name": "Pablo García Calvo",
+        "quote": "Come insegnante, non potrei essere più felice con questa applicazione! Rende molto facile tenere traccia dei registri e dei pagamenti degli studenti"
+      },
+      {
+        "profession": "Marketing Digitale",
+        "name": "Carla Herrero",
+        "quote": "Mario! Super consigliato; ho collaborato con lui e abbiamo ottenuto i migliori risultati. È il migliore nel settore."
+      },
+      {
+        "profession": "Artistico",
+        "name": "Félix González",
+        "quote": "'netneo' metterà tutto l'entusiasmo necessario per realizzare il tuo sito web. Il massimo impegno e la massima dedizione garantiranno che il risultato sia quello che desideri, quello più adatto alla tua attività. Ti consiglieranno affinché il tuo progetto ottenga la visibilità che merita. Un successo sicuro se ti affidi a 'netneo'."
+      }
+    ]
+  }
 }

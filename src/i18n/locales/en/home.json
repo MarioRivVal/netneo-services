@@ -48,7 +48,7 @@
         "description": "So they can find you, choose you, and remember you."
       }
     ],
-    "btnDark": "Let's talk"
+    "btnDark": "What we offer"
   },
   "reasons": {
     "contentTitle6": "// Choose us__",
@@ -88,75 +88,12 @@
   "projects": {
     "contentTitle6": "// Projects__",
     "title3": "<blue>Example</blue> of some of our <pink>projects</pink>",
-    "paragraph": "Every client has their own story, and the results back it up. Here's what they say about us... and what we've achieved together.",
+    "paragraph": "Each project is born from a unique idea and a unique vision. Our job is to transform it into something real and impactful. Here you'll see results that speak for themselves and clients who trust what we do together.",
 
     "btnDark": "Testimonials",
     "btnLight": "More projects"
   },
-  "partners": {
-    "contentTitle6": "// Partners__",
-    "title3": "They <blue>choose us</blue> from many <pink>sectors</pink>",
-    "partnersList": [
-      {
-        "imgAlt": "People with shopping bags in a mall, symbol of clothing stores, fashion and local shops",
-        "category": "Local business",
-        "subcategories": ["Clothing stores", "Independent brands", "Bakeries"]
-      },
-      {
-        "imgAlt": "Smartphone recording a content creator outdoors, representing influencers, marketing and digital startups",
-        "category": "Creative & Digital",
-        "subcategories": ["Marketing", "Startups", "E-commerce"]
-      },
-      {
-        "imgAlt": "Young technician repairing a device, representing trades, freelancers and professional services",
-        "category": "Professionals & Services",
-        "subcategories": ["Technicians", "Freelancers", "Events"]
-      },
-      {
-        "imgAlt": "Gourmet burger in hand, representing the restaurant sector, delivery, cafés and bars",
-        "category": "Restaurants",
-        "subcategories": ["Delivery", "Cafés", "Bars"]
-      },
-      {
-        "imgAlt": "Model house with keys on a table, representing the real estate and renovations sector",
-        "category": "Real Estate & Construction",
-        "subcategories": ["Real estate agencies", "Agents", "Renovations"]
-      },
-      {
-        "imgAlt": "Young people playing padel on a court, representing academies, courses and educational activities",
-        "category": "Education & Training",
-        "subcategories": ["Schools", "Online courses", "Coaching"]
-      },
-      {
-        "imgAlt": "Man training in a gym, example of the fitness, clinics and personal wellness sector",
-        "category": "Wellness & Health",
-        "subcategories": ["Hair salons", "Clinics", "Therapies"]
-      }
-    ]
-  },
-  "testimonials": {
-    "contentTitle6": "// Testimonials__",
-    "title3": "They say we <pink>create</pink><blue> magic.</blue> And the numbers don't lie",
-    "paragraph": "Each client has their story, and the results back it up. Here we show you what they say about us… and what we achieved together.",
-    "stats": "Satisfaction rate",
-    "testimonialsList": [
-      {
-        "profession": "Education",
-        "name": "Pablo García Calvo",
-        "quote": "As a teacher, I couldn't be happier with this application! It makes keeping track of student records and payments very easy."
-      },
-      {
-        "profession": "Digital Marketing",
-        "name": "Carla Herrero",
-        "quote": "Mario! Highly recommended; I have collaborated with him and we achieved the best results. He is the best in the field."
-      },
-      {
-        "profession": "Artistic",
-        "name": "Félix González",
-        "quote": "'netneo' will put so much enthusiasm into having your own website into developing it. Maximum work and dedication will ensure the result is what you desire, the one that best suits your business. They will advise you so your project gains the visibility it deserves. A sure success if you trust 'netneo'"
-      }
-    ]
-  },
+
   "curriculum": {
     "contentTitle6": "// Curriculum__",
     "title3": "Are you <blue>recruiting</blue><pink> talent?</pink>",

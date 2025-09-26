@@ -5,25 +5,25 @@ import { Trans, useTranslation } from "react-i18next";
 import { reasonsIcons } from "../content/icons";
 import Header from "../layouts/Header";
 import AsideBox from "../layouts/AsideBox";
-import StatsIcon from "../icons/StatsIcon";
 import ResponsiveImage from "../components/ResponsiveImage";
 import useGalleryImages from "../hooks/components/useGalleryImages";
 import useGalleryCards from "../hooks/components/useGalleryCards";
 // import ProjectCards from "../components/ProjectCards";
 import ProjectCardsPreview from "../components/ProjectCardsPreview";
-import { homeServicesImgs, partnerImgs } from "../content/images";
+import { homeServicesImgs } from "../content/images";
+import PortfolioBox from "../layouts/PortfolioBox";
 
-type Partner = {
-  imgAlt: string;
-  category: string;
-  subcategories: string[];
-};
+// type Partner = {
+//   imgAlt: string;
+//   category: string;
+//   subcategories: string[];
+// };
 
 export default function Home() {
   const servicesRef = useGalleryImages(homeServicesImgs, "services", 2);
-  const partnersRef = useGalleryImages(partnerImgs, "partners", 3);
+  // const partnersRef = useGalleryImages(partnerImgs, "partners", 3);
   const reasonsRef = useGalleryCards("home", "reasons", 2);
-  const testimonialRef = useGalleryCards("home", "testimonials", 1);
+  // const testimonialRef = useGalleryCards("home", "testimonials", 1);
 
   // TRANSLATIONS
   const { t } = useTranslation("home");
@@ -32,9 +32,9 @@ export default function Home() {
     returnObjects: true,
   }) as Record<string, string>[];
 
-  const partnersList = t("partners.partnersList", {
-    returnObjects: true,
-  }) as Partner[];
+  // const partnersList = t("partners.partnersList", {
+  //   returnObjects: true,
+  // }) as Partner[];
 
   return (
     <>
@@ -43,11 +43,13 @@ export default function Home() {
         <AsideBox
           directory="home"
           scope="header"
-          showButtons={true}
-          lightBtnTo="https://wa.me/34642469683"
-          darkBtnTo="https://wa.me/34642469683"
           reverse={true}
           box={true}
+          buttons={{
+            display: "both",
+            darkBtnTo: "https://wa.me/34642469683",
+            lightBtnTo: "https://wa.me/34642469683",
+          }}
         />
       </main>
 
@@ -83,7 +85,6 @@ export default function Home() {
                 </li>
               ))}
             </ul>
-            {/* IMAGES SLIDER*/}
             <div className={s.slider} ref={servicesRef.sliderRef}>
               {servicesRef.galleryItems.map((item, idx) => (
                 <div
@@ -112,7 +113,11 @@ export default function Home() {
               </div>
             </div>
 
-            <GradientButton to="" text={t("services.btnDark")} variant="dark" />
+            <GradientButton
+              to="/services"
+              text={t("services.btnDark")}
+              variant="dark"
+            />
           </div>
         </div>
       </section>
@@ -123,13 +128,14 @@ export default function Home() {
           <AsideBox
             directory="home"
             scope={"reasons"}
-            showButtons={true}
             box={true}
-            lightBtnTo="https://wa.me/34642469683"
-            darkBtnTo="https://wa.me/34642469683"
+            buttons={{
+              display: "both",
+              lightBtnTo: "https://wa.me/34642469683",
+              darkBtnTo: "./services",
+            }}
           />
           <div className={`${s.box} u--mw-centered u--flex-column`}>
-            {/* REASONS SLIDER*/}
             <div
               className={`${s.slider} ${s.reasonSlider}`}
               ref={reasonsRef.sliderRef}
@@ -172,11 +178,13 @@ export default function Home() {
           <AsideBox
             directory="home"
             scope={"projects"}
-            showButtons={true}
             box={true}
-            lightBtnTo=""
-            darkBtnTo=""
             reverse
+            buttons={{
+              display: "both",
+              lightBtnTo: "./projects",
+              darkBtnTo: "./projects",
+            }}
           />
           <div className={s.projectsBox}>
             <ProjectCardsPreview />
@@ -184,8 +192,37 @@ export default function Home() {
         </div>
       </section>
 
-      {/* PARTNERS SECTION */}
+      {/* PORTFOLIO SECTION */}
       <section className="section u--bg-gray">
+        <div className="container">
+          <PortfolioBox />
+        </div>
+      </section>
+
+      {/* ADDITIONAL SECTIONS */}
+      {/* 
+      <section className="section">
+        <div className="container">
+          <div className="title-box">
+            <h6>{t("projects.contentTitle6")}</h6>
+            <h3>
+              <Trans
+                i18nKey={`projects.title3`}
+                t={t}
+                components={{
+                  blue: <span className="u--blue-text u--bold" />,
+                  pink: <span className="u--pink-text" />,
+                }}
+              />
+            </h3>
+          </div>
+          <div className={s.projectsGrid}>
+            <ProjectCards />
+          </div>
+         
+        </div>
+      </section> */}
+      {/* <section className="section u--bg-gray">
         <div className="container">
           <div className="title-box">
             <h6>{t("partners.contentTitle6")}</h6>
@@ -202,7 +239,7 @@ export default function Home() {
           </div>
 
           <div className={`${s.cardsContent} u--flex-column`}>
-            {/* IMAGES SLIDER*/}
+   
             <div className={s.slider} ref={partnersRef.sliderRef}>
               {partnersRef.galleryItems.map((item, idx) => (
                 <div
@@ -238,10 +275,8 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
-
-      {/* TESTIMONIALS SECTION */}
-      <section className="section">
+      </section> */}
+      {/* <section className="section">
         <div className="container">
           <AsideBox
             directory="home"
@@ -252,17 +287,7 @@ export default function Home() {
             box={true}
           />
           <div className={`${s.box} u--mw-centered u--flex-column`}>
-            <div className={s.stats}>
-              <div className={s.statIcon}>
-                <StatsIcon />
-              </div>
-              <div className={s.details}>
-                <p className="u--light-text">{t("testimonials.stats")}</p>
-                <p>100%</p>
-              </div>
-            </div>
-
-            {/* TESTIMONIALS SLIDER*/}
+        
             <div
               className={`${s.slider} ${s.testimonialsSlider}`}
               ref={testimonialRef.sliderRef}
@@ -287,55 +312,6 @@ export default function Home() {
               ))}
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* CURRICULUM SECTION */}
-
-      <section className="section u--bg-gray">
-        <div className="container">
-          <AsideBox
-            directory="home"
-            scope="curriculum"
-            showButtons
-            darkBtnTo="https://netneoportfolio.netlify.app/"
-            lightBtnTo="/docs/CV_Mario_Rivera_esp_digital.pdf"
-            reverse={true}
-            box={true}
-          />
-          {/* <div className={`${s.stats}`}>
-            <div className={s.curriculumCta}>
-              <p>{t("curriculum.btnTitle")}</p>
-              <div className={s.btnsBox}>
-                <GradientButton variant="dark" text={t("curriculum.btnDark")} />
-                <GradientButton
-                  variant="light"
-                  text={t("curriculum.btnLight")}
-                />
-              </div>
-            </div>
-          </div> */}
-        </div>
-      </section>
-      {/* <section className="section">
-        <div className="container">
-          <div className="title-box">
-            <h6>{t("projects.contentTitle6")}</h6>
-            <h3>
-              <Trans
-                i18nKey={`projects.title3`}
-                t={t}
-                components={{
-                  blue: <span className="u--blue-text u--bold" />,
-                  pink: <span className="u--pink-text" />,
-                }}
-              />
-            </h3>
-          </div>
-          <div className={s.projectsGrid}>
-            <ProjectCards />
-          </div>
-         
         </div>
       </section> */}
     </>

@@ -1,16 +1,16 @@
 import s from "../assets/styles/components/projectCardsPreview.module.css";
 import ResponsiveImage from "./ResponsiveImage";
 import { projectImgs } from "../content/images";
-// import { useTranslation } from "react-i18next";
+import { useTranslation } from "react-i18next";
 
 export default function ProjectCardsPreview() {
-  // const { t } = useTranslation("home");
+  const { t } = useTranslation("projects");
 
-  const projectItems = projectImgs.map(({ id, label, url }) => ({
+  const projectItems = projectImgs.map(({ id, label, url }, index) => ({
     id,
     name: label,
     url,
-    // alt: t(`projects.projectsList.${index}.imgAlt`),
+    alt: t(`projects.projectsList.${index}.imgAlt`),
   }));
 
   return (
@@ -19,11 +19,9 @@ export default function ProjectCardsPreview() {
         <ResponsiveImage
           key={item.id}
           name={`projects/${item.name}`}
-          alt="prueba"
+          alt={item.alt}
           priority={false}
-          className={`${s.imgBox}  ${s[`imgBox${item.id}`]}  ${
-            item.id % 2 === 0 ? s.reverse : ""
-          }`}
+          className={`${s.imgBox}  ${s[`imgBox${item.id}`]}`}
         />
       ))}
     </>

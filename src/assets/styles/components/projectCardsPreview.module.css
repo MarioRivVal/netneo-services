@@ -4,12 +4,13 @@
   justify-content: center;
   background-position: center;
   background-size: cover;
+  pointer-events: none;
 }
 
 .imgBox1 {
   background-image: url("/images/utils/backgrounds/bg-red.png");
-  width: 60%;
-  height: 70vw;
+  width: 50%;
+  height: 60vw;
   align-self: center;
 }
 
@@ -18,17 +19,17 @@
 }
 .imgBox2 {
   background-image: url("/images/utils/backgrounds/bg-green.png");
-  width: 90%;
-  height: 45vw;
+  width: 80%;
+  height: 35vw;
   justify-self: flex-end;
 }
 .imgBox2 img {
-  transform: scale(1.2) translateY(-2rem);
+  transform: scale(1.2);
 }
 .imgBox3 {
   background-image: url("/images/utils/backgrounds/bg-orange.png");
-  width: 60%;
-  height: 75vw;
+  width: 50%;
+  height: 65vw;
   align-self: flex-end;
 }
 .imgBox3 img {
@@ -36,8 +37,8 @@
 }
 .imgBox4 {
   background-image: url("/images/utils/backgrounds/bg-violet.png");
-  width: 90%;
-  height: 45vw;
+  width: 80%;
+  height: 35vw;
 }
 .imgBox4 img {
   transform: scale(1.4);

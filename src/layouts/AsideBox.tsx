@@ -2,24 +2,26 @@ import s from "../assets/styles/layouts/asideBox.module.css";
 import { Trans, useTranslation } from "react-i18next";
 import GradientButton from "../components/GradientButton";
 
+type ButtonsProps = {
+  display: "both" | "one" | "none";
+  lightBtnTo: string;
+  darkBtnTo: string;
+};
+
 type AsideBoxProps = {
   directory: string;
   scope: string;
-  showButtons?: boolean;
-  lightBtnTo: string;
-  darkBtnTo: string;
   reverse?: boolean;
   box?: boolean;
+  buttons: ButtonsProps;
 };
 
 export default function AsideBox({
   directory,
   scope,
-  showButtons,
-  lightBtnTo,
-  darkBtnTo,
   reverse,
   box = false,
+  buttons: { display, lightBtnTo, darkBtnTo },
 }: AsideBoxProps) {
   const { t } = useTranslation(directory);
 
@@ -40,18 +42,23 @@ export default function AsideBox({
       <div className={`${s.box} u--flex-column`}>
         <p className="u--paragraph">{t(`${scope}.paragraph`)}</p>
 
-        {showButtons && (
+        {display !== "none" && (
           <div className={`${s.btnsBox} u--flex-row`}>
-            <GradientButton
-              href={lightBtnTo}
-              text={t(`${scope}.btnLight`)}
-              variant="light"
-            />
-            <GradientButton
-              href={darkBtnTo}
-              text={t(`${scope}.btnDark`)}
-              variant="dark"
-            />
+            {display === "both" && (
+              <GradientButton
+                to={lightBtnTo}
+                text={t(`${scope}.btnLight`)}
+                variant="light"
+              />
+            )}
+
+            {(display === "both" || display === "one") && (
+              <GradientButton
+                to={darkBtnTo}
+                text={t(`${scope}.btnDark`)}
+                variant="dark"
+              />
+            )}
           </div>
         )}
       </div>

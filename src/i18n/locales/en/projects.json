@@ -1,24 +1,93 @@
 {
-  "projectsList": [
-    {
-      "title": "by Carla Herrero",
-      "description": "Website for a brand specializing in branding, social media, and web design. It showcases her services and projects with a visual, dynamic, and easy-to-update design.",
-      "imgAlt": "Mobile screenshot of the website 'by Carla Herrero'"
-    },
-    {
-      "title": "RDA Padel Academy",
-      "description": "Digital project that gives visibility to the brand's philosophy, teams, and events with a solid and modern image, including sections editable by the client.",
-      "imgAlt": "Tablet screenshot of the website 'RDA Padel Academy'"
-    },
-    {
-      "title": "El Whoper",
-      "description": "El Whoper is a website with a unique and 100% original style. Designed for an illustrator and designer, it reflects his creative and professional essence. Its goal: to showcase his services visually and attract new clients.",
-      "imgAlt": "Desktop screenshot of the website 'El Whoper'"
-    },
-    {
-      "title": "Student's MG",
-      "description": "An app that allows our client to easily organize and control student payments by quarters. It securely stores information and generates ready-to-print invoices every three months. A practical and simple tool to always keep records in order.",
-      "imgAlt": "Desktop screenshot of the app 'Student's MG'"
-    }
-  ]
+  "projects": {
+    "contentTitle6": "// Projects__",
+    "title3": "Some of our <pink>recent</pink><blue> works</blue>",
+    "projectsList": [
+      {
+        "title": "by Carla Herrero",
+        "description": "Website for a brand specializing in branding, social media, and web design. It showcases her services and projects with a visual, dynamic, and easy-to-update design.",
+        "imgAlt": "Mobile screenshot of the website 'by Carla Herrero'"
+      },
+      {
+        "title": "RDA Padel Academy",
+        "description": "Digital project that gives visibility to the brand's philosophy, teams, and events with a solid and modern image, including sections editable by the client.",
+        "imgAlt": "Tablet screenshot of the website 'RDA Padel Academy'"
+      },
+      {
+        "title": "El Whoper",
+        "description": "El Whoper is a website with a unique and 100% original style. Designed for an illustrator and designer, it reflects his creative and professional essence. Its goal: to showcase his services visually and attract new clients.",
+        "imgAlt": "Desktop screenshot of the website 'El Whoper'"
+      },
+      {
+        "title": "Student's MG",
+        "description": "An app that allows our client to easily organize and control student payments by quarters. It securely stores information and generates ready-to-print invoices every three months. A practical and simple tool to always keep records in order.",
+        "imgAlt": "Desktop screenshot of the app 'Student's MG'"
+      }
+    ]
+  },
+
+  "partners": {
+    "contentTitle6": "// Partners__",
+    "title3": "They <blue>choose us</blue> from many <pink>sectors</pink>",
+    "partnersList": [
+      {
+        "imgAlt": "People with shopping bags in a mall, symbol of clothing stores, fashion and local shops",
+        "category": "Local business",
+        "subcategories": ["Clothing stores", "Independent brands", "Bakeries"]
+      },
+      {
+        "imgAlt": "Smartphone recording a content creator outdoors, representing influencers, marketing and digital startups",
+        "category": "Creative & Digital",
+        "subcategories": ["Marketing", "Startups", "E-commerce"]
+      },
+      {
+        "imgAlt": "Young technician repairing a device, representing trades, freelancers and professional services",
+        "category": "Professionals & Services",
+        "subcategories": ["Technicians", "Freelancers", "Events"]
+      },
+      {
+        "imgAlt": "Gourmet burger in hand, representing the restaurant sector, delivery, cafés and bars",
+        "category": "Restaurants",
+        "subcategories": ["Delivery", "Cafés", "Bars"]
+      },
+      {
+        "imgAlt": "Model house with keys on a table, representing the real estate and renovations sector",
+        "category": "Real Estate & Construction",
+        "subcategories": ["Real estate agencies", "Agents", "Renovations"]
+      },
+      {
+        "imgAlt": "Young people playing padel on a court, representing academies, courses and educational activities",
+        "category": "Education & Training",
+        "subcategories": ["Schools", "Online courses", "Coaching"]
+      },
+      {
+        "imgAlt": "Man training in a gym, example of the fitness, clinics and personal wellness sector",
+        "category": "Wellness & Health",
+        "subcategories": ["Hair salons", "Clinics", "Therapies"]
+      }
+    ]
+  },
+  "testimonials": {
+    "contentTitle6": "// Testimonials__",
+    "title3": "They say we <pink>create</pink><blue> magic.</blue> And the numbers don't lie",
+    "paragraph": "Each client has their story, and the results back it up. Here we show you what they say about us… and what we achieved together.",
+    "stats": "Satisfaction rate",
+    "testimonialsList": [
+      {
+        "profession": "Education",
+        "name": "Pablo García Calvo",
+        "quote": "As a teacher, I couldn't be happier with this application! It makes keeping track of student records and payments very easy."
+      },
+      {
+        "profession": "Digital Marketing",
+        "name": "Carla Herrero",
+        "quote": "Mario! Highly recommended; I have collaborated with him and we achieved the best results. He is the best in the field."
+      },
+      {
+        "profession": "Artistic",
+        "name": "Félix González",
+        "quote": "'netneo' will put so much enthusiasm into having your own website into developing it. Maximum work and dedication will ensure the result is what you desire, the one that best suits your business. They will advise you so your project gains the visibility it deserves. A sure success if you trust 'netneo'"
+      }
+    ]
+  }
 }

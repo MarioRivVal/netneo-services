@@ -43,7 +43,7 @@ export default function Footer() {
           <GradientButton
             text={t("ctaButton")}
             variant="dark"
-            href="https://wa.me/34642469683"
+            to="https://wa.me/34642469683"
           />
         </div>
 

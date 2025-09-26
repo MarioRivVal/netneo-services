@@ -48,7 +48,7 @@
         "description": "Perché ti trovino, ti scelgano e ti ricordino."
       }
     ],
-    "btnDark": "Parliamone"
+    "btnDark": "Cosa offriamo"
   },
   "reasons": {
     "contentTitle6": "// Sceglici__",
@@ -88,78 +88,11 @@
   "projects": {
     "contentTitle6": "// Progetti__",
     "title3": "<blue>Esempio</blue> di alcuni dei nostri <pink>progetti</pink>",
-    "paragraph": "Ogni cliente ha la sua storia, e i risultati la confermano. Ecco cosa dicono di noi... e cosa abbiamo realizzato insieme.",
+    "paragraph": "Ogni progetto nasce da un'idea e da una visione uniche. Il nostro compito è trasformarle in qualcosa di concreto e di impatto. Qui vedrete risultati che parlano da soli e clienti che si fidano di ciò che facciamo insieme.",
     "btnDark": "Testimonianze",
     "btnLight": "Altri progetti"
   },
-  "partners": {
-    "contentTitle6": "// Partners__",
-    "title3": "Ci <blue>scelgono</blue> da molti <pink>settori</pink>",
-    "partnersList": [
-      {
-        "imgAlt": "Persone con borse della spesa in un centro commerciale, simbolo di negozi di abbigliamento, moda e attività locali",
-        "category": "Commercio locale",
-        "subcategories": [
-          "Negozi di abbigliamento",
-          "Brand indipendenti",
-          "Panetterie"
-        ]
-      },
-      {
-        "imgAlt": "Smartphone che riprende un content creator all'aperto, rappresentazione di influencer, marketing e startup digitali",
-        "category": "Creatività e Digitale",
-        "subcategories": ["Marketing", "Startup", "E-commerce"]
-      },
-      {
-        "imgAlt": "Giovane tecnico che ripara un dispositivo, rappresentazione di mestieri, freelance e servizi professionali",
-        "category": "Professionisti e Servizi",
-        "subcategories": ["Tecnici", "Freelance", "Eventi"]
-      },
-      {
-        "imgAlt": "Hamburger gourmet in mano, rappresentazione del settore ristorazione, delivery, caffetterie e bar",
-        "category": "Ristorazione",
-        "subcategories": ["Delivery", "Caffetterie", "Bar"]
-      },
-      {
-        "imgAlt": "Modellino di casa con chiavi su un tavolo, rappresentazione del settore immobiliare e ristrutturazioni",
-        "category": "Immobiliare e Costruzioni",
-        "subcategories": ["Agenzie immobiliari", "Agenti", "Ristrutturazioni"]
-      },
-      {
-        "imgAlt": "Giovani che giocano a padel in un campo, rappresentazione di accademie, corsi e attività formative",
-        "category": "Educazione e Formazione",
-        "subcategories": ["Scuole", "Corsi online", "Coaching"]
-      },
-      {
-        "imgAlt": "Uomo che si allena in palestra, esempio del settore fitness, cliniche e benessere personale",
-        "category": "Benessere e Salute",
-        "subcategories": ["Parrucchieri", "Cliniche", "Terapie"]
-      }
-    ]
-  },
-  "testimonials": {
-    "contentTitle6": "// Testimonianze__",
-    "title3": "Dicono che <pink>facciamo</pink><blue> magia.</blue> E i numeri non mentono",
-    "paragraph": "Ogni cliente ha la sua storia, e i risultati lo confermano. Qui ti mostriamo cosa dicono di noi… e cosa abbiamo realizzato insieme.",
-    "stats": "Tasso di soddisfazione",
-    "testimonialsList": [
-      {
-        "profession": "Istruzione",
-        "name": "Pablo García Calvo",
-        "quote": "Come insegnante, non potrei essere più felice con questa applicazione! Rende molto facile tenere traccia dei registri e dei pagamenti degli studenti"
-      },
-      {
-        "profession": "Marketing Digitale",
-        "name": "Carla Herrero",
-        "quote": "Mario! Super consigliato; ho collaborato con lui e abbiamo ottenuto i migliori risultati. È il migliore nel settore."
-      },
-      {
-        "profession": "Artistico",
-        "name": "Félix González",
-        "quote": "'netneo' metterà tutto l'entusiasmo necessario per realizzare il tuo sito web. Il massimo impegno e la massima dedizione garantiranno che il risultato sia quello che desideri, quello più adatto alla tua attività. Ti consiglieranno affinché il tuo progetto ottenga la visibilità che merita. Un successo sicuro se ti affidi a 'netneo'."
-      }
-    ]
-  },
+
   "curriculum": {
     "contentTitle6": "// Curriculum__",
     "title3": "Stai <blue>reclutando</blue><pink> talento?</pink>",

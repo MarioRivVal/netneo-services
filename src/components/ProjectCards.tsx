@@ -32,7 +32,7 @@ export default function ProjectCards() {
           <div className={s.infoBox}>
             <h4>{item.title}</h4>
             <p className="u--paragraph u--text-centered">{item.description}</p>
-            <GradientButton href={item.url} text="Online" variant="light" />
+            <GradientButton to={item.url} text="Online" variant="light" />
           </div>
         </div>
       ))}
