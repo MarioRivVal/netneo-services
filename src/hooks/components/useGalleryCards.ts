@@ -7,7 +7,7 @@ export default function useGalleryCards(
   scope: string,
   initial: number
 ) {
-  const [reasonActive, setReasonActive] = useState(initial);
+  const [itemActive, setItemActive] = useState(initial);
 
   const { t } = useTranslation(directory);
 
@@ -16,9 +16,9 @@ export default function useGalleryCards(
   }) as Record<string, string>[];
 
   const { sliderRef, itemRef } = useCarousel(itemsList.length, {
-    initial: reasonActive,
-    onChange: setReasonActive,
+    initial: itemActive,
+    onChange: setItemActive,
   });
 
-  return { sliderRef, itemRef, reasonActive, itemsList };
+  return { sliderRef, itemRef, itemActive, itemsList };
 }

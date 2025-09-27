@@ -1,0 +1,103 @@
+.box {
+  align-items: center;
+  gap: 2rem;
+}
+
+.slider {
+  position: relative;
+  height: 40rem;
+  touch-action: pan-y;
+  cursor: grab;
+}
+
+.reasonsSlider {
+  height: 32rem;
+}
+
+.dragging {
+  cursor: grabbing;
+  -webkit-user-select: none; /* iOS */
+  user-select: none;
+}
+
+.locking {
+  touch-action: none;
+}
+
+.item {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* el JS añade el resto */
+  transform-origin: center center;
+  transition: transform 220ms ease;
+  will-change: transform;
+  -webkit-user-select: none; /* iOS */
+  user-select: none;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  min-width: 28rem;
+  height: 32rem;
+  padding: 2rem;
+  background-color: var(--white);
+  border-radius: var(--radius);
+  box-shadow: var(--light-shadow);
+}
+
+.content.active {
+  border: 0.1rem solid transparent;
+  border-radius: var(--radius);
+  background: linear-gradient(var(--white), var(--white)) padding-box,
+    linear-gradient(90deg, var(--blue), var(--pink)) border-box;
+}
+
+.titles {
+  align-items: center;
+  border-bottom: solid 0.1rem var(--pink);
+  margin-bottom: 1rem;
+}
+
+.icon svg {
+  width: 4rem;
+  height: auto;
+}
+
+.subtitle {
+  font-size: 2.2rem;
+}
+
+.title {
+  font-size: 3rem;
+  text-align: center;
+  font-family: var(--font-title);
+}
+
+.paragraph {
+  font-size: 2.2rem;
+  text-align: center;
+}
+
+@media (min-width: 1280px) {
+  .box {
+    gap: 4rem;
+  }
+
+  .reasonsSlider {
+    height: 26rem;
+  }
+
+  .content {
+    min-width: 42rem;
+    height: 28rem;
+  }
+
+  /* .testimonialsBox {
+    height: 30rem;
+  } */
+}

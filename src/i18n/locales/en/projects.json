@@ -1,7 +1,21 @@
 {
+  "header": {
+    "title6": "// Projects__",
+    "title5": "What if your project is next?",
+    "title2": "We shape your",
+    "title1": ["Ideas", "Vision", "Projects", "Challenges", "Future"],
+    "imgAlt": "Classic David-style bust in blue with 3D mesh texture, using a virtual reality headset on a blue background.",
+    "contentTitle6": "// We create__",
+    "title3": "We design and <blue>develop</blue> for <pink>people</pink> like you",
+    "paragraph": "We create digital solutions that don't just stay on paper. Here you can see some ideas that have already been brought to life with strategy, creativity, and vision. The next project could be yours.",
+    "btnDark": "I have questions",
+    "btnLight": "Let's get started"
+  },
   "projects": {
-    "contentTitle6": "// Projects__",
-    "title3": "Some of our <pink>recent</pink><blue> works</blue>",
+    "contentTitle6": "// Clients__",
+    "title3": "They <pink>trusted</pink> completely in <blue>us</blue>",
+    "btnLight": "I want to hire",
+    "btnDark": "More projects",
     "projectsList": [
       {
         "title": "by Carla Herrero",
@@ -22,6 +36,27 @@
         "title": "Student's MG",
         "description": "An app that allows our client to easily organize and control student payments by quarters. It securely stores information and generates ready-to-print invoices every three months. A practical and simple tool to always keep records in order.",
         "imgAlt": "Desktop screenshot of the app 'Student's MG'"
+      }
+    ]
+  },
+  "testimonials": {
+    "contentTitle6": "// Testimonials__",
+    "title3": "They say we <pink>create</pink><blue> magic.</blue>",
+    "testimonialsList": [
+      {
+        "profession": "Education",
+        "name": "Pablo García Calvo",
+        "quote": "As a teacher, I couldn't be happier with this application! It makes keeping track of student records and payments very easy."
+      },
+      {
+        "profession": "Digital Marketing",
+        "name": "Carla Herrero",
+        "quote": "Mario! Highly recommended; I have collaborated with him and we achieved the best results. He is the best in the field."
+      },
+      {
+        "profession": "Artistic",
+        "name": "Félix González",
+        "quote": "'netneo' will put so much enthusiasm into having your own website into developing it. Maximum work and dedication will ensure the result is what you desire, the one that best suits your business. They will advise you so your project gains the visibility it deserves. A sure success if you trust 'netneo'"
       }
     ]
   },
@@ -64,29 +99,6 @@
         "imgAlt": "Man training in a gym, example of the fitness, clinics and personal wellness sector",
         "category": "Wellness & Health",
         "subcategories": ["Hair salons", "Clinics", "Therapies"]
-      }
-    ]
-  },
-  "testimonials": {
-    "contentTitle6": "// Testimonials__",
-    "title3": "They say we <pink>create</pink><blue> magic.</blue> And the numbers don't lie",
-    "paragraph": "Each client has their story, and the results back it up. Here we show you what they say about us… and what we achieved together.",
-    "stats": "Satisfaction rate",
-    "testimonialsList": [
-      {
-        "profession": "Education",
-        "name": "Pablo García Calvo",
-        "quote": "As a teacher, I couldn't be happier with this application! It makes keeping track of student records and payments very easy."
-      },
-      {
-        "profession": "Digital Marketing",
-        "name": "Carla Herrero",
-        "quote": "Mario! Highly recommended; I have collaborated with him and we achieved the best results. He is the best in the field."
-      },
-      {
-        "profession": "Artistic",
-        "name": "Félix González",
-        "quote": "'netneo' will put so much enthusiasm into having your own website into developing it. Maximum work and dedication will ensure the result is what you desire, the one that best suits your business. They will advise you so your project gains the visibility it deserves. A sure success if you trust 'netneo'"
       }
     ]
   }

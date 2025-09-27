@@ -1,15 +1,12 @@
-import s from "../assets/styles/layouts/header.module.css";
 import { useRef } from "react";
+import s from "../assets/styles/layouts/header.module.css";
+import type { HeaderProps } from "../types/types";
 import { useTranslation } from "react-i18next";
 import ResponsiveImage from "../components/ResponsiveImage";
 import useScramble from "../hooks/useScramble";
 
-type HeaderProps = {
-  scope: string;
-};
-
-export default function Header({ scope }: HeaderProps) {
-  const { t } = useTranslation("home");
+export default function Header({ scope, directory }: HeaderProps) {
+  const { t } = useTranslation(directory);
   const titleRef = useRef<HTMLHeadingElement>(null);
 
   const words = t(`${scope}.title1`, { returnObjects: true }) as string[];
@@ -26,7 +23,7 @@ export default function Header({ scope }: HeaderProps) {
 
       <div className={s.ImgBox}>
         <ResponsiveImage
-          name={`home/${scope}`}
+          name={`${directory}/${scope}`}
           alt={t(`${scope}.imgAlt`)}
           priority
           className={s.headerImg}

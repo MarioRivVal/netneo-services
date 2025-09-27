@@ -38,11 +38,7 @@
   align-items: center;
 }
 
-.detailsBox {
-  align-items: center;
-}
-
-/* SLIDER */
+/* SLIDER IMAGES  es lo mismo para los de texto */
 .slider {
   position: relative;
   height: 40rem;
@@ -64,7 +60,6 @@
   touch-action: none;
 }
 
-/* SLIDER IMAGES */
 .item {
   position: absolute;
   top: 50%;
@@ -90,54 +85,7 @@
   -webkit-user-select: none;
   user-select: none; /* evita selección accidental */
 }
-
-/* REASON SECTION */
-
-.container {
-  display: flex;
-  flex-direction: column;
-  gap: 6rem;
-}
-
-.box {
-  align-items: center;
-  gap: 2rem;
-}
-
-.reasonBox {
-}
-
-.reasonBox.reasonActive {
-  border: 0.1rem solid transparent;
-  border-radius: var(--radius);
-  background: linear-gradient(var(--white), var(--white)) padding-box,
-    linear-gradient(90deg, var(--blue), var(--pink)) border-box;
-}
-
-.reasonTitles {
-  align-items: center;
-  border-bottom: solid 0.1rem var(--pink);
-  margin-bottom: 1rem;
-}
-
-.reasonIcon svg {
-  width: 4rem;
-  height: auto;
-}
-
-.reasonTitle {
-  font-size: 3rem;
-  text-align: center;
-  font-family: var(--font-title);
-}
-.reasonLabel {
-  font-size: 2.2rem;
-}
-
-.reasonParagraph {
-  font-size: 2.2rem;
-  text-align: center;
-}
+/* ------------------------- */
 
 .details {
   display: flex;
@@ -157,32 +105,6 @@
   font-family: var(--font-extra);
 }
 
-.reasonsList {
-  width: 100%;
-  gap: var(--g-tiny);
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.reasonsList button {
-  text-transform: none;
-  flex: none;
-}
-
-.reasonBox {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-  min-width: 28rem;
-  height: 32rem;
-  padding: 2rem;
-  background-color: var(--white);
-  border-radius: var(--radius);
-  box-shadow: var(--light-shadow);
-}
-
 /* PROJECTS SECTION */
 .projectsBox {
   display: flex;
@@ -191,13 +113,6 @@
   margin: 0 auto;
   gap: 3rem;
 }
-
-/* .projectsGrid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 6rem;
-  margin-top: 2rem;
-} */
 
 /* PARTNER SECTION */
 
@@ -216,7 +131,7 @@
 
 /* TESTIMONIALS SECTION  */
 
-/* .testimonialsUser {
+.testimonialsUser {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -235,7 +150,7 @@
 
 .testimonialsBox {
   height: 30rem;
-} */
+}
 
 /* CURRICULUM SECTION */
 
@@ -278,11 +193,6 @@
     justify-self: center;
   }
 
-  .detailsBox {
-    width: 70%;
-    order: 2;
-  }
-
   /* .projectCard {
     grid-template-columns: repeat(2, 1fr);
   } */
@@ -290,16 +200,9 @@
   .infoBox {
     padding: 2rem;
   }
-
-  .projectsBox {
-  }
 }
 
 @media (min-width: 1024px) {
-  /* .projectsGrid {
-    margin-top: 6rem;
-  } */
-
   .projectsBox {
     display: flex;
     flex-direction: row;

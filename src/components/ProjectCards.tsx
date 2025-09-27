@@ -5,7 +5,7 @@ import { projectImgs } from "../content/images";
 import { useTranslation } from "react-i18next";
 
 export default function ProjectCards() {
-  const { t } = useTranslation("home");
+  const { t } = useTranslation("projects");
 
   const projectItems = projectImgs.map(({ id, label, url }, index) => ({
     id,

@@ -5,7 +5,7 @@
     "title2": "Aumenta tu presencia",
     "title1": ["Webs", "Apps", "Diseño", "seo", "ia"],
     "imgAlt": "Mano con teléfono en la mano",
-    "imgName": "home",
+
     "contentTitle6": "// Comencemos_",
     "title3": "Tu  <blue>presencia</blue> digital <pink>empieza</pink> aquí",
     "paragraph": "En Netneo combinamos diseño, desarrollo e inteligencia artificial para crear experiencias digitales únicas. Webs, apps e ideas que funcionan, se ven bien y representan lo que tu marca es. Nada estándar, todo a tu medida.",
@@ -60,33 +60,29 @@
     "stats": "Clientes satisfechos",
     "reasonsList": [
       {
-        "label": "A medida",
+        "subTitle": "A medida",
         "title": "Soluciones sin atajos",
-        "description": "Cada proyecto empieza desde cero. Nada de plantillas recicladas ni sistemas genéricos: solo ideas únicas que reflejan tu esencia y tu marca."
+        "paragraph": "Cada proyecto empieza desde cero. Nada de plantillas recicladas ni sistemas genéricos: solo ideas únicas que reflejan tu esencia y tu marca."
       },
       {
-        "label": "Humano",
+        "subTitle": "Humano",
         "title": "Colaboración real",
-
-        "description": "El trato es directo, cercano y profesional. Hablamos contigo, escuchamos, proponemos. Trabajamos como personas, no como robots."
+        "paragraph": "El trato es directo, cercano y profesional. Hablamos contigo, escuchamos, proponemos. Trabajamos como personas, no como robots."
       },
       {
-        "label": "Original",
+        "subTitle": "Original",
         "title": "Marca la diferencia",
-
-        "description": "Nada de webs grises o clones sin alma. Diseñamos experiencias visuales que destacan, conectan y te hacen recordable."
+        "paragraph": "Nada de webs grises o clones sin alma. Diseñamos experiencias visuales que destacan, conectan y te hacen recordable."
       },
       {
-        "label": "Compromiso",
+        "subTitle": "Compromiso",
         "title": "Valor y resultados",
-
-        "description": "Tu inversión tiene retorno. Nuestros precios reflejan valor, no solo horas. Lo que entregamos, lo respaldamos."
+        "paragraph": "Tu inversión tiene retorno. Nuestros precios reflejan valor, no solo horas. Lo que entregamos, lo respaldamos."
       },
       {
-        "label": "Acompañamiento",
+        "subTitle": "Acompañamiento",
         "title": "Más allá del lanzamiento",
-
-        "description": "Después del lanzamiento, seguimos contigo. Cuidamos tu web o app para que funcione, evolucione y nunca te dé dolores de cabeza."
+        "paragraph": "Después del lanzamiento, seguimos contigo. Cuidamos tu web o app para que funcione, evolucione y nunca te dé dolores de cabeza."
       }
     ]
   },

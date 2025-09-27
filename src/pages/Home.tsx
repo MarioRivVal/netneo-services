@@ -2,16 +2,17 @@ import s from "../assets/styles/pages/home.module.css";
 // import as from "../assets/styles/layouts/asideBox.module.css";
 import GradientButton from "../components/GradientButton";
 import { Trans, useTranslation } from "react-i18next";
-import { reasonsIcons } from "../content/icons";
+// import { reasonsIcons } from "../content/icons";
 import Header from "../layouts/Header";
 import AsideBox from "../layouts/AsideBox";
 import ResponsiveImage from "../components/ResponsiveImage";
 import useGalleryImages from "../hooks/components/useGalleryImages";
-import useGalleryCards from "../hooks/components/useGalleryCards";
+// import useGalleryCards from "../hooks/components/useGalleryCards";
 // import ProjectCards from "../components/ProjectCards";
 import ProjectCardsPreview from "../components/ProjectCardsPreview";
 import { homeServicesImgs } from "../content/images";
 import PortfolioBox from "../layouts/PortfolioBox";
+import SliderTextBox from "../components/SliderTextBox";
 
 // type Partner = {
 //   imgAlt: string;
@@ -22,8 +23,8 @@ import PortfolioBox from "../layouts/PortfolioBox";
 export default function Home() {
   const servicesRef = useGalleryImages(homeServicesImgs, "services", 2);
   // const partnersRef = useGalleryImages(partnerImgs, "partners", 3);
-  const reasonsRef = useGalleryCards("home", "reasons", 2);
-  // const testimonialRef = useGalleryCards("home", "testimonials", 1);
+  // const reasonsRef = useGalleryCards("home", "reasons", 2);
+  // const testimonialRef = useGalleryCards("projects", "testimonials", 1);
 
   // TRANSLATIONS
   const { t } = useTranslation("home");
@@ -39,7 +40,7 @@ export default function Home() {
   return (
     <>
       <main className="main u--bg-light-blue u--flex-column">
-        <Header scope={"header"} />
+        <Header scope="header" directory="home" />
         <AsideBox
           directory="home"
           scope="header"
@@ -124,7 +125,7 @@ export default function Home() {
 
       {/*  REASONS SECTION */}
       <section className="section u--bg-light-blue">
-        <div className={s.container}>
+        <div className="container">
           <AsideBox
             directory="home"
             scope={"reasons"}
@@ -135,40 +136,8 @@ export default function Home() {
               darkBtnTo: "./services",
             }}
           />
-          <div className={`${s.box} u--mw-centered u--flex-column`}>
-            <div
-              className={`${s.slider} ${s.reasonSlider}`}
-              ref={reasonsRef.sliderRef}
-            >
-              {reasonsRef.itemsList.map((item, index) => (
-                <div
-                  key={item.id}
-                  ref={(el) => {
-                    reasonsRef.itemRef.current[index] = el;
-                  }}
-                  className={s.item}
-                >
-                  <div
-                    className={`${s.reasonBox} ${
-                      reasonsRef.reasonActive === index ? s.reasonActive : ""
-                    }`}
-                  >
-                    <div className={`${s.reasonTitles} u--flex-column`}>
-                      <div className={s.reasonIcon}>
-                        {reasonsRef.reasonActive === index
-                          ? reasonsIcons[index].active
-                          : reasonsIcons[index].unactive}
-                      </div>
-                      <p className={s.reasonLabel}>{item.label}</p>
-                      <p className={s.reasonTitle}>{item.title}</p>
-                    </div>
 
-                    <p className={s.reasonParagraph}>{item.description}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
+          <SliderTextBox directory="home" scope="reasons" initialIndex={2} />
         </div>
       </section>
 
@@ -200,28 +169,7 @@ export default function Home() {
       </section>
 
       {/* ADDITIONAL SECTIONS */}
-      {/* 
-      <section className="section">
-        <div className="container">
-          <div className="title-box">
-            <h6>{t("projects.contentTitle6")}</h6>
-            <h3>
-              <Trans
-                i18nKey={`projects.title3`}
-                t={t}
-                components={{
-                  blue: <span className="u--blue-text u--bold" />,
-                  pink: <span className="u--pink-text" />,
-                }}
-              />
-            </h3>
-          </div>
-          <div className={s.projectsGrid}>
-            <ProjectCards />
-          </div>
-         
-        </div>
-      </section> */}
+
       {/* <section className="section u--bg-gray">
         <div className="container">
           <div className="title-box">
@@ -278,16 +226,7 @@ export default function Home() {
       </section> */}
       {/* <section className="section">
         <div className="container">
-          <AsideBox
-            directory="home"
-            darkBtnTo=""
-            lightBtnTo=""
-            scope="testimonials"
-            reverse={true}
-            box={true}
-          />
           <div className={`${s.box} u--mw-centered u--flex-column`}>
-        
             <div
               className={`${s.slider} ${s.testimonialsSlider}`}
               ref={testimonialRef.sliderRef}

@@ -1,7 +1,21 @@
 {
+  "header": {
+    "title6": "// Proyectos__",
+    "title5": "¿Y si tu proyecto es el siguiente?",
+    "title2": "Damos forma a tus",
+    "title1": ["Ideas", "Visión", "Proyectos", "Retos", "Futuro"],
+    "imgAlt": "Busto clásico estilo David en azul con textura de malla 3D, usando un visor de realidad virtual sobre un fondo azul.",
+    "contentTitle6": "// Creamos__",
+    "title3": "Diseñamos y <blue>desarrollamos</blue> para <pink>personas</pink> como tú",
+    "paragraph": "Creamos soluciones digitales que no se quedan solo en el papel. Aquí puedes ver algunas ideas que ya se han hecho realidad con estrategia, creatividad y visión. El próximo proyecto podría ser el tuyo.",
+    "btnLight": "Empecemos",
+    "btnDark": "Tengo preguntas"
+  },
   "projects": {
-    "contentTitle6": "// Proyectos__",
-    "title3": "Algunos de nuestros <pink>proyectos</pink><blue> recientes</blue>",
+    "contentTitle6": "// Clientes__",
+    "title3": "<pink>Confiaron </pink>totalmente en <blue>nosotros</blue>",
+    "btnLight": "Quiero contratar",
+    "btnDark": "Más proyectos",
     "projectsList": [
       {
         "title": "by Carla Herrero",
@@ -22,6 +36,27 @@
         "title": "Student's MG",
         "description": "Una app que permite a nuestro cliente organizar y controlar fácilmente los pagos de sus estudiantes por trimestres. Guarda la información de manera segura y genera facturas listas para imprimir cada tres meses. Una herramienta práctica y sencilla para mantener sus registros siempre en orden.",
         "imgAlt": "Captura de pantalla en versión escritorio para la app de 'Student's MG'"
+      }
+    ]
+  },
+  "testimonials": {
+    "contentTitle6": "// Testimonios__",
+    "title3": "Dicen que <pink>hacemos</pink><blue> magia.</blue>",
+    "testimonialsList": [
+      {
+        "subTitle": "Educación",
+        "title": "Pablo García Calvo",
+        "paragraph": "Como profesor, no podría estar más feliz con esta aplicación! Hace que llevar el control de los registros y pagos de los estudiantes sea muy fácil."
+      },
+      {
+        "subTitle": "Marketing Digital",
+        "title": "Carla Herrero",
+        "paragraph": "Mario! Súper recomendable; he colaborado con él y hemos obtenido los mejores resultados. Es el mejor en la materia"
+      },
+      {
+        "subTitle": "Artístico",
+        "title": "Félix González",
+        "paragraph": "Tanto entusiasmo en tener tu propia web pondrá 'netneo' en desarrollarla. Trabajo y dedicación máximas para que el resultado sea el que tú deseas, el que más se ajuste a tu negocio. Te aconsejarán para que tu proyecto obtenga la visibilidad que se merece. Todo un acierto si confias en 'netNeo'."
       }
     ]
   },
@@ -67,29 +102,6 @@
         "imgAlt": "Hombre entrenando en un gimnasio, ejemplo del sector fitness, clínicas y bienestar personal",
         "category": "Bienestar y salud",
         "subcategories": ["Peluquerías", "Clínicas", "Terapias"]
-      }
-    ]
-  },
-  "testimonials": {
-    "contentTitle6": "// Testimonios__",
-    "title3": "Dicen que <pink>hacemos</pink><blue> magia.</blue> Y los números no mienten",
-    "paragraph": "Cada cliente tiene su historia, y los resultados la respaldan. Aquí te mostramos lo que dicen de nosotros… y lo que logramos juntos.",
-    "stats": "Tasa de satisfacción",
-    "testimonialsList": [
-      {
-        "profession": "Educación",
-        "name": "Pablo García Calvo",
-        "quote": "Como profesor, no podría estar más feliz con esta aplicación! Hace que llevar el control de los registros y pagos de los estudiantes sea muy fácil."
-      },
-      {
-        "profession": "Marketing Digital",
-        "name": "Carla Herrero",
-        "quote": "Mario! Súper recomendable; he colaborado con él y hemos obtenido los mejores resultados. Es el mejor en la materia"
-      },
-      {
-        "profession": "Artístico",
-        "name": "Félix González",
-        "quote": "Tanto entusiasmo en tener tu propia web pondrá 'netneo' en desarrollarla. Trabajo y dedicación máximas para que el resultado sea el que tú deseas, el que más se ajuste a tu negocio. Te aconsejarán para que tu proyecto obtenga la visibilidad que se merece. Todo un acierto si confias en 'netNeo'."
       }
     ]
   }
