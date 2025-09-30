@@ -59,29 +59,29 @@
     "stats": "Clienti soddisfatti",
     "reasonsList": [
       {
-        "label": "Su misura",
+        "subTitle": "Su misura",
         "title": "Soluzioni senza scorciatoie",
-        "description": "Ogni progetto parte da zero. Niente modelli riciclati o sistemi generici: solo idee uniche che riflettono la tua essenza e il tuo brand."
+        "paragraph": "Ogni progetto parte da zero. Niente modelli riciclati o sistemi generici: solo idee uniche che riflettono la tua essenza e il tuo brand."
       },
       {
-        "label": "Umano",
+        "subTitle": "Umano",
         "title": "Collaborazione reale",
-        "description": "Il rapporto è diretto, vicino e professionale. Parliamo con te, ascoltiamo e proponiamo. Lavoriamo come persone, non come robot."
+        "paragraph": "Il rapporto è diretto, vicino e professionale. Parliamo con te, ascoltiamo e proponiamo. Lavoriamo come persone, non come robot."
       },
       {
-        "label": "Originale",
+        "subTitle": "Originale",
         "title": "Marca la differenza",
-        "description": "Niente siti web grigi o cloni senza anima. Progettiamo esperienze visive che si distinguono, connettono e ti rendono memorabile."
+        "paragraph": "Niente siti web grigi o cloni senza anima. Progettiamo esperienze visive che si distinguono, connettono e ti rendono memorabile."
       },
       {
-        "label": "Impegno",
+        "subTitle": "Impegno",
         "title": "Valore e risultati",
-        "description": "Il tuo investimento ha un ritorno. I nostri prezzi riflettono il valore, non solo le ore. Ciò che consegniamo, lo supportiamo."
+        "paragraph": "Il tuo investimento ha un ritorno. I nostri prezzi riflettono il valore, non solo le ore. Ciò che consegniamo, lo supportiamo."
       },
       {
-        "label": "Accompagnamento",
+        "subTitle": "Accompagnamento",
         "title": "Dopo il lancio",
-        "description": "Dopo il lancio, restiamo con te. Ci prendiamo cura del tuo sito o della tua app affinché funzioni, evolva e non ti dia mai mal di testa."
+        "paragraph": "Dopo il lancio, restiamo con te. Ci prendiamo cura del tuo sito o della tua app affinché funzioni, evolva e non ti dia mai mal di testa."
       }
     ]
   },

@@ -2,8 +2,8 @@
   "header": {
     "title6": "// Progetti__",
     "title5": "E se il tuo progetto fosse il prossimo?",
-    "title2": "Diamo forma alle tue",
-    "title1": ["Idee", "Visione", "Progetti", "Sfide", "Futuro"],
+    "title2": "Facciamolo insieme",
+    "title1": ["Idee", "Visione", "Obiettivi", "Sfide", "Futuro"],
     "imgAlt": "Busto classico in stile David in blu con texture a rete 3D, che indossa un visore di realtà virtuale su uno sfondo blu.",
     "contentTitle6": "// Creiamo__",
     "title3": "Progettiamo e <blue>sviluppiamo</blue> per <pink>persone</pink> come te",
@@ -44,26 +44,26 @@
     "title3": "Dicono che <pink>facciamo</pink><blue> magia.</blue>",
     "testimonialsList": [
       {
-        "profession": "Istruzione",
-        "name": "Pablo García Calvo",
-        "quote": "Come insegnante, non potrei essere più felice con questa applicazione! Rende molto facile tenere traccia dei registri e dei pagamenti degli studenti"
+        "subTitle": "Istruzione",
+        "title": "Pablo García Calvo",
+        "paragraph": "Come insegnante, non potrei essere più felice con questa applicazione! Rende molto facile tenere traccia dei registri e dei pagamenti degli studenti"
       },
       {
-        "profession": "Marketing Digitale",
-        "name": "Carla Herrero",
-        "quote": "Mario! Super consigliato; ho collaborato con lui e abbiamo ottenuto i migliori risultati. È il migliore nel settore."
+        "subTitle": "Marketing Digitale",
+        "title": "Carla Herrero",
+        "paragraph": "Mario! Super consigliato; ho collaborato con lui e abbiamo ottenuto i migliori risultati. È il migliore nel settore."
       },
       {
-        "profession": "Artistico",
-        "name": "Félix González",
-        "quote": "'netneo' metterà tutto l'entusiasmo necessario per realizzare il tuo sito web. Il massimo impegno e la massima dedizione garantiranno che il risultato sia quello che desideri, quello più adatto alla tua attività. Ti consiglieranno affinché il tuo progetto ottenga la visibilità che merita. Un successo sicuro se ti affidi a 'netneo'."
+        "subTitle": "Artistico",
+        "title": "Félix González",
+        "paragraph": "'netneo' metterà tutto l'entusiasmo necessario per realizzare il tuo sito web. Il massimo impegno e la massima dedizione garantiranno che il risultato sia quello che desideri, quello più adatto alla tua attività. Ti consiglieranno affinché il tuo progetto ottenga la visibilità che merita. Un successo sicuro se ti affidi a 'netneo'."
       }
     ]
   },
-  "partners": {
-    "contentTitle6": "// Partners__",
+  "clients": {
+    "contentTitle6": "// Clienti__",
     "title3": "Ci <blue>scelgono</blue> da molti <pink>settori</pink>",
-    "partnersList": [
+    "clientsList": [
       {
         "imgAlt": "Persone con borse della spesa in un centro commerciale, simbolo di negozi di abbigliamento, moda e attività locali",
         "category": "Commercio locale",

@@ -13,7 +13,7 @@ export const projectImgs = [
   { id: 4, label: "student", url: "https://students-control.netlify.app/" },
   // { id: 5, label: "wisecalories" },
 ];
-export const partnerImgs = [
+export const clientsImgs = [
   { id: 1, label: "commerce" },
   { id: 2, label: "creativity" },
   { id: 3, label: "profesional" },

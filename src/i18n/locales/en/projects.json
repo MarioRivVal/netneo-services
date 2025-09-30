@@ -2,8 +2,8 @@
   "header": {
     "title6": "// Projects__",
     "title5": "What if your project is next?",
-    "title2": "We shape your",
-    "title1": ["Ideas", "Vision", "Projects", "Challenges", "Future"],
+    "title2": "Let's do it together",
+    "title1": ["Ideas", "Vision", "Goals", "Challenges", "Future"],
     "imgAlt": "Classic David-style bust in blue with 3D mesh texture, using a virtual reality headset on a blue background.",
     "contentTitle6": "// We create__",
     "title3": "We design and <blue>develop</blue> for <pink>people</pink> like you",
@@ -44,27 +44,27 @@
     "title3": "They say we <pink>create</pink><blue> magic.</blue>",
     "testimonialsList": [
       {
-        "profession": "Education",
-        "name": "Pablo García Calvo",
-        "quote": "As a teacher, I couldn't be happier with this application! It makes keeping track of student records and payments very easy."
+        "subTitle": "Education",
+        "title": "Pablo García Calvo",
+        "paragraph": "As a teacher, I couldn't be happier with this application! It makes keeping track of student records and payments very easy."
       },
       {
-        "profession": "Digital Marketing",
-        "name": "Carla Herrero",
-        "quote": "Mario! Highly recommended; I have collaborated with him and we achieved the best results. He is the best in the field."
+        "subTitle": "Digital Marketing",
+        "title": "Carla Herrero",
+        "paragraph": "Mario! Highly recommended; I have collaborated with him and we achieved the best results. He is the best in the field."
       },
       {
-        "profession": "Artistic",
-        "name": "Félix González",
-        "quote": "'netneo' will put so much enthusiasm into having your own website into developing it. Maximum work and dedication will ensure the result is what you desire, the one that best suits your business. They will advise you so your project gains the visibility it deserves. A sure success if you trust 'netneo'"
+        "subTitle": "Artistic",
+        "title": "Félix González",
+        "paragraph": "'netneo' will put so much enthusiasm into having your own website into developing it. Maximum work and dedication will ensure the result is what you desire, the one that best suits your business. They will advise you so your project gains the visibility it deserves. A sure success if you trust 'netneo'"
       }
     ]
   },
 
-  "partners": {
-    "contentTitle6": "// Partners__",
+  "clients": {
+    "contentTitle6": "// Clients__",
     "title3": "They <blue>choose us</blue> from many <pink>sectors</pink>",
-    "partnersList": [
+    "clientsList": [
       {
         "imgAlt": "People with shopping bags in a mall, symbol of clothing stores, fashion and local shops",
         "category": "Local business",

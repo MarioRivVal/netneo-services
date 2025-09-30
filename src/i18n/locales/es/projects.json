@@ -2,8 +2,8 @@
   "header": {
     "title6": "// Proyectos__",
     "title5": "¿Y si tu proyecto es el siguiente?",
-    "title2": "Damos forma a tus",
-    "title1": ["Ideas", "Visión", "Proyectos", "Retos", "Futuro"],
+    "title2": "Hagámoslo juntos",
+    "title1": ["Ideas", "Visión", "Objetivos", "Retos", "Futuro"],
     "imgAlt": "Busto clásico estilo David en azul con textura de malla 3D, usando un visor de realidad virtual sobre un fondo azul.",
     "contentTitle6": "// Creamos__",
     "title3": "Diseñamos y <blue>desarrollamos</blue> para <pink>personas</pink> como tú",
@@ -60,10 +60,10 @@
       }
     ]
   },
-  "partners": {
-    "contentTitle6": "// Partners__",
+  "clients": {
+    "contentTitle6": "// Clientes__",
     "title3": "Nos <blue>eligen</blue> desde muchos <pink>sectores</pink>",
-    "partnersList": [
+    "clientsList": [
       {
         "imgAlt": "Personas con bolsas de compras en un centro comercial, símbolo de tiendas de ropa, moda y comercios locales",
         "category": "Comercio local",

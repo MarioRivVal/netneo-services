@@ -1,31 +1,28 @@
 import { useState } from "react";
 import useCarousel from "../useCarousel";
 import { useTranslation } from "react-i18next";
+import type { UseGalleryImagesProps } from "../../types/hooks";
+import type { ImgItemsProps } from "../../types/objects";
 
-type GalleryItemProps = { id: number; name: string; alt: string };
-type ImgItemsProps = {
-  id: number;
-  label: string;
-};
-
-export default function useGalleryImages(
-  imgItems: ImgItemsProps[],
-  section: string,
-  initial: number
-) {
-  const [serviceActive, setServiceActive] = useState(initial);
-  const { t } = useTranslation("home");
+export default function useGalleryImages({
+  imgItems,
+  directory,
+  scope,
+  initialIndex,
+}: UseGalleryImagesProps) {
+  const [serviceActive, setServiceActive] = useState(initialIndex);
+  const { t } = useTranslation(directory);
 
   const { sliderRef, itemRef } = useCarousel(imgItems.length, {
     initial: serviceActive,
     onChange: setServiceActive,
   });
 
-  const galleryItems: GalleryItemProps[] = imgItems.map(
+  const galleryItems: ImgItemsProps[] = imgItems.map(
     ({ id, label }, index) => ({
       id,
-      name: `${section}/${label}`,
-      alt: t(`${section}.${section}List.${index}.imgAlt`, {
+      name: `${scope}/${label}`,
+      alt: t(`${scope}.${scope}List.${index}.imgAlt`, {
         defaultValue: label,
       }),
     })

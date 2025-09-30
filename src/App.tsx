@@ -4,9 +4,9 @@ import DesktopNav from "./layouts/DesktopNav";
 import MobileNav from "./layouts/MobileNav";
 import Footer from "./layouts/Footer";
 
-import Home from "./pages/Home";
+import HomePage from "./pages/HomePage";
 import Services from "./pages/Services";
-import Projects from "./pages/Projects";
+import ProjectsPage from "./pages/ProjectsPage";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NoFound";
@@ -29,9 +29,9 @@ function App() {
     <>
       {isMobile ? <MobileNav /> : <DesktopNav />}
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<HomePage />} />
         <Route path="/services" element={<Services />} />
-        <Route path="/projects" element={<Projects />} />
+        <Route path="/projects" element={<ProjectsPage />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="*" element={<NotFound />} />

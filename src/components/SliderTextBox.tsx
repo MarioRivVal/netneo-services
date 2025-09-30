@@ -1,6 +1,6 @@
 import s from "../assets/styles/components/sliderTextBox.module.css";
 import useGalleryCards from "../hooks/components/useGalleryCards";
-import { reasonsIcons } from "../content/icons";
+import { reasonsIcons, testimonialIcons } from "../content/icons";
 import type { SliderTextBoxProps } from "../types/components";
 
 export default function SliderTextBox({
@@ -10,19 +10,18 @@ export default function SliderTextBox({
 }: SliderTextBoxProps) {
   const refs = useGalleryCards(directory, scope, initialIndex);
 
+  const icons = scope === "reasons" ? reasonsIcons : testimonialIcons;
+
   return (
     <div className={`${s.box} u--mw-centered u--flex-column`}>
-      <div
-        className={`${s.slider} ${s[`${scope}Slider`]}`}
-        ref={refs.sliderRef}
-      >
+      <div className={`slider ${s[`${scope}Slider`]}`} ref={refs.sliderRef}>
         {refs.itemsList.map((item, index) => (
           <div
-            key={item.id}
+            key={index}
             ref={(el) => {
               refs.itemRef.current[index] = el;
             }}
-            className={s.item}
+            className="item"
           >
             <div
               className={`${s.content} ${
@@ -32,8 +31,8 @@ export default function SliderTextBox({
               <div className={`${s.titles} u--flex-column`}>
                 <div className={s.icon}>
                   {refs.itemActive === index
-                    ? reasonsIcons[index].active
-                    : reasonsIcons[index].unactive}
+                    ? icons[index].active
+                    : icons[index].unactive}
                 </div>
                 <p className={s.subtitle}>{item.subTitle}</p>
                 <p className={s.title}>{item.title}</p>

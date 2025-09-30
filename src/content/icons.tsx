@@ -39,17 +39,17 @@ export const reasonsIcons = [
   },
 ];
 
-export const testimonialIcons = {
-  artist: {
-    active: <ArtistAct />,
-    unactive: <ArtistIcon />,
-  },
-  education: {
+export const testimonialIcons = [
+  {
     active: <EducationAct />,
     unactive: <EducationIcon />,
   },
-  marketing: {
+  {
     active: <MarketingAct />,
     unactive: <MarketingIcon />,
   },
-};
+  {
+    active: <ArtistAct />,
+    unactive: <ArtistIcon />,
+  },
+];

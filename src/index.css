@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Sofia+Sans+Extra+Condensed:ital,wght@0,1..1000;1,1..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Sofia+Sans+Extra+Condensed:ital,wght@0,1..1000;1,1..1000&family=Square+Peg&display=swap");
 
 @font-face {
   font-family: "Bodoni MT Condensed";
@@ -20,6 +20,7 @@
   --font-title: "Bodoni MT Condensed", serif;
   --font-paragraph: "Sofia Sans Extra Condensed", sans-serif;
   --font-extra: "JetBrains Mono", monospace;
+  --font-special: "Square Peg", cursive;
 
   --black: #0d0810;
   --white: #fcfcfc;
@@ -184,11 +185,6 @@ picture {
   font-weight: 700;
 }
 
-/* POR ELIMINAR */
-.u--bg-gray {
-  background-color: var(--gray-1);
-}
-
 .u--bg-light-blue {
   background-color: var(--light-blue);
 }
@@ -206,6 +202,41 @@ picture {
 .u--mw-centered {
   max-width: 160rem;
   margin: 0 auto;
+}
+
+/* SLIDER LAYOUT */
+.slider {
+  position: relative;
+  height: 32rem;
+  touch-action: pan-y;
+  cursor: grab;
+}
+
+.dragging {
+  cursor: grabbing;
+  -webkit-user-select: none; /* iOS */
+  user-select: none;
+}
+
+.locking {
+  touch-action: none;
+}
+
+.item {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* el JS añade el resto */
+  transform-origin: center center;
+  transition: transform 220ms ease;
+  will-change: transform;
+  -webkit-user-select: none; /* iOS */
+  user-select: none;
+}
+
+.cardsContent {
+  align-items: center;
+  gap: var(--g-large);
 }
 
 @media (min-width: 768px) {
@@ -236,6 +267,10 @@ picture {
   }
   h5 {
     font-size: 3.8rem;
+  }
+
+  .slider {
+    height: 38rem;
   }
 }
 @media (min-width: 1440px) {

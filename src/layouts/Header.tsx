@@ -1,6 +1,6 @@
 import { useRef } from "react";
 import s from "../assets/styles/layouts/header.module.css";
-import type { HeaderProps } from "../types/types";
+import type { HeaderProps } from "../types/layouts";
 import { useTranslation } from "react-i18next";
 import ResponsiveImage from "../components/ResponsiveImage";
 import useScramble from "../hooks/useScramble";

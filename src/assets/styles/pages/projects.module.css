@@ -9,84 +9,19 @@
   align-self: center;
 }
 
-/* TESTIMONIALS SECTION  */
+/* CLIENTS */
 
-.slider {
-  position: relative;
-  height: 40rem;
-  touch-action: pan-y;
-  cursor: grab;
-}
-.dragging {
-  cursor: grabbing;
-  -webkit-user-select: none; /* iOS */
-  user-select: none;
-}
-
-.locking {
-  touch-action: none;
-}
-.box {
-  align-items: center;
-  gap: 2rem;
-}
-.item {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); /* el JS añade el resto */
-  transform-origin: center center;
-  transition: transform 220ms ease;
-  will-change: transform;
-  -webkit-user-select: none; /* iOS */
-  user-select: none;
-}
-
-.reasonBox {
+.partnersSub {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
-  gap: 1rem;
-  min-width: 28rem;
-  height: 32rem;
-  padding: 2rem;
-  background-color: var(--white);
-  border-radius: var(--radius);
-  box-shadow: var(--light-shadow);
 }
 
-.reasonBox.reasonActive {
-  border: 0.1rem solid transparent;
-  border-radius: var(--radius);
-  background: linear-gradient(var(--white), var(--white)) padding-box,
-    linear-gradient(90deg, var(--blue), var(--pink)) border-box;
+.partnersSub span {
+  padding: 0 1rem;
 }
-
-.reasonParagraph {
-  font-size: 2.2rem;
-  text-align: center;
-}
-
-.testimonialsUser {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.testimonialsUser span:first-child {
-  font-size: 1.6rem;
-  color: var(--blue);
-}
-.testimonialsUser span:last-child {
-  font-size: 2.6rem;
-  font-family: var(--font-title);
-}
-.testimonialsSlider {
-  height: 38rem;
-}
-
-.testimonialsBox {
-  height: 30rem;
+.partnersSub > span:not(:last-child) {
+  border-right: solid 0.2rem var(--pink);
 }
 
 @media (min-width: 780px) {

@@ -3,37 +3,8 @@
   gap: 2rem;
 }
 
-.slider {
-  position: relative;
+.testimonialsSlider {
   height: 40rem;
-  touch-action: pan-y;
-  cursor: grab;
-}
-
-.reasonsSlider {
-  height: 32rem;
-}
-
-.dragging {
-  cursor: grabbing;
-  -webkit-user-select: none; /* iOS */
-  user-select: none;
-}
-
-.locking {
-  touch-action: none;
-}
-
-.item {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); /* el JS añade el resto */
-  transform-origin: center center;
-  transition: transform 220ms ease;
-  will-change: transform;
-  -webkit-user-select: none; /* iOS */
-  user-select: none;
 }
 
 .content {
@@ -43,7 +14,6 @@
   justify-content: center;
   gap: 1rem;
   min-width: 28rem;
-  height: 32rem;
   padding: 2rem;
   background-color: var(--white);
   border-radius: var(--radius);
@@ -55,6 +25,14 @@
   border-radius: var(--radius);
   background: linear-gradient(var(--white), var(--white)) padding-box,
     linear-gradient(90deg, var(--blue), var(--pink)) border-box;
+}
+
+.reasonsSlider .content {
+  height: 32rem;
+}
+
+.testimonialsSlider .content {
+  height: 42rem;
 }
 
 .titles {
@@ -88,16 +66,11 @@
     gap: 4rem;
   }
 
-  .reasonsSlider {
-    height: 26rem;
-  }
-
   .content {
     min-width: 42rem;
     height: 28rem;
   }
-
-  /* .testimonialsBox {
-    height: 30rem;
-  } */
+  .testimonialsSlider .content {
+    height: 36rem;
+  }
 }
