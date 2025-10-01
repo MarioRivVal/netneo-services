@@ -1,14 +1,5 @@
 import s from "../assets/styles/components/smallButton.module.css";
-import type { ReactNode } from "react";
-
-type SmallButtonProps = {
-  text: string;
-  onClick?: () => void;
-  active?: boolean;
-  className?: string;
-  title?: string;
-  Icon?: ReactNode;
-};
+import type { SmallButtonProps } from "../types/components";
 
 export default function SmallButton({
   text,

@@ -1,20 +1,7 @@
 import s from "../assets/styles/layouts/asideBox.module.css";
 import { Trans, useTranslation } from "react-i18next";
 import GradientButton from "../components/GradientButton";
-
-type ButtonsProps = {
-  display: "both" | "one" | "none";
-  lightBtnTo: string;
-  darkBtnTo: string;
-};
-
-type AsideBoxProps = {
-  directory: string;
-  scope: string;
-  reverse?: boolean;
-  box?: boolean;
-  buttons: ButtonsProps;
-};
+import type { AsideBoxProps } from "../types/layouts";
 
 export default function AsideBox({
   directory,

@@ -8,7 +8,7 @@ export default function SliderTextBox({
   scope,
   initialIndex,
 }: SliderTextBoxProps) {
-  const refs = useGalleryCards(directory, scope, initialIndex);
+  const refs = useGalleryCards({ directory, scope, initialIndex });
 
   const icons = scope === "reasons" ? reasonsIcons : testimonialIcons;
 
@@ -24,7 +24,7 @@ export default function SliderTextBox({
             className="item"
           >
             <div
-              className={`${s.content} ${
+              className={`u--flex-column ${s.content} ${
                 refs.itemActive === index ? s.active : ""
               }`}
             >

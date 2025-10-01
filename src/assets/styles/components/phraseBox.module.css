@@ -1,12 +1,12 @@
 .box {
   background-color: var(--light-blue);
-  padding: 6rem 2rem;
+  padding: var(--p-large) var(--p-small);
 }
 
 .content {
   position: relative;
   width: fit-content;
-  padding: 0 2rem;
+  padding: 0 var(--p-small);
   margin: 0 auto;
 }
 .icon {

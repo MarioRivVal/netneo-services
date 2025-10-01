@@ -1,6 +1,5 @@
 .imgBox {
-  border-radius: 2rem;
-  display: flex;
+  border-radius: var(--radius);
   justify-content: center;
   background-position: center;
   background-size: cover;

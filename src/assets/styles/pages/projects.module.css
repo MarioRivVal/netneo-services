@@ -1,7 +1,7 @@
 .projectsGrid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 6rem;
+  gap: var(--g-xlarge);
   margin-top: 2rem;
 }
 
@@ -11,16 +11,15 @@
 
 /* CLIENTS */
 
-.partnersSub {
-  display: flex;
+.clientsSub {
   flex-wrap: wrap;
   justify-content: center;
 }
 
-.partnersSub span {
-  padding: 0 1rem;
+.clientsSub span {
+  padding: 0 var(--p-tiny);
 }
-.partnersSub > span:not(:last-child) {
+.clientsSub > span:not(:last-child) {
   border-right: solid 0.2rem var(--pink);
 }
 

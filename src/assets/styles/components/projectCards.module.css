@@ -3,14 +3,13 @@
   grid-template-columns: 1fr;
   align-items: center;
   box-shadow: var(--light-shadow);
-  border-radius: 2rem;
+  border-radius: var(--radius);
 }
 
 .imgBox {
   width: 100%;
   height: 100%;
-  border-radius: 2rem;
-  display: flex;
+  border-radius: var(--radius);
   justify-content: center;
   background-position: center;
   background-size: cover;
@@ -37,11 +36,9 @@
 }
 
 .infoBox {
-  padding: 4rem 2rem 2rem 2rem;
-  display: flex;
-  flex-direction: column;
+  padding: var(--p-medium) var(--p-small) var(--p-small) var(--p-small);
   align-items: center;
-  gap: 1rem;
+  gap: var(--g-tiny);
 }
 
 @media (min-width: 780px) {
@@ -54,13 +51,13 @@
   }
 
   .infoBox {
-    padding: 2rem;
+    padding: var(--p-small);
   }
 }
 
 @media (min-width: 1280px) {
   .infoBox {
-    padding: 2rem 4rem;
+    padding: var(--p-small) var(--p-medium);
     gap: 2rem;
   }
 }

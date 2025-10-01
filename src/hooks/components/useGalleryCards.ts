@@ -1,13 +1,14 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import useCarousel from "../useCarousel";
+import type { UseGalleryCardsProps } from "../../types/hooks";
 
-export default function useGalleryCards(
-  directory: string,
-  scope: string,
-  initial: number
-) {
-  const [itemActive, setItemActive] = useState(initial);
+export default function useGalleryCards({
+  directory,
+  scope,
+  initialIndex,
+}: UseGalleryCardsProps) {
+  const [itemActive, setItemActive] = useState(initialIndex);
 
   const { t } = useTranslation(directory);
 

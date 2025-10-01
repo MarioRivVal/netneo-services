@@ -6,3 +6,9 @@ export type UseGalleryImagesProps = {
   scope: string;
   initialIndex: number;
 };
+
+export type UseGalleryCardsProps = {
+  directory: string;
+  scope: string;
+  initialIndex: number;
+};

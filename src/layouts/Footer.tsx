@@ -53,7 +53,7 @@ export default function Footer() {
             <NetneoIcon />
           </div>
 
-          <div className={s.copyrights}>
+          <div className={` u--flex-column ${s.copyrights}`}>
             <div className={`${s.languages} u--flex-row`}>
               {LANGS.map(({ code, label, name }) => (
                 <SmallButton

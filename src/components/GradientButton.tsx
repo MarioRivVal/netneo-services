@@ -1,16 +1,7 @@
 import { Link } from "react-router-dom";
 import s from "../assets/styles/components/gradientButton.module.css";
 import ArrowIcon from "../icons/ArrowIcon";
-
-type GradientButtonProps = {
-  text: string;
-  to?: string; // interno o archivo/externo
-  onClick?: () => void;
-  target?: "_blank" | "_self";
-  rel?: string;
-  variant?: "dark" | "light";
-  className?: string;
-};
+import type { GradientButtonProps } from "../types/components";
 
 const isExternalHttp = (url: string) => /^https?:\/\//i.test(url);
 const isFile = (url: string) =>

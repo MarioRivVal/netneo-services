@@ -13,7 +13,7 @@ import { clientsImgs } from "../content/images";
 import type { ClientsItemsProps } from "../types/objects";
 
 export default function ProjectsPage() {
-  const partnersRef = useGalleryImages({
+  const clientsRef = useGalleryImages({
     imgItems: clientsImgs,
     directory: "projects",
     scope: "clients",
@@ -125,18 +125,18 @@ export default function ProjectsPage() {
           <div className={"cardsContent u--flex-column"}>
             <SliderImgBox
               sliderRef={
-                partnersRef.sliderRef as React.RefObject<HTMLDivElement>
+                clientsRef.sliderRef as React.RefObject<HTMLDivElement>
               }
-              itemRef={partnersRef.itemRef}
-              items={partnersRef.galleryItems}
+              itemRef={clientsRef.itemRef}
+              items={clientsRef.galleryItems}
             />
             <div className={`${s.servicesDetails} u--flex-column`}>
               <div className={`${s.detailsBox} u--flex-column`}>
-                <h4>{partnersList[partnersRef.serviceActive].category}</h4>
+                <h4>{partnersList[clientsRef.serviceActive].category}</h4>
                 <div
-                  className={`${s.partnersSub} u--paragraph u--text-centered`}
+                  className={`${s.clientsSub} u--flex-row u--paragraph u--text-centered`}
                 >
-                  {partnersList[partnersRef.serviceActive].subcategories.map(
+                  {partnersList[clientsRef.serviceActive].subcategories.map(
                     (sub, i) => (
                       <span key={i}>{sub}</span>
                     )
@@ -145,6 +145,23 @@ export default function ProjectsPage() {
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* PORTFOLIO SECTION */}
+      <section className="section u--bg-light-blue">
+        <div className="container">
+          <AsideBox
+            directory="home"
+            scope="curriculum"
+            reverse={true}
+            box={true}
+            buttons={{
+              display: "both",
+              darkBtnTo: "https://netneoportfolio.netlify.app/",
+              lightBtnTo: "/docs/CV_Mario_Rivera_esp_digital.pdf",
+            }}
+          />
         </div>
       </section>
     </>

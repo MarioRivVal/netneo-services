@@ -1,6 +1,6 @@
 .box {
   align-items: center;
-  gap: 2rem;
+  gap: var(--g-small);
 }
 
 .testimonialsSlider {
@@ -8,13 +8,11 @@
 }
 
 .content {
-  display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 1rem;
+  gap: var(--g-tiny);
   min-width: 28rem;
-  padding: 2rem;
+  padding: var(--p-small);
   background-color: var(--white);
   border-radius: var(--radius);
   box-shadow: var(--light-shadow);
@@ -63,7 +61,7 @@
 
 @media (min-width: 1280px) {
   .box {
-    gap: 4rem;
+    gap: var(--g-large);
   }
 
   .content {

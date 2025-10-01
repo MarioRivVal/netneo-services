@@ -22,7 +22,7 @@
 
 .footerContent {
   border-radius: var(--radius);
-  border: 0.2rem solid transparent;
+  border: 0.1rem solid transparent;
   background: linear-gradient(var(--white), var(--white)) padding-box,
     linear-gradient(90deg, var(--blue), var(--pink)) border-box;
   padding: var(--p-small);
@@ -45,8 +45,8 @@
 }
 
 .copyrights {
-  display: grid;
   justify-items: center;
+  align-items: center;
   gap: var(--g-tiny);
 }
 
@@ -62,6 +62,22 @@
 }
 
 .languages {
-  width: 100%;
   gap: var(--g-small);
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding: var(--p-large) var(--p-medium);
+  }
+  .copyrights {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 var(--p-small);
+  }
+}
+@media (min-width: 992px) {
+  .footerContent {
+    padding: var(--p-small) var(--p-medium);
+  }
 }

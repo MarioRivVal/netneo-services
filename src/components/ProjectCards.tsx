@@ -24,12 +24,12 @@ export default function ProjectCards() {
             name={`projects/${item.name}`}
             alt={item.alt}
             priority={false}
-            className={`${s.imgBox}  ${s[`imgBox${item.id}`]}  ${
+            className={`u--flex-row ${s.imgBox}  ${s[`imgBox${item.id}`]}  ${
               item.id % 2 === 0 ? s.reverse : ""
             }`}
           />
 
-          <div className={s.infoBox}>
+          <div className={`${s.infoBox} u--flex-column`}>
             <h4>{item.title}</h4>
             <p className="u--paragraph u--text-centered">{item.description}</p>
             <GradientButton to={item.url} text="Online" variant="light" />

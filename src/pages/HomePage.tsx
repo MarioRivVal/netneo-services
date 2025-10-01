@@ -6,7 +6,6 @@ import AsideBox from "../layouts/AsideBox";
 import useGalleryImages from "../hooks/components/useGalleryImages";
 import ProjectCardsPreview from "../components/ProjectCardsPreview";
 import { homeServicesImgs } from "../content/images";
-import PortfolioBox from "../layouts/PortfolioBox";
 import SliderTextBox from "../components/SliderTextBox";
 import SliderImgBox from "../components/SliderImgBox";
 
@@ -131,7 +130,7 @@ export default function Home() {
               darkBtnTo: "./projects",
             }}
           />
-          <div className={s.projectsBox}>
+          <div className={`${s.projectsBox} u--flex-column`}>
             <ProjectCardsPreview />
           </div>
         </div>
@@ -140,7 +139,17 @@ export default function Home() {
       {/* PORTFOLIO SECTION */}
       <section className="section u--bg-light-blue">
         <div className="container">
-          <PortfolioBox />
+          <AsideBox
+            directory="home"
+            scope="curriculum"
+            reverse={true}
+            box={true}
+            buttons={{
+              display: "both",
+              darkBtnTo: "https://netneoportfolio.netlify.app/",
+              lightBtnTo: "/docs/CV_Mario_Rivera_esp_digital.pdf",
+            }}
+          />
         </div>
       </section>
     </>

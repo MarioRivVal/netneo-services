@@ -35,36 +35,9 @@
 
 /* PROJECTS SECTION */
 .projectsBox {
-  display: flex;
-  flex-direction: column;
   max-width: 140rem;
   margin: 0 auto;
-  gap: 3rem;
-}
-
-/* CURRICULUM SECTION */
-
-.curriculumCta {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2rem;
-}
-
-.curriculumCta p {
-  font-family: var(--font-extra);
-  font-size: 1.4rem;
-  font-weight: 100;
-}
-.btnsBox {
-  width: 100%;
-  max-width: 50rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  gap: 2rem;
+  gap: var(--g-medium);
 }
 
 @media (min-width: 500px) {
@@ -84,7 +57,7 @@
   }
 
   .infoBox {
-    padding: 2rem;
+    padding: var(--p-small);
   }
 }
 

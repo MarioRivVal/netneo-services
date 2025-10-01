@@ -5,7 +5,7 @@ import MobileNav from "./layouts/MobileNav";
 import Footer from "./layouts/Footer";
 
 import HomePage from "./pages/HomePage";
-import Services from "./pages/Services";
+import ServicesPage from "./pages/ServicesPage";
 import ProjectsPage from "./pages/ProjectsPage";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
@@ -30,7 +30,7 @@ function App() {
       {isMobile ? <MobileNav /> : <DesktopNav />}
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/services" element={<Services />} />
+        <Route path="/services" element={<ServicesPage />} />
         <Route path="/projects" element={<ProjectsPage />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />

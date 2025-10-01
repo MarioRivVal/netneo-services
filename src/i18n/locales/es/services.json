@@ -1,0 +1,73 @@
+{
+  "header": {
+    "title6": "// Servicios__",
+    "title5": "¿Y si lo hacemos realidad juntos?",
+    "title2": "Creamos contigo",
+    "title1": ["Persencia", "Valor", "Confianza", "Estrategia", "Autoridad"],
+    "imgAlt": "Portátil MacBook iluminado con tonos púrpura, azul y naranja sobre un fondo oscuro minimalista",
+    "contentTitle6": "// Soluciones__",
+    "title3": "<pink>Todo</pink> lo que <blue>hacemos</blue> por ti.",
+    "paragraph": "Creamos webs, apps e integraciones con IA hechas a medida, sin plantillas ni soluciones genéricas. Cada servicio está pensado para dar valor real: diseño con carácter, desarrollo sólido y estrategias digitales que hacen crecer tu proyecto.",
+    "btnLight": "Empecemos",
+    "btnDark": "Tengo preguntas"
+  },
+  "services": {
+    "contentTitle6": "// Servicios__",
+    "title3": "Lo que hacemos por ti. Transformamos <pink>ideas</pink> en <blue>soluciones</blue> digitales",
+    "servicesList": [
+      {
+        "title3": "Diseño <blue>único,</blue> como tu <pink>marca</pink>",
+        "label": "Diseño",
+        "contentTitle6": "// Diseño__",
+        "imgAlt": "Diseño UI/UX en pantalla",
+        "title": "Diseño UI/UX",
+        "description": "Interfaces limpias, usabilidad que enamora.",
+        "paragraph": "Cada marca merece un diseño que la represente. En Netneo convertimos ideas en experiencias visuales únicas, funcionales y memorables. Ya sea para una web, app o interfaz, diseñamos con intención y estilo propio.",
+        "statsLabel": "De reconocimiento de marca"
+      },
+
+      {
+        "title3": "Apps a medida comot tu <blue>idea</blue> lo <pink>merece</pink>",
+        "label": "Apps",
+        "contentTitle6": "// Apps__",
+        "imgAlt": "Aplicación móvil en uso",
+        "title": "Apps a medida",
+        "description": "Funcionales, rápidas y adaptadas a tus necesidades.",
+        "paragraph": "Cada negocio tiene sus propias reglas. Por eso, desarrollamos aplicaciones pensadas desde cero para lo que realmente necesitas. Rápidas, útiles y diseñadas para que tus usuarios las disfruten y tú saques provecho.",
+        "statsLabel": "De retención de usuarios"
+      },
+      {
+        "title3": "Webs que <blue>convierten,</blue> no que <pink>decoran</pink>",
+        "label": "Webs",
+        "contentTitle6": "// Webs__",
+        "imgAlt": "Sitio web mostrado en un portátil",
+        "title": "Webs inteligentes",
+        "description": "Diseñadas para convertir, optimizadas para destacar.",
+        "paragraph": "Tu sitio web no es solo una carta de presentación: es una herramienta de venta, conexión y posicionamiento. Creamos webs funcionales, rápidas y adaptadas a tu estrategia. Sin rodeos, sin límites, sin excusas.",
+        "statsLabel": "De interacción del usuario"
+      },
+      {
+        "title3": "<blue>Inteligencia</blue> que trabaja <pink>contigo</pink>",
+        "label": "IA",
+        "contentTitle6": "// IA__",
+        "imgAlt": "Interfaz con inteligencia artificial",
+        "title": "IA integrada",
+        "description": "Automatiza, responde y evoluciona con inteligencia.",
+        "paragraph": "No solo creamos interfaces, también integramos cerebros digitales. Automatizamos respuestas, simplificamos procesos y mejoramos la experiencia del usuario con IA útil y accesible para tu negocio.",
+        "statsLabel": "Más eficiencia en procesos"
+      },
+      {
+        "title3": "<blue>Visibilidad</blue> que no depende de la <pink>suerte</pink>",
+        "label": "SEO",
+        "contentTitle6": "// SEO__",
+        "imgAlt": "Imagen con texto SEO",
+        "title": "SEO & estrategia",
+        "description": "Para que te encuentren, te elijan y te recuerden",
+        "paragraph": "Tener una buena web no basta si nadie la encuentra. En netneo trabajamos el SEO como parte del diseño, para que tu marca aparezca donde debe estar: en la mente y en la búsqueda de tus clientes.",
+        "statsLabel": "En visibilidad en buscadores"
+      }
+    ],
+
+    "btnDark": "Lo que ofrecemos"
+  }
+}

@@ -21,7 +21,7 @@ export default function ProjectCardsPreview() {
           name={`projects/${item.name}`}
           alt={item.alt}
           priority={false}
-          className={`${s.imgBox}  ${s[`imgBox${item.id}`]}`}
+          className={` u--flex-row ${s.imgBox}  ${s[`imgBox${item.id}`]}`}
         />
       ))}
     </>

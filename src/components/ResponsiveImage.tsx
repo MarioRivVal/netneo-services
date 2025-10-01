@@ -1,10 +1,4 @@
-type ResponsiveImageProps = {
-  name: string;
-  alt: string;
-  className?: string;
-  ext?: string;
-  priority?: boolean;
-};
+import type { ResponsiveImageProps } from "../types/components";
 
 export default function ResponsiveImage({
   name,
