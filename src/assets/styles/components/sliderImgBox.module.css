@@ -12,6 +12,64 @@
   user-select: none;
 }
 
+.statsBox {
+  position: absolute;
+  height: 85%;
+  width: 80%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.9);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--font-extra);
+  border-radius: var(--radius);
+  padding: 2rem;
+}
+
+/* --- Dots --- */
+.dots {
+  display: flex;
+  gap: 0.6rem;
+  margin-bottom: 1.2rem;
+}
+
+.dot {
+  width: 1.2rem;
+  height: 0.6rem;
+  border-radius: 5rem;
+  background: #000;
+  opacity: calc(0.25 + (var(--i) * 0.07));
+}
+
+.isActive .dot {
+  animation: dotPulse 3s infinite both;
+  animation-delay: calc(var(--i) * 90ms);
+}
+
+.statsNumber {
+  font-size: 3.8rem;
+}
+.statsLabel {
+  font-size: 1.6rem;
+  text-align: center;
+  font-weight: 100;
+}
+
+@keyframes dotPulse {
+  0% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.95;
+  }
+  100% {
+    opacity: 0.3;
+  }
+}
+
 @media (min-width: 1280px) {
   .card img {
     width: 26rem;

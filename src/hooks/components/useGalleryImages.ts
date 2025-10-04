@@ -25,6 +25,8 @@ export default function useGalleryImages({
       alt: t(`${scope}.${scope}List.${index}.imgAlt`, {
         defaultValue: label,
       }),
+      statsNumber: t(`${scope}.${scope}List.${index}.statsNumber`),
+      statsLabel: t(`${scope}.${scope}List.${index}.statsLabel`),
     })
   );
 

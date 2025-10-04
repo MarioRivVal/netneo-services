@@ -11,6 +11,8 @@ export type SliderImgBoxProps = {
   sliderRef: React.RefObject<HTMLDivElement>;
   itemRef: React.RefObject<(HTMLDivElement | null)[]>;
   items: ImgItemsProps[];
+  stats?: boolean;
+  activeIndex?: number;
 };
 
 export type PhraseBoxProps = {

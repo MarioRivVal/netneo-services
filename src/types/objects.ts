@@ -4,6 +4,8 @@ export type ImgItemsProps = {
   url?: string;
   alt?: string;
   name?: string;
+  statsNumber?: string;
+  statsLabel?: string;
 };
 
 export type ClientsItemsProps = {

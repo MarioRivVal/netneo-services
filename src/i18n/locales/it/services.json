@@ -12,57 +12,48 @@
     "btnDark": "Ho delle domande"
   },
   "services": {
-    "contentTitle6": "// Servicios__",
-    "title3": "Lo que hacemos por ti. Transformamos <pink>ideas</pink> en <blue>soluciones</blue> digitales",
+    "btnDark": "Lo que ofrecemos",
     "servicesList": [
       {
-        "title3": "Diseño <blue>único,</blue> como tu <pink>marca</pink>",
-        "label": "Diseño",
-        "imgAlt": "Diseño UI/UX en pantalla",
-        "title": "Diseño UI/UX",
-        "description": "Interfaces limpias, usabilidad que enamora.",
-        "paragraph": "Cada marca merece un diseño que la represente. En Netneo convertimos ideas en experiencias visuales únicas, funcionales y memorables. Ya sea para una web, app o interfaz, diseñamos con intención y estilo propio.",
-        "statsLabel": "De reconocimiento de marca"
-      },
-
-      {
-        "title3": "Apps a medida comot tu <blue>idea</blue> lo <pink>merece</pink>",
-        "label": "Apps",
-        "imgAlt": "Aplicación móvil en uso",
-        "title": "Apps a medida",
-        "description": "Funcionales, rápidas y adaptadas a tus necesidades.",
-        "paragraph": "Cada negocio tiene sus propias reglas. Por eso, desarrollamos aplicaciones pensadas desde cero para lo que realmente necesitas. Rápidas, útiles y diseñadas para que tus usuarios las disfruten y tú saques provecho.",
-        "statsLabel": "De retención de usuarios"
+        "title3": "Design <blue>unico,</blue> come il tuo <pink>brand</pink>",
+        "contentTitle6": "// Design__",
+        "imgAlt": "Design UI/UX su schermo",
+        "paragraph": "Ogni brand merita un design che lo rappresenti. In Netneo trasformiamo idee in esperienze visive uniche, funzionali e memorabili. Che sia per un sito web, un’app o un’interfaccia, progettiamo con intenzione e stile personale.",
+        "statsNumber": "+70%",
+        "statsLabel": "Di riconoscimento del brand"
       },
       {
-        "title3": "Webs que <blue>convierten,</blue> no que <pink>decoran</pink>",
-        "label": "Webs",
-        "imgAlt": "Sitio web mostrado en un portátil",
-        "title": "Webs inteligentes",
-        "description": "Diseñadas para convertir, optimizadas para destacar.",
-        "paragraph": "Tu sitio web no es solo una carta de presentación: es una herramienta de venta, conexión y posicionamiento. Creamos webs funcionales, rápidas y adaptadas a tu estrategia. Sin rodeos, sin límites, sin excusas.",
-        "statsLabel": "De interacción del usuario"
+        "title3": "App su misura come la tua <blue>idea</blue> <pink>merita</pink>",
+        "contentTitle6": "// App__",
+        "imgAlt": "Applicazione mobile in uso",
+        "paragraph": "Ogni business ha le sue regole. Per questo sviluppiamo applicazioni pensate da zero per ciò di cui hai davvero bisogno. Veloci, utili e progettate perché i tuoi utenti le apprezzino e tu ne tragga vantaggio.",
+        "statsNumber": "+60%",
+        "statsLabel": "Di fidelizzazione degli utenti"
       },
       {
-        "title3": "<blue>Inteligencia</blue> que trabaja <pink>contigo</pink>",
-        "label": "IA",
-        "imgAlt": "Interfaz con inteligencia artificial",
-        "title": "IA integrada",
-        "description": "Automatiza, responde y evoluciona con inteligencia.",
-        "paragraph": "No solo creamos interfaces, también integramos cerebros digitales. Automatizamos respuestas, simplificamos procesos y mejoramos la experiencia del usuario con IA útil y accesible para tu negocio.",
-        "statsLabel": "Más eficiencia en procesos"
+        "title3": "Siti web che <blue>convertono,</blue> non che <pink>decorano</pink>",
+        "contentTitle6": "// Web__",
+        "imgAlt": "Sito web mostrato su un portatile",
+        "paragraph": "Il tuo sito web non è solo un biglietto da visita: è uno strumento di vendita, connessione e posizionamento. Creiamo siti web funzionali, veloci e adattati alla tua strategia. Senza giri, senza limiti, senza scuse.",
+        "statsNumber": "+45%",
+        "statsLabel": "Di interazione degli utenti"
       },
       {
-        "title3": "<blue>Visibilidad</blue> que no depende de la <pink>suerte</pink>",
-        "label": "SEO",
-        "imgAlt": "Imagen con texto SEO",
-        "title": "SEO & estrategia",
-        "description": "Para que te encuentren, te elijan y te recuerden",
-        "paragraph": "Tener una buena web no basta si nadie la encuentra. En netneo trabajamos el SEO como parte del diseño, para que tu marca aparezca donde debe estar: en la mente y en la búsqueda de tus clientes.",
-        "statsLabel": "En visibilidad en buscadores"
+        "title3": "<blue>Intelligenza</blue> che lavora <pink>con te</pink>",
+        "contentTitle6": "// IA__",
+        "imgAlt": "Interfaccia con intelligenza artificiale",
+        "paragraph": "Non creiamo solo interfacce, integriamo anche cervelli digitali. Automatizziamo risposte, semplifichiamo processi e miglioriamo l’esperienza utente con un’IA utile e accessibile per il tuo business.",
+        "statsNumber": "x3",
+        "statsLabel": "Più efficienza nei processi"
+      },
+      {
+        "title3": "<blue>Visibilità</blue> che non dipende dalla <pink>fortuna</pink>",
+        "contentTitle6": "// SEO__",
+        "imgAlt": "Immagine con testo SEO",
+        "paragraph": "Avere un buon sito non basta se nessuno lo trova. In Netneo lavoriamo la SEO come parte integrante del design, affinché il tuo brand appaia dove deve essere: nella mente e nella ricerca dei tuoi clienti.",
+        "statsNumber": "+120%",
+        "statsLabel": "In visibilità sui motori di ricerca"
       }
-    ],
-
-    "btnDark": "Lo que ofrecemos"
+    ]
   }
 }

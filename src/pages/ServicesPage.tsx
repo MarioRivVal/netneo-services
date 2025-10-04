@@ -10,7 +10,7 @@ export default function ServicesPage() {
 
   const servicesRef = useGalleryImages({
     imgItems: homeServicesImgs,
-    directory: "home",
+    directory: "services",
     scope: "services",
     initialIndex: 2,
   });
@@ -56,6 +56,8 @@ export default function ServicesPage() {
               }
               itemRef={servicesRef.itemRef}
               items={servicesRef.galleryItems}
+              stats={true}
+              activeIndex={servicesRef.serviceActive}
             />
           </div>
         </div>
