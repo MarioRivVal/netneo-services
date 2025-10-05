@@ -3,7 +3,7 @@ import QuoteIcon from "../icons/others/Quote";
 import { useTranslation } from "react-i18next";
 import type { PhraseBoxProps } from "../types/components";
 
-export default function PhraseBox({ index }: PhraseBoxProps) {
+export default function PhraseBox({ phrase }: PhraseBoxProps) {
   const { t } = useTranslation("generals");
 
   return (
@@ -12,8 +12,8 @@ export default function PhraseBox({ index }: PhraseBoxProps) {
         <div className={s.icon}>
           <QuoteIcon />
         </div>
-        <p className={s.phrase}>{t(`phrases.phrase${index}.text`)}</p>
-        <span className={s.author}>{t(`phrases.phrase${index}.author`)}</span>
+        <p className={s.phrase}>{t(`phrases.phrase${phrase}.text`)}</p>
+        <span className={s.author}>{t(`phrases.phrase${phrase}.author`)}</span>
       </div>
     </div>
   );

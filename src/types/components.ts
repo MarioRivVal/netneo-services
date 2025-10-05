@@ -16,7 +16,7 @@ export type SliderImgBoxProps = {
 };
 
 export type PhraseBoxProps = {
-  index: number;
+  phrase: number;
 };
 
 export type GradientButtonProps = {
@@ -44,4 +44,15 @@ export type ResponsiveImageProps = {
   className?: string;
   ext?: string;
   priority?: boolean;
+};
+
+export type StepBoxProps = {
+  item: {
+    id: number;
+    imgName: string;
+    imgAlt: string;
+    title: string;
+    paragraph: string;
+  };
+  reverse: boolean;
 };

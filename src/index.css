@@ -167,6 +167,9 @@ picture {
   font-size: 2.4rem;
   font-family: var(--font-paragraph);
 }
+.u--paragraph-small {
+  font-size: 2.2rem;
+}
 
 .u--text-centered {
   text-align: center;
@@ -258,6 +261,9 @@ picture {
 @media (min-width: 1280px) {
   .u--paragraph {
     font-size: 2.8rem;
+  }
+  .u--paragraph-small {
+    font-size: 2.6rem;
   }
   /* h3 {
     font-size: 8rem;

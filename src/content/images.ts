@@ -22,3 +22,11 @@ export const clientsImgs = [
   { id: 6, label: "schools" },
   { id: 7, label: "wellness" },
 ];
+
+export const numbersImgs = [
+  { id: 1, label: "one" },
+  { id: 2, label: "two" },
+  { id: 3, label: "three" },
+  { id: 4, label: "four" },
+  { id: 5, label: "five" },
+];

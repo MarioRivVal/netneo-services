@@ -1,0 +1,52 @@
+.step {
+  padding: 2rem;
+  border-bottom: solid 0.1rem var(--pink);
+  gap: 1rem;
+}
+
+.stepImg {
+  width: 50%;
+  max-width: 16rem;
+  height: auto;
+}
+
+.reverse .stepImg {
+  align-self: flex-end;
+}
+
+.stepText h4 {
+  text-align: start;
+}
+
+.paragraph {
+  text-align: start;
+  margin-top: 1rem;
+}
+
+.reverse h4,
+.reverse p {
+  text-align: end;
+}
+
+@media (min-width: 768px) {
+  .step {
+    flex-direction: row;
+    gap: 8rem;
+    align-items: center;
+    padding: 4rem 6rem;
+  }
+
+  .stepImg {
+    max-width: 28rem;
+    width: initial;
+  }
+
+  .reverse .stepImg {
+    order: 2;
+  }
+
+  .reverse h4,
+  .reverse p {
+    text-align: start;
+  }
+}

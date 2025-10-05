@@ -56,5 +56,83 @@
         "statsLabel": "En visibilidad en buscadores"
       }
     ]
+  },
+  "steps": {
+    "title3": "De la <blue>idea</blue> al lanzamiento, paso a paso <pink>contigo</pink>",
+    "contentTitle6": "// Asi trabajamos__",
+    "paragraph": "Nada al azar. Cada proyecto sigue un proceso claro para que todo fluya y el resultado sea exactamente lo que necesitas.",
+    "btnLight": "Escribenos",
+    "btnDark": "Testimonios",
+    "stepsList": [
+      {
+        "title": "Escucha activa",
+        "imgAlt": "Imagen del numero 1 con color verde claro",
+        "paragraph": "Empezamos conociéndote: quién eres, qué haces y qué necesitas realmente. No vendemos lo mismo a todos. Aquí todo empieza con una conversación que marca la diferencia."
+      },
+      {
+        "title": "Propuesta clara",
+        "imgAlt": "Imagen del numero 2 con color rojo claro",
+        "paragraph": "Te presentamos una solución personalizada, con ideas aterrizadas, tiempos reales y transparencia total. Sin promesas vacías ni letras pequeñas."
+      },
+      {
+        "title": "Diseño original",
+        "imgAlt": "Imagen del numero 3 con color morado claro",
+        "paragraph": "Damos forma visual a tu proyecto. Diseños únicos, centrados en tu marca, tu cliente y tu objetivo. Porque lo tuyo no merece una plantilla."
+      },
+      {
+        "title": "Desarrollo profesional",
+        "imgAlt": "Imagen del numero 4 con color naranja claro",
+        "paragraph": "Convertimos el diseño en algo funcional, optimizado y rápido. Sea web, app o integración con IA, aquí empieza la parte técnica… bien hecha."
+      },
+      {
+        "title": "Contigo a largo plazo",
+        "imgAlt": "Imagen del numero 5 con color verde claro",
+        "paragraph": "Publicamos tu proyecto y seguimos contigo. Soporte, mejoras, evolución. Aquí no soltamos tu mano después del “entregado”."
+      }
+    ]
+  },
+  "faqs": {
+    "title3": "¿Tienes <blue>dudas?</blue> Algunas <pink>FAQ's</pink> más comunes",
+    "contentTitle6": "// Preguntas__",
+    "paragraph": "Sabemos que antes de dar el primer paso siempre surgen dudas. Por eso reunimos aquí las preguntas más comunes sobre nuestros servicios, procesos y tiempos. Todo claro, sin rodeos.",
+    "btnDark": "Otras preguntas",
+    "faqsList": [
+      {
+        "title": "¿Cuánto cuesta una página web con Netneo?",
+        "paragraph": "Cada proyecto es único, pero nuestras webs básicas comienzan desde 950 €. Siempre adaptamos el presupuesto a tus necesidades reales."
+      },
+      {
+        "title": "¿En cuánto tiempo podrían tener lista mi web o app?",
+        "paragraph": "Depende del alcance, pero una web puede estar lista en 2 a 4 semanas. Una app puede tardar entre 4 y 8 semanas. Te damos un plazo claro desde el inicio."
+      },
+      {
+        "title": "¿Los diseños que hacen son 100% personalizados?",
+        "paragraph": "Sí. Nada de plantillas genéricas. Todo lo que hacemos parte desde cero, con diseño adaptado a tu marca, estilo y objetivo."
+      },
+      {
+        "title": "¿Pueden hacer una app móvil para mi negocio?",
+        "paragraph": "¡Claro! Desarrollamos apps a medida, pensadas para que se adapten a ti, tu cliente y tu flujo de trabajo."
+      },
+      {
+        "title": "¿También integran inteligencia artificial en los proyectos?",
+        "paragraph": "Sí. Podemos integrar asistentes inteligentes, automatizaciones, chatbots, análisis predictivo y más, según lo que necesites."
+      },
+      {
+        "title": "¿Ofrecen mantenimiento o soporte después de entregar el sitio?",
+        "paragraph": "Sí. No te dejamos solo. Podemos encargarnos del soporte técnico, actualizaciones, mejoras o evoluciones futuras."
+      },
+      {
+        "title": "¿Qué necesito tener preparado para empezar un proyecto con ustedes?",
+        "paragraph": "Nada complicado: una idea clara de lo que quieres lograr y, si tienes, textos, imágenes o referencias. Si no, también te ayudamos con eso."
+      },
+      {
+        "title": "¿Trabajan con clientes fuera de España?",
+        "paragraph": "Sí, trabajamos con personas y empresas de cualquier país. Todo el proceso puede hacerse online, sin complicaciones."
+      },
+      {
+        "title": "¿Hacen tiendas online o e-commerce?",
+        "paragraph": "Sí, creamos tiendas online completas, adaptadas a tus productos, con pasarelas de pago, gestión de stock y un diseño único."
+      }
+    ]
   }
 }

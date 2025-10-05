@@ -55,5 +55,39 @@
         "statsLabel": "In visibilità sui motori di ricerca"
       }
     ]
+  },
+  "steps": {
+    "title3": "Dall’<blue>idea</blue> al lancio, passo dopo passo <pink>con te</pink>",
+    "contentTitle6": "// Come lavoriamo__",
+    "paragraph": "Niente è lasciato al caso. Ogni progetto segue un processo chiaro affinché tutto scorra e il risultato sia esattamente ciò di cui hai bisogno.",
+    "btnLight": "Scrivici",
+    "btnDark": "Testimonianze",
+    "stepsList": [
+      {
+        "title": "Ascolto attivo",
+        "imgAlt": "Immagine del numero 1 con colore verde chiaro",
+        "paragraph": "Iniziamo conoscendoti: chi sei, cosa fai e di cosa hai davvero bisogno. Non vendiamo la stessa cosa a tutti. Tutto comincia con una conversazione che fa la differenza."
+      },
+      {
+        "title": "Proposta chiara",
+        "imgAlt": "Immagine del numero 2 con colore rosso chiaro",
+        "paragraph": "Ti presentiamo una soluzione personalizzata, con idee concrete, tempi realistici e totale trasparenza. Niente promesse vuote né clausole nascoste."
+      },
+      {
+        "title": "Design originale",
+        "imgAlt": "Immagine del numero 3 con colore viola chiaro",
+        "paragraph": "Diamo forma visiva al tuo progetto. Design unici, incentrati sul tuo brand, sul tuo cliente e sul tuo obiettivo. Perché il tuo lavoro merita più di un modello predefinito."
+      },
+      {
+        "title": "Sviluppo professionale",
+        "imgAlt": "Immagine del numero 4 con colore arancione chiaro",
+        "paragraph": "Trasformiamo il design in qualcosa di funzionale, ottimizzato e veloce. Che sia sito web, app o integrazione con IA, qui inizia la parte tecnica… fatta come si deve."
+      },
+      {
+        "title": "Con te a lungo termine",
+        "imgAlt": "Immagine del numero 5 con colore verde chiaro",
+        "paragraph": "Lanciamo il tuo progetto e restiamo al tuo fianco. Supporto, miglioramenti, evoluzione. Non ti lasciamo solo dopo la consegna."
+      }
+    ]
   }
 }

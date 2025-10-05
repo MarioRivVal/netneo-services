@@ -55,5 +55,39 @@
         "statsLabel": "Search engine visibility"
       }
     ]
+  },
+  "steps": {
+    "title3": "From <blue>idea</blue> to launch, step by step <pink>with you</pink>",
+    "contentTitle6": "// How we work__",
+    "paragraph": "Nothing left to chance. Every project follows a clear process so everything flows and the result is exactly what you need.",
+    "btnLight": "Write to us",
+    "btnDark": "Testimonials",
+    "stepsList": [
+      {
+        "title": "Active listening",
+        "imgAlt": "Image of number 1 in light green color",
+        "paragraph": "We start by getting to know you: who you are, what you do, and what you really need. We don’t sell the same to everyone. It all begins with a conversation that makes the difference."
+      },
+      {
+        "title": "Clear proposal",
+        "imgAlt": "Image of number 2 in light red color",
+        "paragraph": "We present you with a personalized solution, with realistic ideas, real timelines, and full transparency. No empty promises or small print."
+      },
+      {
+        "title": "Original design",
+        "imgAlt": "Image of number 3 in light purple color",
+        "paragraph": "We give your project a visual shape. Unique designs focused on your brand, your client, and your goals. Because your work deserves more than a template."
+      },
+      {
+        "title": "Professional development",
+        "imgAlt": "Image of number 4 in light orange color",
+        "paragraph": "We turn the design into something functional, optimized, and fast. Whether it’s a website, app, or AI integration, this is where the technical part… is done right."
+      },
+      {
+        "title": "With you long-term",
+        "imgAlt": "Image of number 5 in light green color",
+        "paragraph": "We launch your project and stay with you. Support, improvements, evolution. We don’t let go of your hand after delivery."
+      }
+    ]
   }
 }

@@ -104,7 +104,7 @@ export default function ProjectsPage() {
       </section>
 
       {/* PHRASE BOX */}
-      <PhraseBox index={1} />
+      <PhraseBox phrase={1} />
 
       {/* CLIENTS SECTION */}
       <section className="section">
