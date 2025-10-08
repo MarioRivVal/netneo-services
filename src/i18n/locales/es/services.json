@@ -98,20 +98,8 @@
     "btnDark": "Otras preguntas",
     "faqsList": [
       {
-        "title": "¿Cuánto cuesta una página web con Netneo?",
-        "paragraph": "Cada proyecto es único, pero nuestras webs básicas comienzan desde 950 €. Siempre adaptamos el presupuesto a tus necesidades reales."
-      },
-      {
         "title": "¿En cuánto tiempo podrían tener lista mi web o app?",
         "paragraph": "Depende del alcance, pero una web puede estar lista en 2 a 4 semanas. Una app puede tardar entre 4 y 8 semanas. Te damos un plazo claro desde el inicio."
-      },
-      {
-        "title": "¿Los diseños que hacen son 100% personalizados?",
-        "paragraph": "Sí. Nada de plantillas genéricas. Todo lo que hacemos parte desde cero, con diseño adaptado a tu marca, estilo y objetivo."
-      },
-      {
-        "title": "¿Pueden hacer una app móvil para mi negocio?",
-        "paragraph": "¡Claro! Desarrollamos apps a medida, pensadas para que se adapten a ti, tu cliente y tu flujo de trabajo."
       },
       {
         "title": "¿También integran inteligencia artificial en los proyectos?",
@@ -122,11 +110,15 @@
         "paragraph": "Sí. No te dejamos solo. Podemos encargarnos del soporte técnico, actualizaciones, mejoras o evoluciones futuras."
       },
       {
+        "title": "¿Cuánto cuesta una página web con Netneo?",
+        "paragraph": "Cada proyecto es único, pero nuestras webs básicas comienzan desde 690 €. Siempre adaptamos el presupuesto a tus necesidades reales."
+      },
+      {
         "title": "¿Qué necesito tener preparado para empezar un proyecto con ustedes?",
         "paragraph": "Nada complicado: una idea clara de lo que quieres lograr y, si tienes, textos, imágenes o referencias. Si no, también te ayudamos con eso."
       },
       {
-        "title": "¿Trabajan con clientes fuera de España?",
+        "title": "¿Trabajan con clientes con clientes de cualquier parte del mundo?",
         "paragraph": "Sí, trabajamos con personas y empresas de cualquier país. Todo el proceso puede hacerse online, sin complicaciones."
       },
       {

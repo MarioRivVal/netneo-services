@@ -92,14 +92,5 @@
 
     "btnDark": "Testimonials",
     "btnLight": "More projects"
-  },
-
-  "curriculum": {
-    "contentTitle6": "// Curriculum__",
-    "title3": "Are you <blue>recruiting</blue><pink> talent?</pink>",
-    "paragraph": "I am also open to collaborating with companies, agencies, or teams that share a clear vision: doing things right. If you are looking for someone with initiative, real experience in development and design, and who understands technology with purpose, here I am.",
-    "btnTitle": "Do you want to know me better?",
-    "btnLight": "Download CV",
-    "btnDark": "My portfolio"
   }
 }

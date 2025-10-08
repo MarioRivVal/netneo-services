@@ -10,7 +10,7 @@ import { Trans, useTranslation } from "react-i18next";
 import { LANGS } from "../i18n/langs";
 
 export default function Footer() {
-  const { t, i18n } = useTranslation("footer");
+  const { t, i18n } = useTranslation("generals");
   const current = (i18n.resolvedLanguage || i18n.language || "en").split(
     "-"
   )[0];
@@ -18,7 +18,7 @@ export default function Footer() {
   return (
     <footer className={s.footer}>
       <div className={`${s.container} u--flex-column u--mw-centered`}>
-        <h6>{t("follow")}</h6>
+        <h6>{t("footer.follow")}</h6>
 
         <div className={`${s.titleBox} u--flex-column`}>
           <div className={`${s.socials} u--flex-row`}>
@@ -28,7 +28,7 @@ export default function Footer() {
 
           <h3>
             <Trans
-              i18nKey="headline"
+              i18nKey="footer.headline"
               t={t}
               components={{
                 pink: <span className="u--pink-text" />,
@@ -39,9 +39,9 @@ export default function Footer() {
         </div>
 
         <div className={`${s.cta} u--flex-row`}>
-          <p className="u--paragraph">{t("ctaLabel")}</p>
+          <p className="u--paragraph">{t("footer.ctaLabel")}</p>
           <GradientButton
-            text={t("ctaButton")}
+            text={t("footer.ctaButton")}
             variant="dark"
             to="https://wa.me/34642469683"
           />
@@ -66,11 +66,11 @@ export default function Footer() {
               ))}
             </div>
 
-            <a href="#">{t("terms")}</a>
+            <a href="#">{t("footer.terms")}</a>
 
             <p>
               <span>{t("rights", { year: new Date().getFullYear() })}</span>
-              {t("allRights")}
+              {t("footer.allRights")}
             </p>
           </div>
         </div>

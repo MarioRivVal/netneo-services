@@ -1,0 +1,46 @@
+{
+  "header": {
+    "title6": "// Who I am__",
+    "title5": "Who's behind Netneo?",
+    "title2": "Our philosophy",
+    "title1": ["Honest", "Personal", "Purpose", "Original", "Loyal"],
+    "imgAlt": "Person contemplating the city from the edge of a lake with open arms, in a serene light blue atmosphere.",
+    "contentTitle6": "// This is serious__",
+    "title3": "A <blue>vision</blue> with <pink>purpose</pink>",
+    "paragraph": "An agency is more than a pretty name. Netneo was born from a personal vision: to create unique digital solutions, without copying, without shortcuts, and with genuine human connection.",
+    "btnLight": "Let's begin",
+    "btnDark": "I have questions"
+  },
+  "philosophy": {
+    "title3": "This is what I <blue>believe</blue> in. And how I <pink>work</pink>",
+    "contentTitle6": "// Intention__",
+    "paragraph": "I don't do mass projects. I don't sell empty solutions. I believe in the power of digital when it's done with intention, with respect for the brand, and with a clear vision. This is my way of working. This is Netneo.",
+    "philosophyList": [
+      {
+        "title": "Respect above all",
+        "imgAlt": "Image of number 1 in light green color",
+        "paragraph": "I'm tired of seeing how many clients are used, rushed, overcharged, and abandoned. Cloned websites. Mass-produced services that don't represent their product or their story."
+      },
+      {
+        "title": "That's why Netneo exists",
+        "imgAlt": "Image of number 2 in light red color",
+        "paragraph": "Netneo was born to be the opposite. My way of working has character, intention, and above all: respect for those who trust me. Every project reflects the person or brand behind it."
+      },
+      {
+        "title": "No copy and paste",
+        "imgAlt": "Image of number 3 in light purple color",
+        "paragraph": "I don't use recycled templates or empty formulas. What I create has meaning, structure, and purpose. It's design with soul and development with sense."
+      },
+      {
+        "title": "What I'm worth, it's worth",
+        "imgAlt": "Image of number 4 in light orange color",
+        "paragraph": "My prices reflect the real value of the service, not a random number. I don't give my work away, because what I do isn't something you find everywhere."
+      },
+      {
+        "title": "I don't disappear. I stay involved",
+        "imgAlt": "Image of number 5 in light green color",
+        "paragraph": "I don't deliver and vanish. I stay. I take care of your project after launch, because I know that what's built well also deserves to be maintained well."
+      }
+    ]
+  }
+}

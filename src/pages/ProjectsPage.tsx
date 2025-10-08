@@ -11,6 +11,7 @@ import SliderImgBox from "../components/SliderImgBox";
 import useGalleryImages from "../hooks/components/useGalleryImages";
 import { clientsImgs } from "../content/images";
 import type { ClientsItemsProps } from "../types/objects";
+import PortfolioBox from "../components/PortfolioBox";
 
 export default function ProjectsPage() {
   const clientsRef = useGalleryImages({
@@ -149,21 +150,7 @@ export default function ProjectsPage() {
       </section>
 
       {/* PORTFOLIO SECTION */}
-      <section className="section u--bg-light-blue">
-        <div className="container">
-          <AsideBox
-            directory="home"
-            scope="curriculum"
-            reverse={true}
-            box={true}
-            buttons={{
-              display: "both",
-              darkBtnTo: "https://netneoportfolio.netlify.app/",
-              lightBtnTo: "/docs/CV_Mario_Rivera_esp_digital.pdf",
-            }}
-          />
-        </div>
-      </section>
+      <PortfolioBox />
     </>
   );
 }

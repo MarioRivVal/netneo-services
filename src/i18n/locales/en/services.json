@@ -89,5 +89,41 @@
         "paragraph": "We launch your project and stay with you. Support, improvements, evolution. We don’t let go of your hand after delivery."
       }
     ]
+  },
+  "faqs": {
+    "title3": "Got <blue>questions?</blue> Here are some common <pink>FAQs</pink>",
+    "contentTitle6": "// Questions__",
+    "paragraph": "We know that before taking the first step, questions always arise. That’s why we’ve gathered here the most common questions about our services, processes, and timelines. Everything clear, no fluff.",
+    "btnDark": "Other questions",
+    "faqsList": [
+      {
+        "title": "How long would it take to have my website or app ready?",
+        "paragraph": "It depends on the scope, but a website can be ready in 2 to 4 weeks. An app may take between 4 and 8 weeks. We’ll give you a clear timeline from the start."
+      },
+      {
+        "title": "Do you also integrate artificial intelligence into projects?",
+        "paragraph": "Yes. We can integrate intelligent assistants, automations, chatbots, predictive analysis, and more — depending on your needs."
+      },
+      {
+        "title": "Do you offer maintenance or support after delivering the site?",
+        "paragraph": "Yes. We don’t leave you on your own. We can take care of technical support, updates, improvements, or future evolutions."
+      },
+      {
+        "title": "How much does a website with Netneo cost?",
+        "paragraph": "Every project is unique, but our basic websites start at €690. We always tailor the budget to your real needs."
+      },
+      {
+        "title": "What do I need to have ready to start a project with you?",
+        "paragraph": "Nothing complicated: a clear idea of what you want to achieve and, if you have them, texts, images, or references. If not, we can help you with that too."
+      },
+      {
+        "title": "Do you work with clients from all over the world?",
+        "paragraph": "Yes, we work with individuals and companies from any country. The entire process can be done online, hassle-free."
+      },
+      {
+        "title": "Do you create online stores or e-commerce?",
+        "paragraph": "Yes, we build complete online stores, tailored to your products, with payment gateways, stock management, and a unique design."
+      }
+    ]
   }
 }

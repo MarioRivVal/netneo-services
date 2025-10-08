@@ -1,0 +1,46 @@
+{
+  "header": {
+    "title6": "// Quién soy__",
+    "title5": "¿Quién está detrás de Netneo?",
+    "title2": "Nuestra filosofía",
+    "title1": ["Honesto", "Personal", "Propósito", "Original", "Leal"],
+    "imgAlt": "Persona contemplando la ciudad desde la orilla de un lago con los brazos abiertos, en un ambiente sereno y azul claro.",
+    "contentTitle6": "// Va es serio__",
+    "title3": "Una <blue>visión</blue> con <pink>propósito</pink>",
+    "paragraph": "Una agencia es más que un nombre bonito. Netneo nace de una visión personal: crear soluciones digitales únicas, sin copiar, sin atajos, y con un trato humano de verdad..",
+    "btnLight": "Comencemos",
+    "btnDark": "Tengo preguntas"
+  },
+  "philosophy": {
+    "title3": "Esto es en lo que <blue>creo.</blue> Y como <pink>trabajo</pink>",
+    "contentTitle6": "//Intención__",
+    "paragraph": "No hago proyectos en masa. No vendo soluciones vacías. Creo en el poder de lo digital cuando se hace con intención, con respeto por la marca, y con una visión clara. Esta es mi forma de trabajar. Así es Netneo.",
+    "philosophyList": [
+      {
+        "title": "Respeto ante todo",
+        "imgAlt": "Imagen del numero 1 con color verde claro",
+        "paragraph": "Estoy cansado de ver cómo a muchos clientes los usan, los apuran, les cobran y los sueltan. Webs clonadas. Servicios en serie que no representan ni su producto ni su historia."
+      },
+      {
+        "title": "Por eso existe Netneo",
+        "imgAlt": "Imagen del numero 2 con color rojo claro",
+        "paragraph": "Netneo nació para ser lo contrario. Mi forma de trabajar tiene carácter, tiene intención, y sobre todo: tiene respeto por quien confía en mí. Cada proyecto refleja a la persona o marca detrás."
+      },
+      {
+        "title": "Nada de copiar y pegar",
+        "imgAlt": "Imagen del numero 3 con color morado claro",
+        "paragraph": "No uso plantillas recicladas ni fórmulas vacías. Lo que creo tiene sentido, estructura y propósito. Es diseño con alma y desarrollo con cabeza."
+      },
+      {
+        "title": "Lo que valgo, lo vale",
+        "imgAlt": "Imagen del numero 4 con color naranja claro",
+        "paragraph": "Mis precios reflejan el valor real del servicio, no un número aleatorio. No regalo mi trabajo, porque lo que hago no es lo que se encuentra por ahí."
+      },
+      {
+        "title": "No desaparezco, acompaño",
+        "imgAlt": "Imagen del numero 5 con color verde claro",
+        "paragraph": "No entrego y desaparezco. Acompaño. Cuido tu proyecto después del lanzamiento, porque sé que lo que se construye bien, también se mantiene bien."
+      }
+    ]
+  }
+}

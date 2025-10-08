@@ -89,5 +89,41 @@
         "paragraph": "Lanciamo il tuo progetto e restiamo al tuo fianco. Supporto, miglioramenti, evoluzione. Non ti lasciamo solo dopo la consegna."
       }
     ]
+  },
+  "faqs": {
+    "title3": "Hai <blue>domande?</blue> Alcune <pink>FAQ</pink> comuni",
+    "contentTitle6": "// Domande__",
+    "paragraph": "Sappiamo che prima di fare il primo passo sorgono sempre dei dubbi. Per questo abbiamo raccolto qui le domande più comuni sui nostri servizi, processi e tempi di consegna. Tutto chiaro, senza giri di parole.",
+    "btnDark": "Altre domande",
+    "faqsList": [
+      {
+        "title": "In quanto tempo potreste realizzare il mio sito o la mia app?",
+        "paragraph": "Dipende dall’entità del progetto, ma un sito può essere pronto in 2-4 settimane. Un’app richiede tra 4 e 8 settimane. Ti forniremo un calendario chiaro fin dall’inizio."
+      },
+      {
+        "title": "Integrate anche l’intelligenza artificiale nei progetti?",
+        "paragraph": "Sì. Possiamo integrare assistenti intelligenti, automazioni, chatbot, analisi predittive e altro, in base alle tue necessità."
+      },
+      {
+        "title": "Offrite manutenzione o supporto dopo la consegna del sito?",
+        "paragraph": "Sì. Non ti lasciamo da solo. Possiamo occuparci del supporto tecnico, degli aggiornamenti, dei miglioramenti o delle evoluzioni future."
+      },
+      {
+        "title": "Quanto costa un sito web con Netneo?",
+        "paragraph": "Ogni progetto è unico, ma i nostri siti base partono da 690 €. Adattiamo sempre il preventivo alle tue reali esigenze."
+      },
+      {
+        "title": "Cosa devo preparare per iniziare un progetto con voi?",
+        "paragraph": "Niente di complicato: un’idea chiara di ciò che vuoi ottenere e, se li hai, testi, immagini o riferimenti. Se non li hai, ti aiutiamo noi."
+      },
+      {
+        "title": "Lavori con clienti provenienti da tutto il mondo?",
+        "paragraph": "Sì, lavoriamo con persone e aziende di qualsiasi paese. Tutto il processo può essere gestito online, senza complicazioni."
+      },
+      {
+        "title": "Realizzate negozi online o e-commerce?",
+        "paragraph": "Sì, creiamo negozi online completi, adattati ai tuoi prodotti, con sistemi di pagamento, gestione del magazzino e un design unico."
+      }
+    ]
   }
 }

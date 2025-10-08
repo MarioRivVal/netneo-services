@@ -7,6 +7,10 @@
   height: 40rem;
 }
 
+.faqsSlider {
+  height: 40rem;
+}
+
 .content {
   align-items: center;
   justify-content: center;
@@ -33,6 +37,10 @@
   height: 42rem;
 }
 
+.faqsSlider .content {
+  height: 36rem;
+}
+
 .titles {
   align-items: center;
   border-bottom: solid 0.1rem var(--pink);
@@ -57,6 +65,16 @@
 .paragraph {
   font-size: 2.2rem;
   text-align: center;
+}
+
+.number {
+  font-size: 2.8rem;
+  font-family: var(--font-paragraph);
+  font-weight: 300;
+}
+
+.numberActive {
+  color: var(--pink);
 }
 
 @media (min-width: 1280px) {

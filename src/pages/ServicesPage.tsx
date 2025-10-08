@@ -9,6 +9,8 @@ import PhraseBox from "../components/PhraseBox";
 import { useTranslation } from "react-i18next";
 import { numbersImgs } from "../content/images";
 import StepBox from "../components/StepBox";
+import SliderTextBox from "../components/SliderTextBox";
+import PortfolioBox from "../components/PortfolioBox";
 
 export default function ServicesPage() {
   const { t } = useTranslation("services");
@@ -119,7 +121,11 @@ export default function ServicesPage() {
             }}
           />
         </div>
+        <SliderTextBox directory="services" scope="faqs" initialIndex={3} />
       </section>
+
+      {/* PORTFOLIO SECTION */}
+      <PortfolioBox />
     </>
   );
 }

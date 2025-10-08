@@ -1,4 +1,11 @@
 {
+  "nav": {
+    "home": "Home",
+    "services": "Servizi",
+    "projects": "Progetti",
+    "about": "Chi sono",
+    "contact": "Contatti"
+  },
   "phrases": {
     "phrase1": {
       "text": "Creare con significato è l'unica strada che ha valore.",
@@ -8,5 +15,21 @@
       "text": "Le aziende dovrebbero esistere per servire, non per approfittare",
       "author": "— Grant Cardone"
     }
+  },
+  "curriculum": {
+    "contentTitle6": "// Profilo tecnico__",
+    "title3": "Vuoi <blue>conoscere</blue> il mio profilo <pink>tecnico?</pink>",
+    "paragraph": "Sono uno sviluppatore di applicazioni e siti web. Qui puoi vedere la mia formazione (DAM), il mio stack (React, Node/Express, AWS, IA) e i progetti reali a cui ho lavorato. Se vuoi valutare nel dettaglio le mie competenze, dai un’occhiata al mio portfolio o scarica il mio CV.",
+    "btnLight": "Scarica CV",
+    "btnDark": "Il mio portfolio"
+  },
+  "footer": {
+    "follow": "// Seguici_",
+    "headline": "E se la tua <pink>idea</pink> diventasse il prossimo caso di <blue>successo</blue>?",
+    "ctaLabel": "Parla con noi",
+    "ctaButton": "WhatsApp",
+    "terms": "Termini e privacy",
+    "rights": "@ {{year}} Netneo",
+    "allRights": "Tutti i diritti riservati"
   }
 }

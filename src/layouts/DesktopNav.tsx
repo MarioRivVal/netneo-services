@@ -5,7 +5,7 @@ import { Link, NavLink } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
 export default function DesktopNav() {
-  const { t } = useTranslation("nav");
+  const { t } = useTranslation("generals");
   return (
     <nav className={s.navigation}>
       <Link to="/" aria-label="Go home">
@@ -20,7 +20,7 @@ export default function DesktopNav() {
               `${s.item} ${isActive ? s.active : ""}`
             }
           >
-            {t("home")}
+            {t("nav.home")}
           </NavLink>
         </li>
         <li>
@@ -30,7 +30,7 @@ export default function DesktopNav() {
               `${s.item} ${isActive ? s.active : ""}`
             }
           >
-            {t("services")}
+            {t("nav.services")}
           </NavLink>
         </li>
         <li>
@@ -40,7 +40,7 @@ export default function DesktopNav() {
               `${s.item} ${isActive ? s.active : ""}`
             }
           >
-            {t("projects")}
+            {t("nav.projects")}
           </NavLink>
         </li>
         <li>
@@ -50,19 +50,19 @@ export default function DesktopNav() {
               `${s.item} ${isActive ? s.active : ""}`
             }
           >
-            {t("about")}
+            {t("nav.about")}
           </NavLink>
         </li>
-        <li>
+        {/* <li>
           <NavLink
             to="/contact"
             className={({ isActive }) =>
               `${s.item} ${isActive ? s.active : ""}`
             }
           >
-            {t("contact")}
+            {t("nav.contact")}
           </NavLink>
-        </li>
+        </li> */}
       </ul>
 
       <Link to="/" className={s.logoText} aria-label="Go home">

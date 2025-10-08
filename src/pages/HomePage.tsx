@@ -8,6 +8,7 @@ import ProjectCardsPreview from "../components/ProjectCardsPreview";
 import { homeServicesImgs } from "../content/images";
 import SliderTextBox from "../components/SliderTextBox";
 import SliderImgBox from "../components/SliderImgBox";
+import PortfolioBox from "../components/PortfolioBox";
 
 export default function Home() {
   const servicesRef = useGalleryImages({
@@ -137,21 +138,7 @@ export default function Home() {
       </section>
 
       {/* PORTFOLIO SECTION */}
-      <section className="section u--bg-light-blue">
-        <div className="container">
-          <AsideBox
-            directory="home"
-            scope="curriculum"
-            reverse={true}
-            box={true}
-            buttons={{
-              display: "both",
-              darkBtnTo: "https://netneoportfolio.netlify.app/",
-              lightBtnTo: "/docs/CV_Mario_Rivera_esp_digital.pdf",
-            }}
-          />
-        </div>
-      </section>
+      <PortfolioBox />
     </>
   );
 }

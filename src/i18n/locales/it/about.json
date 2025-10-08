@@ -1,0 +1,46 @@
+{
+  "header": {
+    "title6": "// Chi sono__",
+    "title5": "Chi c'è dietro Netneo?",
+    "title2": "La nostra filosofia",
+    "title1": ["Onesto", "Personale", "Scopo", "Originale", "Leale"],
+    "imgAlt": "Persona che contempla la città dal bordo di un lago con le braccia aperte, in un ambiente sereno e azzurro chiaro.",
+    "contentTitle6": "// Si fa sul serio__",
+    "title3": "Una <blue>visione</blue> con <pink>scopo</pink>",
+    "paragraph": "Un'agenzia è più di un bel nome. Netneo nasce da una visione personale: creare soluzioni digitali uniche, senza copiare, senza scorciatoie e con un vero approccio umano.",
+    "btnLight": "Cominciamo",
+    "btnDark": "Ho delle domande"
+  },
+  "philosophy": {
+    "title3": "Questo è in ciò in cui <blue>credo</blue>. E come <pink>lavoro</pink>",
+    "contentTitle6": "// Intenzione__",
+    "paragraph": "Non realizzo progetti in serie. Non vendo soluzioni vuote. Credo nella forza del digitale quando è fatto con intenzione, con rispetto per il brand e con una visione chiara. Questo è il mio modo di lavorare. Questa è Netneo.",
+    "philosophyList": [
+      {
+        "title": "Rispetto prima di tutto",
+        "imgAlt": "Immagine del numero 1 di colore verde chiaro",
+        "paragraph": "Sono stanco di vedere tanti clienti sfruttati, pressati, pagati troppo e poi abbandonati. Siti clonati. Servizi in serie che non rappresentano né il loro prodotto né la loro storia."
+      },
+      {
+        "title": "Ecco perché esiste Netneo",
+        "imgAlt": "Immagine del numero 2 di colore rosso chiaro",
+        "paragraph": "Netneo è nata per essere l’opposto. Il mio modo di lavorare ha carattere, intenzione e soprattutto rispetto per chi si fida di me. Ogni progetto riflette la persona o il marchio che c’è dietro."
+      },
+      {
+        "title": "Niente copia e incolla",
+        "imgAlt": "Immagine del numero 3 di colore viola chiaro",
+        "paragraph": "Non uso modelli riciclati né formule vuote. Ciò che creo ha senso, struttura e scopo. È design con anima e sviluppo con testa."
+      },
+      {
+        "title": "Il mio valore, lo vale",
+        "imgAlt": "Immagine del numero 4 di colore arancione chiaro",
+        "paragraph": "I miei prezzi riflettono il vero valore del servizio, non un numero casuale. Non regalo il mio lavoro, perché ciò che faccio non si trova ovunque."
+      },
+      {
+        "title": "Non scompaio, accompagno",
+        "imgAlt": "Immagine del numero 5 di colore verde chiaro",
+        "paragraph": "Non consegno e sparisco. Accompagno. Mi prendo cura del tuo progetto dopo il lancio, perché so che ciò che è costruito bene merita anche di essere mantenuto bene."
+      }
+    ]
+  }
+}

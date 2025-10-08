@@ -1,4 +1,11 @@
 {
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "projects": "Projects",
+    "about": "About me",
+    "contact": "Contact"
+  },
   "phrases": {
     "phrase1": {
       "text": "Creating with meaning is the only path that has value.",
@@ -8,5 +15,21 @@
       "text": "Businesses should exist to serve, not to take advantage",
       "author": "— Grant Cardone"
     }
+  },
+  "curriculum": {
+    "contentTitle6": "// Technical profile__",
+    "title3": "Want to <blue>discover</blue> my <pink>technical</pink> profile?",
+    "paragraph": "I'm an application and web developer. Here you can see my education (DAM), my stack (React, Node/Express, AWS, AI), and real projects I've worked on. If you'd like to evaluate my skills in detail, take a look at my portfolio or download my CV.",
+    "btnLight": "Download CV",
+    "btnDark": "My portfolio"
+  },
+  "footer": {
+    "follow": "// Follow us_",
+    "headline": "What if your <pink>idea</pink> becomes the next <blue>success</blue> case?",
+    "ctaLabel": "Talk to us",
+    "ctaButton": "WhatsApp",
+    "terms": "Terms & privacy",
+    "rights": "@ {{year}} Netneo",
+    "allRights": "All rights reserved"
   }
 }
