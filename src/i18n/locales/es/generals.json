@@ -28,8 +28,9 @@
     "headline": "¿Y si tu <pink>idea</pink> se convierte en el próximo caso de <blue>éxito</blue>?",
     "ctaLabel": "Habla con nosotros",
     "ctaButton": "WhatsApp",
-    "terms": "Términos y privacidad",
-    "rights": "@ {{year}} Netneo",
+    "privacy": "Términos y privacidad",
+    "cookies": "Política de cookies",
+    "legal": "Aviso legal",
     "allRights": "Todos los derechos reservados"
   }
 }

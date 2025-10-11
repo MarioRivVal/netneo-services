@@ -46,7 +46,7 @@ export default function MobileNav() {
                   {t("nav.home")}
                 </NavLink>
               </li>
-              <li>
+              <li onClick={handleCheckboxChange}>
                 <NavLink
                   to="/services"
                   className={({ isActive }) =>
@@ -56,7 +56,7 @@ export default function MobileNav() {
                   {t("nav.services")}
                 </NavLink>
               </li>
-              <li>
+              <li onClick={handleCheckboxChange}>
                 <NavLink
                   to="/projects"
                   className={({ isActive }) =>
@@ -66,7 +66,7 @@ export default function MobileNav() {
                   {t("nav.projects")}
                 </NavLink>
               </li>
-              <li>
+              <li onClick={handleCheckboxChange}>
                 <NavLink
                   to="/about"
                   className={({ isActive }) =>
@@ -76,7 +76,7 @@ export default function MobileNav() {
                   {t("nav.about")}
                 </NavLink>
               </li>
-              {/* <li>
+              {/* <li  onClick={handleCheckboxChange}>
                 <NavLink
                   to="/contact"
                   className={({ isActive }) =>

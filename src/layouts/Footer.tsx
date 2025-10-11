@@ -1,4 +1,5 @@
 // layouts/Footer.tsx
+import { NavLink } from "react-router-dom";
 import s from "../assets/styles/layouts/footer.module.css";
 import LinkedinIcon from "../icons/LinkedinIcon";
 import InstagramIcon from "../icons/InstagramIcon";
@@ -65,11 +66,20 @@ export default function Footer() {
                 />
               ))}
             </div>
-
-            <a href="#">{t("footer.terms")}</a>
+            <ul className={`${s.legalBox} u--flex-column`}>
+              <li>
+                <NavLink to="/privacy">{t("footer.privacy")}</NavLink>
+              </li>
+              <li>
+                <NavLink to="/cookies">{t("footer.cookies")}</NavLink>
+              </li>
+              <li>
+                <NavLink to="/legal">{t("footer.legal")}</NavLink>
+              </li>
+            </ul>
 
             <p>
-              <span>{t("rights", { year: new Date().getFullYear() })}</span>
+              <span>{`netneo ${new Date().getFullYear()}`} </span>
               {t("footer.allRights")}
             </p>
           </div>
