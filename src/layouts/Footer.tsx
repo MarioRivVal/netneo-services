@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 import s from "../assets/styles/layouts/footer.module.css";
 import LinkedinIcon from "../icons/LinkedinIcon";
 import InstagramIcon from "../icons/InstagramIcon";
+import GithubIcon from "../icons/GithubIcon";
 import GradientButton from "../components/GradientButton";
 import NetneoIcon from "../icons/NetneoIcon";
 import TextIcon from "../icons/TextIcon";
@@ -23,8 +24,30 @@ export default function Footer() {
 
         <div className={`${s.titleBox} u--flex-column`}>
           <div className={`${s.socials} u--flex-row`}>
-            <InstagramIcon />
-            <LinkedinIcon />
+            <a
+              href="https://www.instagram.com/netneo.es/"
+              target="_blank"
+              rel="noreferrer noopener"
+              title="Instagram"
+            >
+              <InstagramIcon />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/mario-valverde-web-developer/"
+              target="_blank"
+              rel="noreferrer noopener"
+              title="Linkedin"
+            >
+              <LinkedinIcon />
+            </a>
+            <a
+              href="https://github.com/MarioRivVal"
+              target="_blank"
+              rel="noreferrer noopener"
+              title="Github"
+            >
+              <GithubIcon />
+            </a>
           </div>
 
           <h3>

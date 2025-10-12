@@ -37,14 +37,14 @@ export default function ProjectsPage() {
           box={true}
           buttons={{
             display: "both",
-            darkBtnTo: "/services",
+            darkBtnTo: "/services#faqs",
             lightBtnTo: "https://wa.me/34642469683",
           }}
         />
       </main>
 
       {/* PROJECTS SECTION */}
-      <section className={`section ${s.sectionProjects}`}>
+      <section id="projects" className={`section ${s.sectionProjects}`}>
         <div className="container">
           <div className="title-box">
             <h6>{t("projects.contentTitle6")}</h6>
@@ -66,22 +66,22 @@ export default function ProjectsPage() {
             <GradientButton
               to="https://wa.me/34642469683"
               text={t(`projects.btnLight`)}
-              variant="light"
+              variant="dark"
             />
 
-            <GradientButton
+            {/* <GradientButton
               onClick={() => {
                 console.log("More projects");
               }}
               text={t(`projects.btnDark`)}
               variant="dark"
-            />
+            /> */}
           </div>
         </div>
       </section>
 
       {/* TESTIMONIALS SECTION */}
-      <section className="section">
+      <section id="testimonials" className="section">
         <div className="container">
           <div className="title-box">
             <h6>{t("testimonials.contentTitle6")}</h6>

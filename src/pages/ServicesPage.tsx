@@ -1,7 +1,6 @@
 import s from "../assets/styles/pages/services.module.css";
 import Header from "../layouts/Header";
 import AsideBox from "../layouts/AsideBox";
-// import {  useTranslation } from "react-i18next";
 import useGalleryImages from "../hooks/components/useGalleryImages";
 import { homeServicesImgs } from "../content/images";
 import SliderImgBox from "../components/SliderImgBox";
@@ -30,10 +29,6 @@ export default function ServicesPage() {
     paragraph: t(`steps.stepsList.${id - 1}.paragraph`),
   }));
 
-  // const servicesList = t("services.servicesList", {
-  //   returnObjects: true,
-  // }) as Record<string, string>[];
-
   return (
     <>
       <main className="main u--bg-light-blue u--flex-column">
@@ -45,7 +40,7 @@ export default function ServicesPage() {
           box={true}
           buttons={{
             display: "both",
-            darkBtnTo: "/services",
+            darkBtnTo: "#faqs",
             lightBtnTo: "https://wa.me/34642469683",
           }}
         />
@@ -89,7 +84,7 @@ export default function ServicesPage() {
             scope="steps"
             buttons={{
               display: "both",
-              darkBtnTo: "/projects",
+              darkBtnTo: "/projects#testimonials",
               lightBtnTo: "https://wa.me/34642469683",
             }}
           />
@@ -109,7 +104,7 @@ export default function ServicesPage() {
       <PhraseBox phrase={2} />
 
       {/* FAQ`S SECTION */}
-      <section className="section">
+      <section id="faqs" className="section">
         <div className="container">
           <AsideBox
             directory="services"

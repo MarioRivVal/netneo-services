@@ -109,7 +109,7 @@ export default function Home() {
             buttons={{
               display: "both",
               lightBtnTo: "https://wa.me/34642469683",
-              darkBtnTo: "./services",
+              darkBtnTo: "/services#faqs",
             }}
           />
 
@@ -127,8 +127,8 @@ export default function Home() {
             reverse
             buttons={{
               display: "both",
-              lightBtnTo: "./projects",
-              darkBtnTo: "./projects",
+              lightBtnTo: "/projects#projects",
+              darkBtnTo: "/projects#testimonials",
             }}
           />
           <div className={`${s.projectsBox} u--flex-column`}>
