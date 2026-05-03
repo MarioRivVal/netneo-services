@@ -7,10 +7,37 @@ export const homeServicesImgs = [
 ];
 
 export const projectImgs = [
-  { id: 1, label: "carlaherrero", url: "https://bycarlaherrero.com/" },
-  { id: 2, label: "rdapadel", url: "https://www.rdapadel.com/" },
-  { id: 3, label: "whoper", url: "https://www.elwhopercomics.es/" },
-  { id: 4, label: "student", url: "https://students-control.netlify.app/" },
+  {
+    id: 1,
+    label: "gastro",
+    url: "https://app.gastronomiate.com/restaurantes",
+    background: "bgOrange",
+  },
+  {
+    id: 2,
+    label: "carlaherrero",
+    url: "https://bycarlaherrero.com/",
+    background: "bgRed",
+  },
+  {
+    id: 3,
+    label: "rdapadel",
+    url: "https://www.rdapadel.com/",
+    background: "bgGreen",
+  },
+  {
+    id: 4,
+    label: "whoper",
+    url: "https://www.elwhopercomics.es/",
+    background: "bgOrange",
+  },
+  {
+    id: 5,
+    label: "student",
+    url: "https://students-control.netlify.app/",
+    background: "bgViolet",
+  },
+
   // { id: 5, label: "wisecalories" },
 ];
 export const clientsImgs = [

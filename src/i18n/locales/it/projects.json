@@ -13,10 +13,15 @@
   },
   "projects": {
     "contentTitle6": "// Clienti__",
-    "title3": "Si sono <pink>fidati</pink> completamenet di <blue>noi</blue>",
+    "title3": "Si sono <pink>fidati</pink> completamente di <blue>noi</blue>",
     "btnLight": "Voglio assumere",
     "btnDark": "Altri progetti",
     "projectsList": [
+      {
+        "title": "Gastronomiate",
+        "description": "SaaS di prenotazioni per ristoranti orientato alle esigenze reali del business. Gestione in tempo reale, pagamenti multi-mercato (Argentina e Brasile), comunicazioni automatiche e pannello admin. Progettato per scalabilità ed efficienza operativa.",
+        "imgAlt": "Screenshot desktop dell'app web 'Gastronomiate'"
+      },
       {
         "title": "by Carla Herrero",
         "description": "Sito web per un brand specializzato in branding, social media e web design. Mostra i suoi servizi e progetti con un design visivo, dinamico e facile da aggiornare.",

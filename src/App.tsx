@@ -17,6 +17,7 @@ import Legal from "./pages/legal/Legal";
 
 import CookieBanner from "./components/CookieBanner";
 import { trackPageView } from "./lib/ga";
+import ScrollUpButton from "./components/ScrollUpBotton";
 
 function App() {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 1024);
@@ -51,6 +52,7 @@ function App() {
       </Routes>
       <Footer />
       <CookieBanner />
+      <ScrollUpButton />
     </>
   );
 }

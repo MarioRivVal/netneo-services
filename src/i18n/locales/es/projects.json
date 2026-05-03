@@ -18,6 +18,11 @@
     "btnDark": "Más proyectos",
     "projectsList": [
       {
+        "title": "Gastronomiate",
+        "description": "SaaS de reservas para restaurantes enfocado en necesidades reales de negocio. Gestión en tiempo real, pagos multi-mercado (Argentina y Brasil), comunicaciones automatizadas y panel de administración. Diseñado para escalar y optimizar operaciones.",
+        "imgAlt": "Captura de pantalla en versión escritorio para la app de 'Gastronomiate'"
+      },
+      {
         "title": "by Carla Herrero",
         "description": "Sitio para una marca especialista en branding, redes sociales y diseño web. Muestra sus servicios y proyectos con un diseño visual, dinámico y fácil de actualizar.",
         "imgAlt": "Captura de pantalla en movil para web de 'by Carla Herrero'"

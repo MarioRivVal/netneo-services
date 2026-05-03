@@ -12,9 +12,11 @@ import UsersAct from "../icons/UsersAct";
 import ArtistIcon from "../icons/testimonials/ArtistIcon";
 import EducationIcon from "../icons/testimonials/EducationIcon";
 import MarketingIcon from "../icons/testimonials/MarketingIcon";
+import RestaurantIcon from "../icons/testimonials/RestaurantIcon";
 import ArtistAct from "../icons/testimonials/ArtistAct";
 import EducationAct from "../icons/testimonials/EducationAct";
 import MarketingAct from "../icons/testimonials/MarketingAct";
+import RestaurantAct from "../icons/testimonials/RestaurantAct";
 
 export const reasonsIcons = [
   {
@@ -51,5 +53,9 @@ export const testimonialIcons = [
   {
     active: <ArtistAct />,
     unactive: <ArtistIcon />,
+  },
+  {
+    active: <RestaurantAct />,
+    unactive: <RestaurantIcon />,
   },
 ];

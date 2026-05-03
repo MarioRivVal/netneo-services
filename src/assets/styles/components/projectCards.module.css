@@ -15,16 +15,16 @@
   background-size: cover;
 }
 
-.imgBox1 {
-  background-image: url("/images/utils/backgrounds/bg-red.png");
-}
-.imgBox2 {
-  background-image: url("/images/utils/backgrounds/bg-green.png");
-}
-.imgBox3 {
+.bgOrange {
   background-image: url("/images/utils/backgrounds/bg-orange.png");
 }
-.imgBox4 {
+.bgRed {
+  background-image: url("/images/utils/backgrounds/bg-red.png");
+}
+.bgGreen {
+  background-image: url("/images/utils/backgrounds/bg-green.png");
+}
+.bgViolet {
   background-image: url("/images/utils/backgrounds/bg-violet.png");
 }
 

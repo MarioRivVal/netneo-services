@@ -3,7 +3,7 @@
     "home": "Home",
     "services": "Services",
     "projects": "Projects",
-    "about": "About me",
+    "about": "About us",
     "contact": "Contact"
   },
   "phrases": {
@@ -19,7 +19,7 @@
   "curriculum": {
     "contentTitle6": "// Technical profile__",
     "title3": "Want to <blue>discover</blue> my <pink>technical</pink> profile?",
-    "paragraph": "I'm an application and web developer. Here you can see my education (DAM), my stack (React, Node/Express, AWS, AI), and real projects I've worked on. If you'd like to evaluate my skills in detail, take a look at my portfolio or download my CV.",
+    "paragraph": "I'm an application and web developer. Here you can see my education, my tech stack, and real projects I've worked on. If you'd like to evaluate my skills in detail, take a look at my portfolio or download my CV.",
     "btnLight": "Download CV",
     "btnDark": "My portfolio"
   },

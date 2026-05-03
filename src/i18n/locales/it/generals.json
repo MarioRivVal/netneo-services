@@ -3,7 +3,7 @@
     "home": "Home",
     "services": "Servizi",
     "projects": "Progetti",
-    "about": "Chi sono",
+    "about": "Chi siamo",
     "contact": "Contatti"
   },
   "phrases": {
@@ -19,7 +19,7 @@
   "curriculum": {
     "contentTitle6": "// Profilo tecnico__",
     "title3": "Vuoi <blue>conoscere</blue> il mio profilo <pink>tecnico?</pink>",
-    "paragraph": "Sono uno sviluppatore di applicazioni e siti web. Qui puoi vedere la mia formazione (DAM), il mio stack (React, Node/Express, AWS, IA) e i progetti reali a cui ho lavorato. Se vuoi valutare nel dettaglio le mie competenze, dai un’occhiata al mio portfolio o scarica il mio CV.",
+    "paragraph": "Sono uno sviluppatore di applicazioni e siti web. Qui puoi vedere la mia formazione, il mio stack tecnologico e i progetti reali a cui ho lavorato. Se vuoi valutare nel dettaglio le mie competenze, dai un’occhiata al mio portfolio o scarica il mio CV.",
     "btnLight": "Scarica CV",
     "btnDark": "Il mio portfolio"
   },
